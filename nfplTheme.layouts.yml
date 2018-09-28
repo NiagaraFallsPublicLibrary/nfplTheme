@@ -1,0 +1,183 @@
+#EQUAL COLUMNS
+one_column:
+  label: One column #Req
+  category: My Layouts #Req
+  path: layouts/one_column
+  template: one_column
+  regions:
+    column_one:
+      label: Content
+    
+two_column:
+  label: Two equal columns #Req
+  category: My Layouts #Req
+  path: layouts/two_column
+  template: two_column
+  regions:
+    column_one:
+      label: Left Column
+    column_two:
+      label: Right Column
+
+
+three_column:
+  label: Three equal columns #Req
+  category: My Layouts #Req
+  path: layouts/three_column
+  template: three_column
+  regions:
+    column_one:
+      label: Left Column
+    column_two:
+      label: Middle Column
+    column_three:
+      label: Right Column
+
+four_column:
+  label: Four equal columns #Req
+  category: My Layouts #Req
+  path: layouts/four_column
+  template: four_column
+  regions:
+    column_one:
+      label: Far Left Column
+    column_two:
+      label: Middle Left Column
+    column_three:
+      label: Middle Right Column
+    column_four:
+      label: Far Right Column
+#END EQUAL COLUMNS
+
+#UNEVEN COLUMNS
+two_column_33_66:
+  label: Two columns L-33 R-66 #Req
+  category: My Layouts #Req
+  path: layouts/two_column_33_66
+  template: two_column_33_66
+  regions:
+    top:
+      label: Top
+    column_one:
+      label: Left Column
+    column_two:
+      label: Right Column
+    bottom:
+      label: Bottom
+
+two_column_66_33:
+  label: Two columns L-66 R-33 #Req
+  category: My Layouts #Req
+  path: layouts/two_column_66_33
+  template: two_column_66_33
+  regions:
+    column_one:
+      label: Left Column
+    column_two:
+      label: Right Column
+      
+
+custom_2_top_66_33_bottom_100:
+  label: Two columns L-66 R-33 One Row 100% Bottom #Req
+  category: My Layouts #Req
+  path: layouts/custom_2_top_66_33_bottom_100
+  template: custom_2_top_66_33_bottom_100
+  regions:
+    column_one:
+      label: Left Column
+    column_two:
+      label: Right Column
+    row_two:
+      label: Bottom Row
+
+two_column_100_250px:
+  label: Two columns L-100% R-250px #Req
+  category: My Layouts #Req
+  path: layouts/two_column_100_250px
+  template: two_column_100_250px
+  regions:
+    column_one:
+      label: Left Column
+    column_two:
+      label: Right Column
+
+two_column_250px_100:
+  label: Two columns L-250px R-100 #Req
+  category: My Layouts #Req
+  path: layouts/two_column_250px_100
+  template: two_column_250px_100
+  regions:
+    column_one:
+      label: Left Column
+    column_two:
+      label: Right Column
+
+#END UNEVEN COLUMNS
+
+
+#EVEN ROWS
+
+three_col_25_50_25:
+  label: Three columns L-25% C-50% R-25% #Req
+  category: My Layouts #Req
+  path: layouts/three_col_25_50_25
+  template: three_col_25_50_25
+  regions:
+    top:
+      label: Top
+    column_one:
+      label: Left Column
+    column_two:
+      label: Center Column
+    column_three:
+      label: Right Column
+    bottom:
+      label: Bottom
+
+four_rows:
+  label: Four Rows #Req
+  category: My Layouts #Req
+  path: layouts/4row
+  template: 4row
+  regions:
+    row1:
+      label: Row 1
+    row2:
+      label: Row 2
+    row3:
+      label: Row 3
+    row4:
+      label: Row 4
+#END EVEN ROWS
+
+
+#OTHER LAYOUTS
+one_row_three_column:
+  label: One Full Row Above Three Equal Columns #Req
+  category: My Layouts #Req
+  path: layouts/top_row_three_column
+  template: top_row_three_column
+  regions:
+    top_row:
+      label: Top Row
+    column_one:
+      label: Left Column
+    column_two:
+      label: Middle Column
+    column_three:
+      label: Right Column
+
+allLocation_layout:
+  label: All Locations Layout (5/7) #Req
+  category: My Layouts #Req
+  path: layouts/allLocation_layout
+  template: allLocation_layout
+  regions:
+    top:
+      label: Top
+    first:
+      label: Left
+    second:
+      label: Right
+    bottom:
+      label: Bottom

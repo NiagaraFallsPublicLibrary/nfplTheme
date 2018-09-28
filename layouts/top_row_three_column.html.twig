@@ -1,0 +1,26 @@
+<div class="contain">
+  <div class="row">
+      <div class="col-md-12">
+        {% if content.top_row %}
+            {{ content.top_row }}
+        {% endif %}
+      </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+        {% if content.column_one %}
+            {{ content.column_one }}
+        {% endif %}
+    </div>
+    <div class="col-md-4">
+        {% if content.column_two %}
+            {{ content.column_two }}
+        {% endif %}
+    </div>
+    <div class="col-md-4">
+        {% if content.column_three %}
+            {{ content.column_three }}
+        {% endif %}
+    </div>
+  </div>
+</div>

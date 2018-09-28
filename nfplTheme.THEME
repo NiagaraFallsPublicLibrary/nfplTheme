@@ -1,0 +1,36 @@
+<?php
+/**
+* Implements hook_preprocess_HOOK() for menu.html.twig.
+*/
+function nfplTheme_preprocess_menu(&$variables) {
+  if ($variables['menu_name'] == 'menu') {
+    if (!isset($variables['attributes']['class'])) {
+      $variables['attributes']['class'] = [];
+    }
+    $variables['attributes']['class'] = array_merge($variables['attributes']['class'], ['my-main-menu']);  }
+  }
+
+function nfplTheme_preprocess_aggregator_item(&$variables) {
+   $variables['elements']['index'] = '999999';
+}
+
+/**
+ * Fix entity.definitions.bundle_field_map key store with old bundles.
+ */
+function my_module_update_8001() {
+  /** @var \Drupal\Core\KeyValueStore\KeyValueFactoryInterface $key_value_factory */
+  $key_value_factory = \Drupal::service('keyvalue');
+  $field_map_kv_store = $key_value_factory->get('entity.definitions.bundle_field_map');
+  $node_map = $field_map_kv_store->get('node');
+  // Remove the field_dates field from the bundle field map for the page bundle.
+  unset($node_map['field_dates']['bundles']['page']);
+  $field_map_kv_store->set('node', $node_map);
+}
+
+function nfplTheme_theme_suggestions_alter(array &$suggestions, array $variables, $hook) {
+
+  if ($hook == 'form' & !empty($variables['element']['#id'])) {
+    $suggestions[] = 'form__' . str_replace('-', '_', $variables['element']['#id']);
+  }
+}
+

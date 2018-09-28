@@ -1,0 +1,33 @@
+<div class="contain">
+    <div class="row">
+        <div class="col-lg-12">
+            {% if content.top %}
+                {{ content.top }}
+            {% endif %}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3 col-lg-offset-1">
+            {% if content.column_one %}
+                {{ content.column_one }}
+            {% endif %}
+        </div>
+        <div class="col-lg-6 col-lg-offset-1">
+            {% if content.column_two %}
+                {{ content.column_two }}
+            {% endif %}
+        </div>
+        <div class="col-lg-3">
+            {% if content.column_three %}
+                {{ content.column_three }}
+            {% endif %}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            {% if content.bottom %}
+                {{ content.bottom }}
+            {% endif %}
+        </div>
+    </div>
+</div>

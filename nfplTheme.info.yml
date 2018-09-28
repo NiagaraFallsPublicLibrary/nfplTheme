@@ -1,0 +1,27 @@
+name: 'NFPL Theme'
+type: theme
+description: 'A custom theme created for Niagara Falls Public Library'
+package: Other
+core: 8.x
+libraries: 
+  - nfplTheme/global-styling
+  - nfplTheme/global-scripts
+  - nfplTheme/media-styling
+  - nfplTheme/editor-classes
+
+
+regions:
+  navigation: 'Navigation'
+  navigation_collapsible: 'Navigation (Collapsible)'
+  header: 'Top Bar'
+  highlighted: 'Highlighted'
+  headline: 'headline'
+  help: 'Help'
+  content: 'Content'
+  sidebar_first: 'Primary'
+  sidebar_second: 'Secondary'
+  footer: 'Footer'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+
+ 

@@ -1,0 +1,6375 @@
+/*  3.0
+	This is the default styling.
+	Please don't make changes to this file as it will be overwritten by future updates.
+*/
+
+@import url("../../../js/dojo/dijit/themes/dijit.css");
+/*fontsizes*/
+@import url("fontsizes.css");
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+/*globals*/
+html,body{
+	margin: auto;
+}
+
+img {
+  -ms-interpolation-mode: bicubic;
+}
+.clear {
+	clear: both;
+	margin: -1px 0px 0px 0px;
+	height: 1px;
+	line-height: 1px;
+	width: 100%;
+}
+.ahem { 
+	position: absolute;
+	overflow: hidden;
+	height: 0px;
+	width: 0px;
+	left: -1000px;
+	top: -1000px;
+}
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+#bg{
+	width: 100%;
+	height: 100%;
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:-100;
+}
+/***
+*	Main styles
+***/
+/***
+ *	Main CSS
+ *
+ *	copyright (c) 2008 Infor.com
+ */
+
+*	{
+	padding:				0;
+	margin:					0;	
+	outline:none !Important;
+}
+body.accFeatures *:focus {
+    outline: 1px dotted !important;}
+
+body	{
+	-x-system-font:none;
+	font-family:arial,sans-serif;
+	font-size-adjust:none;
+	font-stretch:normal;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:normal;
+	width:100%;
+	margin: auto;
+	/*background-color:#808080;*/
+	color:#333333;
+	padding-top: 0px;
+	margin-top: 0px;
+}
+
+body, div, h1, h2, h3, h4, h5, h6, form, textarea, p, td, input	{
+	font-family:arial,sans-serif;
+	margin:0pt;
+	padding:0pt;
+	margin-top: 0px;
+}
+
+a	{
+	text-decoration:		none;
+	color:					#333333;
+}
+select {
+	 padding: 1px;}
+ul, ol	{
+	list-style:none;
+}
+ul li	{
+	margin-left: 15px;
+}
+ol li	{
+	margin-left: 25px;
+}
+ul.browseList li {
+	border-bottom: 1px solid #ccc;
+	list-style: none outside none;
+	margin-left: 10px;
+	clear:both;
+	position:relative;}
+ul.browseList li > span {
+	position:absolute;
+	top:0;
+	right:0;}
+ul.browseList li > span:first-child {
+	left:0;
+	right:auto;}
+ul.browseList li > a {
+	padding:0 25px;
+	display:block;}
+ul.browseList li:hover a span {
+	color:#F47921;}
+ul.browseList .fullMatch {
+	font-weight: bold;
+}
+ul.browseList li > span:hover div.noteDisplay {
+    display: block !important;
+}
+#browseNavOptions li {
+	list-style: none;
+	float: left;
+	margin-top: 30px;
+}
+
+.pageHeading, .hidden {
+    position: absolute;
+    text-indent: -99999px;
+}
+
+.hideme {
+	display: none;
+}
+
+/* BUTTON HOLDER */
+.buttonHolder .buttonHolderContent	{
+	padding-left: 5px !Important;
+	padding-right: 5px !Important;
+	padding-top: auto !Important;
+	padding-bottom: 0px !Important;
+}
+.buttonHolder a	{
+	color: #333333;
+	text-decoration: none;
+	font-weight:normal;
+	line-height:25px;
+	vertical-align:bottom;
+}
+
+
+#wrapper	{
+	width: 				90%;
+	min-width:			940px;
+	max-width:			1500px;
+	margin:				auto;
+	margin-top: 		0px;
+	padding-top: 		0px;
+	background: 		url("images/sprite2.png") repeat-y scroll left top white;
+}
+#dj_history {display:none;}
+#wrapperinner	{
+	width: 				auto;
+	padding-right:		10px;
+	margin-left:		10px;
+	background: 		url("images/sprite2.png") repeat-y scroll right top transparent;
+}
+
+#header	{
+    background: 		url("images/sprite.png") no-repeat scroll right top #808080;
+	margin:				0 -10px;
+    min-height: 		70px;
+    max-height: 		250px;
+	padding: 			20px 10px 0;
+    position: 			relative;
+    width: 				inherit;
+	z-index:			0;
+}
+#header > a:first-child {
+    background: 		url("images/sprite.png") no-repeat scroll left top transparent;
+    height: 			100%;
+    left: 				0px;
+    position:			absolute;
+    top: 				0;
+    width: 				20px;
+	z-index:			-1;
+}
+
+.dj_ie7 #wrapper {		ZZmargin-top:20px;} 	/*IE7 )-:*/
+.dj_ie7 #wrapperinner {	margin-bottom:-3px;}	/*IE7 )-:*/
+.dj_ie7 #header {		ZZmargin-left:0;}		/*IE7 )-:*/
+
+.navDiv {
+	width: 				100%;
+}
+.HeaderNavigation {
+	margin-top:0px !Important;
+}
+.HeaderNavigationInner {
+	height:81px;
+}
+.HeaderBasicInner div.row1 {
+    height: 25px;
+}
+.HeaderBasicInner div.row {
+    clear: both;
+    float: right;
+}
+.customnavigation .HeaderBasicInner .row div {
+    float: left;
+    margin-right: 0 !important;
+}
+.HeaderNavigationInner div.row1 {
+	float: right;
+	clear:both;
+	height:78px;
+}
+.HeaderNavigationInner div.row1 > div {
+	margin-top:20px;
+}
+.HeaderNavigationInner div.row2 {
+	float: right;
+	clear:both;
+	height:25px;
+}
+.HeaderNavigationInner div.row2 div {
+	height:25px;
+	vertical-align:bottom;
+}
+
+div.SearchInner {
+	position:absolute;
+	right:13px;
+	top:105px;
+}
+.dj_ie div.SearchInner {
+	top:103px;
+}
+.SearchBox div.SearchInner {
+	margin-left:7px;
+	position:relative;
+	top:auto;
+	right:auto;
+}
+.SearchInner {
+	width:							180px;
+	height:							25px;
+	border:							1px solid #B3B3B3;
+	background-color:				#FFFFFF;
+}
+.dj_ie .SearchInner {
+	width:							183px;
+	margin-top:						2px;
+}
+.SearchInner > form > label {
+	display:						none;
+}
+.SearchInner form input {
+	height:							22px;
+	padding:						0;
+	margin:							0;
+	border:							none;
+}
+.SearchInner form input[type="text"] {
+	width:							150px;
+	height:							20px !Important;
+	background:						#FFFFFF;
+	border:							none;
+	line-height:					20px;
+	vertical-align:					middle;
+}
+.SearchInner form input[type="submit"] {
+	position:						relative;
+	top:							3px;
+	width:							25px;
+	height:							22px !Important;
+	background:						#FFFFFF url(images/search.png) no-repeat center center;
+	color:							transparent;
+	font-size:						0;
+	cursor:							pointer;
+	border:							none;
+}
+.dj_ie .SearchInner form {
+	padding:						0;
+	margin:							0;
+	border:							none;
+}
+.dj_ie .SearchInner form input[type="text"] {
+	height:							18px !Important;
+	border:							none;
+	position:						relative;
+	top:							-2px;
+}
+/*Search FoldOut*/
+.SearchInner #sOptions {
+	position:						relative;
+	top:							-1px !Important;
+	text-align:						left;
+	
+	position:						relative;
+}
+.HeaderNavigation .SearchInner #sOptions {
+	left:							-134px;
+	width:							300px;
+	background:						#FBFBFB url(images/magnify.gif) no-repeat 10px center;
+
+
+	border:					1px solid #F47921;
+	-moz-box-shadow: 		0px 0px 4px #AAAAAA;
+	-webkit-box-shadow: 	0px 0px 4px #AAAAAA;
+	box-shadow: 			0px 0px 4px #AAAAAA;
+	margin:					2px;
+	
+	filter:progid:DXImageTransform.Microsoft.glow(Strength=1, color='#AAAAAA');
+ 	-ms-filter:"progid:DXImageTransform.Microsoft.glow(Strength=1, color='#AAAAAA')";
+}
+ .SearchInner #sOptions.expanded {
+	float:left;
+	display:block;
+	position:relative;
+	left:-1px;
+	width:							265px;
+	height:							140px;
+	margin-top:10px;
+}
+.Zdj_ie .SearchBox .SearchInner > form > #sOptions,
+.dj_ie .HeaderNavigation .SearchInner > form > #sOptions {
+	left:							-1px;
+	top:							-3px !Important;
+	margin-left:					-127px;
+
+	filter:none;
+	-ms-filter:none;
+}
+.dj_ie .application  .searchDiv {
+	height:							170px;
+}
+
+.HeaderNavigation .SearchInner #sOptions > div {
+	padding:1px;
+	padding-left:5px;
+	margin-left: 90px;
+}
+.SearchInner #sOptions.expanded > div {
+	padding:1px;
+}
+
+.SearchBox .SearchInner #sOptions > .searchIn,
+.HeaderNavigation .SearchInner #sOptions > .searchIn {
+	font-weight:bold;
+	color:#F47921;
+}
+.SearchBox .SearchInner #sOptions > .searchInfo:last-child,
+.HeaderNavigation .SearchInner #sOptions > .searchInfo:last-child {
+	margin-top:5px;
+}
+.SearchBox .SearchInner #sOptions input,
+.HeaderNavigation .SearchInner #sOptions input {
+	height:16px !Important;
+
+}
+.normal .SearchBox .SearchInner #sOptions,
+.normal .HeaderNavigation .SearchInner #sOptions {
+	top:							1px;
+}
+.Zdj_ie .SearchBox .SearchInner #sOptions,
+.dj_ie .HeaderNavigation .SearchInner #sOptions {
+	top:							-1px;
+}
+
+
+/* SearchBox-FoldOut, Widget version */
+.SearchBox #sBoxOptions {
+	float:							left;
+	position:						static;
+	margin-left:					-1px;
+	width:							250px;
+}
+#sOptions .advancedLink,
+#sBoxOptions .advancedLink {
+	margin-top:						5px;
+}
+
+#normala {
+	background: url(images/Devider.gif) no-repeat left center;
+	padding-left:5px;
+}
+#largea{}
+#largesta{
+	padding-right:5px;
+}
+#readAloud,
+#homepage,
+#storelayout,
+#contact, #uitpunt {
+	background: url(images/Devider.gif) no-repeat left center;
+}
+
+#avatarSpacer {
+	height:80px;
+	margin-top: 0px;
+	padding-left:18px;
+	background-color:		#0099FF;
+	background: 			url(images/HeaderAvatarBackgroundLeft.gif) no-repeat left top;
+}
+#avatarSpacer .avatarSpacer {
+	height:80px;
+	padding-right:17px;
+	background: 			url(images/HeaderAvatarBackgroundRight.gif) no-repeat right top;
+}
+#avatarSpacer .avatarImage {
+	margin-top:4px;
+}
+
+#logon {
+	float:left;
+	font-size-adjust:+0.7;
+	
+}
+
+#useractivities a {
+	font-weight:bold;
+}
+#renew,
+#reserve,
+#logoff {
+	background: url(images/Devider.gif) no-repeat left center;
+}
+#useractivities a,
+#logoff a,
+#logon a {
+	color:#FF6600;
+	font-weight:bold;
+}
+
+
+/* NAVIGATION */
+#navigation	{
+	float:					left;
+	width:					100%;
+	position:				relative;
+	z-index: 				210;
+	line-height					: 37px;
+    
+    background: none repeat scroll 0 0 #E6E7E2 !important;
+    border-bottom: 1px solid #CCCCCC;
+    border-top: 1px solid #CCCCCC;
+}
+
+
+/* ADDITIONAL STATICNAVIGATION CSS END */
+.dijitToolbar .dijitDropDownButton {
+	background: url(images/btn_grey_left.jpg) no-repeat 0 0;
+}
+.dijitToolbar .dijitDropDownButton .dijitRight {
+	background: url(images/btn_grey_right.jpg) no-repeat top right;
+}
+.dijitToolbar .dijitDropDownButton .dijitButtonText {
+	background: url(images/btn_grey_center.jpg) repeat-x 0 -1px;
+	margin-left: 9px;
+	margin-right: 9px;
+	padding: 7px 2px;
+	height: 18px;
+}
+
+.dj_ie .dijitToolbar .dijitDropDownButton .dijitButtonText {
+	background: url(images/btn_grey_center.jpg) repeat-x 0 -2px;
+	margin-left: 11px;
+	margin-right: 11px;
+	padding: 7px 2px;
+	height: 18px;
+}
+
+.dijitToolbar .dijitDropDownButton .dijitButtonText .dropdown {
+	background: url(images/dropdown_red.gif) no-repeat -2px 0;
+	padding-left: 14px;
+}
+
+/* BANNER */
+#banner	{
+	float:					left;
+	width:					100%;
+	position:				relative;
+	text-align:				left;
+	z-index: 1;
+	overflow: auto;
+}
+.BannerSWF .openClose .inner {
+    overflow: hidden;
+}
+
+#banner .bannerImage {
+	background: 			url(images/BackgroundBanner.gif) repeat-x bottom;
+}
+#banner .bannerImage img {
+	margin-bottom:			5px;
+	width:					100%
+}
+
+.flashContainer , .fiContainer{
+	width:	100% !Important;
+}
+
+.FeaturedItems .flashContainer, .FeaturedItems .fiContainer {
+	background: 			none;
+	background-position:	center center;
+}
+.applicationcontainer .FeaturedItems {
+	width:					auto;}
+#additionalbefore {
+	margin: 0 10px;
+}
+#contentsection {
+	height:auto;
+}
+#columnwrapper	{
+	position:				relative;
+	display:				block;
+	min-height:				300px;
+	width:					100%;
+	height:					100%;
+}
+#columnwrapper div.column {
+	height:auto;
+	min-height: 250px;
+}
+#mandatory	{
+	clear:					both;
+	width:					100%;
+	position:				relative;
+}
+
+#footer {
+	clear:					both;
+	width:					auto;
+	margin-right:			-10px;
+	margin-left:			-10px;
+	background: 			#808080 url(images/sprite.png) no-repeat left -730px;
+}
+#footerinner {
+	width:					auto;
+	height:					20px;
+	margin-left: 			19px;
+	background: 			#808080 url(images/sprite.png) no-repeat right -730px;
+}
+#footer .payoff{
+	text-align:				center;
+	font-size:				x-small;
+	margin-bottom:			3px;
+}
+
+#footer, #footerinner, #footer div {
+	text-align:				center;
+}
+#footer div .quicklist {
+	display:none;}
+
+#ie6warning {
+}
+
+.column	{
+	float:					left;
+}
+
+.dj_ie .column {
+	height:					250px;
+}
+
+
+/***
+*	Application container
+***/
+.applicationcontainer{
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding:5px 0 0 5px;
+}
+
+.apptitle h1, .apptitle h2{
+	color: #f47921;
+	font-weight: normal;
+	margin:0 0 0 2px;
+}
+.apptitle h3{
+	color: #888;
+	margin: 30px 0 0 0;
+	text-align: left;
+	display: block;
+}
+.apptitle{
+	margin: 				8px 0 15px 0;
+	border-top:				1px dotted #FFFFFF;
+	border-bottom:			1px dotted #333333;
+	padding-left: 			5px;
+}
+
+.applicationcontainerhiddentitle .dijitTitlePaneContentOuter,
+.applicationcontainernotitle .dijitTitlePaneContentOuter {
+	margin-top:				14px;
+}
+.applicationcontainerhiddentitle .apptitle[style~="display"] .appFunctions div {
+	display:				block !Important;
+}
+.UserActivities .apptitle {
+	border-top:				1px dotted #FFFFFF !Important;
+}
+
+.apptitle:hover {
+	border-top:				1px dotted #dadada;
+}
+
+.dijitOpen .dijitArrowNode {
+	display: 				block;
+}
+.dijitOpen > .dijitArrowNode > .dijitArrowNodeInner {
+	background : 				url(images/Icons.png) no-repeat -40px top;
+	visibility:				visible !important;
+}
+.dijitOpen:hover > .dijitArrowNode > .dijitArrowNodeInner {
+	background : 				url(images/Icons.png) no-repeat -40px bottom;
+}
+
+.dijitClosed .dijitArrowNode {
+	display: 				block;
+}
+.dijitClosed .dijitArrowNode .dijitArrowNodeInner {
+	background : 				url(images/Icons.png) no-repeat -20px top;
+	visibility:				visible !important;
+}
+.dijitClosed:hover .dijitArrowNode .dijitArrowNodeInner {
+	background : 				url(images/Icons.png) no-repeat -20px bottom;
+}
+.dijitArrowNode .dijitArrowNodeInner span {
+	visibility:hidden;
+}
+
+
+.apptitle .ttl	{
+	font-weight:			bold;
+	position:				relative;
+	z-index:				3;
+}
+
+.appmover	{
+	position:				absolute;
+	top:					0;
+	left:					0;
+	width:					100%;
+	height:					100%;
+	display:				block;
+	cursor:					move;
+	z-index:				2;
+}
+
+.dj_ie .dijitTitlePaneContentOuter {
+	width:					100%;
+	overflow:				hidden;
+}
+
+.appcontent	{
+	padding-left:			8px;
+	padding-right:			8px;
+}
+.FeaturedItems .appcontent	{
+	padding-left:			0;
+	padding-right:			0;
+}
+
+.loading	{
+	top:					0;
+	text-align:				center;
+}
+
+.iframe	{
+	width:					100%;
+	height:					100%;
+	z-index:				1;
+}
+
+.dijitTitlePane .dijitTitlePaneTitle	{
+	min-height: 30px;
+}
+
+.dijitTitlePane .apptitle	{
+	position:				relative;
+	display: block;
+}
+
+.dijitTitlePane .appTitleDiv	{
+	z-index: 99;
+	position: absolute;
+	float: left;
+}
+
+.dijitTitlePane .appFunctions	{
+	z-index: 50;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.dijitTitlePane .appFunctions .dijitClosed {
+	display:inline;
+}
+.dijitTitlePane .appFunctions div {
+	display:						none;
+}
+body.accFeatures .dijitTitlePane .appFunctions div { 
+	display: 						inline !important;}
+
+.dijitTitlePane .appFunctions div.dijitClosed,
+.dijitTitlePane .dijitTitlePaneTitle:hover .appFunctions,
+.dijitTitlePane .dijitTitlePaneTitle:hover .appFunctions div,
+body.useractivities .dijitTitlePane .appFunctions,
+body.useractivities .dijitTitlePane .appFunctions div,
+body.search .dijitTitlePane .appFunctions,
+body.search .dijitTitlePane .appFunctions div {
+	display:						inline;
+}
+.dijitTitlePane .appFunctions {
+	display:						inline;
+	float:							right;
+	width:							80px;
+}
+
+/***
+*	Dropdown general style
+*
+*	These deal with dropdowns made using dojo which replaces them with dijit.Menu
+***/
+ul.dijitMenu {
+	border: 1px solid #7eabcd;
+	margin: 0px;
+	padding: 0px;
+}
+li.dijitMenuItem {
+	background-color: #f7f7f7;
+	font: menu;
+	margin: 0;
+}
+li.dijitMenuPreviousButton, .externalcms li.dijitMenuNextButton {
+	font-style: italic;
+}
+li.dijitMenuItem td {
+	padding:0px;
+}
+li.dijitMenuItemHover {
+	background-color: #60a1ea;
+	color:#fff;
+}
+
+
+/***
+*	General styles
+***/
+.moreDiv	{
+	position:				relative;
+	float:					right;
+	top:					-13px;
+}
+
+hr	{
+	margin:5px 0px;
+}
+
+/* CMS CSS */
+.cmslayover label	{
+	width:					150px;
+	display:				block;
+	float:					left;
+	font-weight:			bold;
+}
+
+.cmsHorizontalDivider	{
+	height:					1px;
+	color:					lightgrey;
+	background-color:		lightgrey;
+	margin:					5px 5px 5px 0;
+	border:					0;
+}
+
+/***
+*	Application/module styles that are theme dependent
+***/
+
+#NavigationToolBar .dijitButtonNode	{
+	text-align:				left;
+	display:				block;
+}
+
+/***
+*	Dojo specific styles
+***/
+.dojoDndItemBefore {
+	margin-top:				2px;
+	border-top:				2px dashed black;
+}
+
+.dojoDndItemAfter {
+	margin-bottom:			5px;
+	border-bottom:			2px dashed black;
+}
+
+/* Avatar for drag'n'drop */
+.dojoDndAvatar	{
+	padding:				0;
+	margin:					0;
+}
+
+.dojoDndAvatarHeader	{
+	display:				none;
+}
+
+.dojoDndAvatarItem .application	{
+	text-align:				center;
+}
+
+.dojoDndAvatarItem .apptitle	{
+	background:				white;
+	padding:				0 10px 0 6px;	
+}
+
+.dojoDndAvatarItem .appcontent	{
+	display:				none;
+}
+
+.dojoDndAvatarItem .dijitArrowNode, .dojoDndAvatarItem .dijitArrowNodeInner	{
+	display:				none;
+}
+
+.dojoDndAvatarItem .dijitEditNode, .dojoDndAvatarItem .dijitEditNodeInner	{
+	display:				none;
+}
+
+.dojoDndAvatarItem .dijitCloseNode, .dojoDndAvatarItem .dijitCloseNodeInner	{
+	display:				none;
+}
+
+.dojoDndAvatarItem .dijitFullscreenNode, .dojoDndAvatarItem .dijitFullscreenNodeInner	{
+	display:				none;
+}
+
+.dojoDndAvatarItem .dijitTitlePaneContentInner, .dojoDndAvatarItem .dijitTitlePaneContentOuter {
+	display:				none;
+}
+
+/****
+*	Dijit widget styles
+***/
+
+.dijitSliderDisabled *,
+.dijitDisabledClickableRegion,	
+.dijitSpinnerDisabled *,
+.dijitButtonDisabled *,
+.dijitDropDownButtonDisabled *,
+.dijitComboButtonDisabled *,
+.dijitComboBoxDisabled *
+{
+	cursor: not-allowed !important;
+}
+.dijitContentPaneLoading {
+	background:url(images/loading.gif) no-repeat left center;
+	padding-left:25px;
+}
+.dijitContentPaneError {
+	background:url(images/warning.png) no-repeat left center;
+	padding-left:25px;
+}
+.dijitTabPaneWrapper {
+	padding:2px 2px 0px 2px;
+	background:#fff;
+	border:1px solid #ccc;
+}
+.dijitTab {
+	line-height:normal;
+	margin-left:4px;
+	padding:0px;
+	border:1px solid #ccc;
+	background:#e2e2e2 url(images/tabEnabled.png) repeat-x;
+	display: inline;
+}
+.dijitAlignLeft .dijitTab,
+.dijitAlignRight .dijitTab {
+	margin-right:0px;
+	margin-bottom:5px;
+}
+.dijitTabInnerDiv {
+	padding: 1px 5px;
+}
+.dijitTabHover,
+.dijitTabCloseButtonHover {
+	color: #243C5F;
+	border-top-color:#92a0b3;
+	border-left-color:#92a0b3;
+	border-right-color:#92a0b3;
+	background:#e2e2e2 url(images/tabHover.png) repeat-x bottom;
+}
+.dj_ie6 .dijitTabCloseButtonHover {
+	background-image: url(images/tabHover.gif);
+}
+.dijitTabChecked,
+.dijitTabCloseButtonChecked
+{
+	font-weight: bold;
+	background-color:#fff;
+	border-color: #ccc;
+	background-image:none;
+}
+.dijitAlignTop .dijitTabChecked,
+.dijitAlignTop .dijitTabCloseButtonChecked
+{
+	border-bottom-color:white;
+	vertical-align:bottom;
+}
+.dijitAlignBottom .dijitTabChecked,
+.dijitAlignBottom .dijitTabCloseButtonChecked
+{
+	border-top-color:white;
+	-moz-border-radius:2px 2px 0px 0px;	
+}
+.dijitAlignLeft .dijitTabChecked,
+.dijitAlignLeft .dijitTabCloseButtonChecked
+{
+	border-right-color:white;
+}
+.dijitAlignRight .dijitTabChecked,
+.dijitAlignRight .dijitTabCloseButtonChecked
+{
+	border-left-color:white;
+}
+.dijitTab .dijitClosable {
+	position: relative;
+	padding:6px 20px 4px 10px;
+}
+.dijitTab .dijitClosable .closeImage {
+	position:absolute;
+	top: 7px;
+	right: 3px;
+	height: 12px;
+	width: 12px;
+	padding: 0;
+	margin: 0;
+	background: url(images/tabClose.png) no-repeat right top;
+}
+.dj_ie6 .dijitTab .dijitClosable .closeImage {
+	background-image:url(images/tabClose.gif);
+}
+.dijitTabCloseButton .dijitClosable .closeImage {
+	background-image : url(images/tabClose.png);
+}
+.dj_ie6 .dijitTabCloseButton .dijitClosable .closeImage {
+	background-image : url(images/tabClose.gif);
+}
+.dijitTabCloseButtonHover .dijitClosable .closeImage {
+	background-image : url(images/tabCloseHover.png);
+}
+.dj_ie6 .dijitTabCloseButtonHover .dijitClosable .closeImage {
+	background-image : url(images/tabCloseHover.gif);
+}
+.dijitAlignLeft .dijitTab .dijitClosable {
+	padding:6px 10px 4px 20px;
+}
+.dj_ie6 .dijitAlignLeft .dijitTab .dijitClosable .closeImage {
+	left:-20px;
+}
+.dijitAlignBottom .dijitTab .dijitClosable .closeImage {
+	top: auto;
+	bottom: 7px;
+	right: 3px;
+}
+.dijitAlignLeft .dijitTab .dijitClosable .closeImage {
+	top: 7px;
+	left: 3px;
+}
+.dijitInputField INPUT,
+.dijitTextBox,
+.dijitComboBox,
+.dijitSpinner {
+	margin: 0em 0.1em;
+}
+.dijitTextBox,
+.dijitComboBox,
+.dijitSpinner,
+.dijitInlineEditor input {
+
+	background:#fff url(images/validationInputBg.png) repeat-x top left;
+	#background:#fff url(images/validationInputBg.gif) repeat-x top left;
+	border:1px solid #b3b3b3;
+	line-height: normal;
+    ZZwidth:100%;/*inputs to wide on login dialog*/
+}
+.restrictionRow .dijitComboBox {
+    width: 15em;
+}
+.dijitInputField INPUT,
+.dijitTextBox,
+.dijitSpinner {
+	height: 22px;
+}
+.dijitComboBox {
+	height: 22px;
+}
+.dj_ie .dijitInputField INPUT,
+.dj_ie .dijitTextBox,
+.dj_ie .dijitComboBox {
+	height: 22px;
+	padding: 2px;
+}
+.dijitComboBox .dijitButtonNode {
+	padding: 0 0.2em;
+}
+.dijitComboBox .dijitButtonNode,
+.dijitSpinner .dijitButtonNode {
+
+	border-color: #9b9b9b;
+}
+.dijitTextBoxFocused,
+.dijitComboBoxFocused,
+.dijitSpinnerFocused {
+	
+	border-color:#406b9b;
+}
+.dijitComboBoxFocused .dijitButtonNode, .dijitSpinnerFocused .dijitButtonNode {
+	border-left-color:#366dba;
+}
+.dijitSpinnerFocused .dijitDownArrowButton {
+	border-top-color:#366dba;
+}
+.dijitError {
+	border-color:#f3d118;
+	background-color:#f9f7ba;
+	background-image:none;
+}
+.dj_ie6 .dijitError INPUT {
+	
+	background-color:#f9f7ba !important;
+}
+.dijitErrorFocused {
+	background-color:#ff6;
+	background-image:none;
+}
+.dj_ie6 .dijitErrorFocused INPUT {
+	
+	background-color:#ff6 !important;
+}
+.dijitValidationIcon {
+	
+	width: 16px;
+	background: transparent url(images/warning.png) no-repeat center center;
+}
+.dijitInlineValue {
+	
+	padding:3px;
+	margin:4px;
+}
+.dijitInlineEditor {
+	
+	display: inline-block;
+	display: -moz-inline-stack;
+	#display:inline;
+	
+}
+.dijitInlineEditor .saveButton,
+.dijitInlineEditor .cancelButton {
+	margin:3px 3px 3px 0px;
+}
+.RichTextEditable {
+	border:1px solid #bfbfbf;
+	border-top:0;
+}
+.dj_ie6 .dijitInputField
+{
+	background: url(images/validationInputBg.gif) repeat-x top left #fff;
+}
+
+.dijitComboBox .dijitButtonNode {
+	border: 0px;
+	height: 22px;
+}
+.dj_ie .dijitComboBox .dijitButtonNode {
+	height: 21px;
+}
+.dijitArrowButton {
+	color: #111;
+}
+.dijitComboButton .dijitDownArrowButton {
+	padding-right:4px;
+}
+.dj_ff2 .dijitComboButton .dijitButtonContentsFocused,
+
+
+.dj_ff2 .dijitComboButton .dijitDownArrowButtonFocused {
+	border: 1px black dotted !important;
+}
+.dijitButtonDisabled .dijitButtonNode,
+.dijitToggleButtonDisabled .dijitButtonNode,
+.dijitDropDownButtonDisabled .dijitButtonNode,
+.dijitComboButtonDisabled .dijitButtonNode,
+.dijitComboBoxDisabled,
+.dijitSpinnerDisabled,
+.dijitSpinnerDisabled .dijitButtonNode {
+	
+	border-color: #d5d5d5 #bdbdbd #bdbdbd #d5d5d5;
+	
+	background:#e4e4e4 url(images/buttonDisabled.png) top repeat-x;
+	opacity: 0.60; 
+}
+.dj_ie .dijitButtonDisabled .dijitButtonNode *,
+.dj_ie .dijitToggleButtonDisabled .dijitButtonNode *,
+.dj_ie .dijitDropDownButtonDisabled .dijitButtonNode *,
+.dj_ie .dijitComboButtonDisabled .dijitButtonNode *,
+.dj_ie .dijitSpinnerDisabled .dijitButtonNode * {
+	filter: gray() alpha(opacity=50); 
+}
+.dijitButtonHover .dijitButtonNode,
+.dijitToggleButtonHover .dijitButtonNode,
+.dijitDropDownButtonHover .dijitButtonNode,
+.dijitComboButtonHover .dijitButtonContents,
+.dijitComboButtonDownArrowHover .dijitDownArrowButton,
+.dijitComboBoxHover .dijitDownArrowButton,
+.dijitSpinnerUpArrowHover .dijitUpArrowButton,
+.dijitSpinnerDownArrowHover .dijitDownArrowButton {
+	border-color:#a5beda;
+	border-bottom-color:#5c7590;
+	border-right-color:#5c7590;
+	color:#000;
+	background:#fcfdff url(images/buttonHover.png) repeat-x bottom;
+}
+.dijitSpinnerUpArrowActive .dijitUpArrowButton,
+.dijitSpinnerDownArrowActive .dijitDownArrowButton,
+.dijitButtonActive .dijitButtonNode,
+.dijitToggleButtonActive .dijitButtonNode,
+.dijitDropDownButtonActive .dijitButtonNode,
+.dijitComboButtonActive .dijitButtonContents,
+.dijitDownArrowActive .dijitDownArrowButton,
+.dijitComboBoxActive .dijitDownArrowButton {
+	border-color:#366dba;
+	background: #ededed url(images/buttonActive.png) bottom repeat-x;
+}
+.dijitArrowButtonInner {
+	background:url(images/arrowDown.png) no-repeat center center;
+}
+.dijitUpArrowButton .dijitArrowButtonInner { background-image:url(images/arrowUp.png); }
+.dj_ie6 .dijitArrowButtonInner {
+	background-image:url(images/arrowDown.gif);
+}
+.dj_ie6 .dijitUpArrowButton .dijitArrowButtonInner {
+	background-image:url(images/arrowUp.gif);
+}
+.dijitComboBox .dijitArrowButton .dijitArrowButtonInner {
+	background:url(images/comboArrowDown.gif) no-repeat center center;
+	height:22px;
+}
+.dijitToggleButton .dijitCheckBoxIcon {
+	background-image: url(images/checkmarkNoBorder.gif);
+}
+.dijitCheckBox,
+.dijitCheckBoxIcon			{
+	background-image: url(images/checkmark.gif); 
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;
+	margin: 0;
+	padding: 0;
+}
+.dijitCheckBox,
+.dijitToggleButton .dijitCheckBoxIcon {
+	background-position: -16px;
+}
+.dijitCheckBoxChecked,
+.dijitToggleButtonChecked .dijitCheckBoxIcon {
+	background-position: 0px;
+}
+.dijitCheckBoxDisabled {
+	background-position: -48px;
+}
+.dijitCheckBoxCheckedDisabled {
+	background-position: -32px;
+}
+.dijitCheckBoxHover,
+.dijitCheckBoxFocused {
+	background-position: -80px;
+}
+.dijitCheckBoxCheckedHover,
+.dijitCheckBoxCheckedFocused {
+	background-position: -64px;
+}
+.dijitToggleButton .dijitRadio,
+.dijitToggleButton .dijitRadioIcon {
+	background-image: url(images/checkmarkNoBorder.gif);
+}
+.dijitRadio,
+.dijitRadioIcon	{		
+	background-image: url(images/checkmark.gif); 
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;
+	margin: 0;
+	padding: 0;
+}
+.dijitRadio,
+.dijitToggleButton .dijitRadioIcon {
+	background-position: -112px;
+}
+.dijitRadioChecked,
+.dijitToggleButtonChecked .dijitRadioIcon {
+	background-position: -96px;
+}
+.dijitRadioDisabled {
+	background-position: -144px;
+}
+.dijitRadioCheckedDisabled {
+	background-position: -128px;
+}
+.dijitRadioHover,
+.dijitRadioFocused {
+	background-position: -176px;
+}
+.dijitRadioCheckedHover,
+.dijitRadioCheckedFocused {
+	background-position: -160px;
+}
+.dijitTextArea {
+	background:#fff url(images/validationInputBg.png) repeat-x top left;
+	#background:#fff url(images/validationInputBg.gif) repeat-x top left;
+	border:1px solid #b3b3b3;
+	line-height: normal;
+}
+.dijitTreeNode {
+    background-image : url(images/i.gif);
+    background-position : top left;
+    background-repeat : repeat-y;
+    margin-left: 19px;
+    zoom: 1;	
+}
+.dijitTreeIsLast {
+    background: url(images/i_half.gif) no-repeat;
+}
+.dijitTreeIsRoot {
+    margin-left: 0;
+    background-image: none;
+}
+.dijitTreeExpando {
+    width: 18px;
+    height: 18px;
+	margin-top:4px;
+}
+.dijitTreeContent {
+    min-height: 18px;
+    min-width: 18px;
+    margin-left:18px;
+    padding-top:3px;
+    padding-left:1px;
+}
+.dijitTreeContent * {
+	cursor:							pointer;
+}
+.dijitTreeExpand {
+    width: 18px;
+    height: 18px;
+    background-repeat : no-repeat;
+}
+.dijitTreeNodeEmphasized {
+    background-color: Highlight;
+    color: HighlightText;
+}
+.dijitTreeExpandoOpened {
+	background-image: url(images/treeExpand_leaf.gif);
+}
+.dijitTreeExpandoClosed {
+	background-image: url(images/treeExpand_leaf.gif);
+}
+.dijitTreeExpandoLeaf {
+	background-image: url(images/treeExpand_leaf.gif);
+}
+.dijitTreeExpandoLoading {
+	background-image: url(images/treeExpand_loading.gif);
+}
+.dijitTreeIcon {
+	width: 20px;
+	height:						20px;
+}
+.dijitFolderOpened {
+	background : 				url(images/Icons.png) no-repeat -100px top;
+}
+.dijitFolderClosed {
+	background : 				url(images/Icons.png) no-repeat -80px top;
+	vertical-align:middle;
+}
+.dijitLeaf {
+	background: url(images/arrowRight.gif) no-repeat 8px top;
+	height: 8px;
+}
+.dijitTreeContent .dijitTreeLabel {
+	line-height:				20px;
+	vertical-align:				middle;
+}
+.dijitTreeContent .dijitTreeLabel.treeNodeHighlightOn {
+	color:						orange;
+	font-weight:				bold;
+}
+
+.dijitTreeLabel:hover {
+	color:					#F47921;
+}
+.dijitProgressBar {
+	margin:2px 0px 2px 0px;
+}
+.dijitProgressBarEmpty{
+	
+	background:#fff url(images/progressBarEmpty.png) repeat-x top left;
+	border-color: #a2a2a2 #b8b8b8 #b8b8b8 #a2a2a2;
+}
+.dijitProgressBarTile{
+	
+	background:#f0f0f0 url(images/progressBarFull.png) repeat-x center center;
+}
+.dijitProgressBarFull {
+	border-right:1px solid #b8b8b8;
+}
+.dijitProgressBarLabel {
+	
+	color:#293a4b;
+}
+.dijitProgressBarIndeterminate .dijitProgressBarTile {
+	
+	background:#cad2de url(images/progressBarAnim.gif) repeat-x center center;
+}
+.dijitTitlePane .dijitTitlePaneTitle {
+	cursor: default;
+	color: black;
+	overflow: hidden;
+}
+
+.dijitTitlePaneFocused .dijitTitlePaneTextNode {
+	text-decoration:underline;
+}
+
+.dijitTitlePane .dijitEditNode {
+	background : 				url(images/sprite.png) no-repeat -100px -350px;
+	position:					relative;
+	vertical-align: 			middle;
+	float: 						left;
+	margin-top: 				5px;
+    width: 						20px;
+    height: 					20px;
+}
+.dijitTitlePane .dijitEditNode:hover {
+	background : 				url(images/sprite.png) no-repeat -100px -370px;
+}
+.dijitTitlePane .dijitEditNode + .dijitEditNode {
+	background : 				url(images/sprite.png) no-repeat -120px -350px;
+}
+.dijitTitlePane .dijitEditNode + .dijitEditNode:hover {
+	background : 				url(images/sprite.png) no-repeat -120px -370px;
+}
+
+.dijitTitlePane .dijitClosed {
+	background : 				url(images/sprite.png) no-repeat -140px -350px;
+	position:					relative;
+	vertical-align: 			middle;
+
+	float: 						right;
+	margin-top: 				5px;
+    width: 						20px;
+    height: 					20px;
+}
+.dijitTitlePane .dijitOpen {
+	background : 				url(images/sprite.png) no-repeat -160px -350px;
+	position:					relative;
+	vertical-align: 			middle;
+
+	float: 						right;
+	margin-top: 				5px;
+    width: 						20px;
+    height: 					20px;
+}
+.applicationcontainerhiddentitle .dijitOpen {
+	visibility:					hidden;
+}
+
+.dijitTitlePane .dijitCloseNode {
+	background : 				url(images/sprite.png) no-repeat -180px -350px;
+	float: 						right;
+	position: 					relative;
+	vertical-align: 			middle;
+	margin-top: 				5px;
+    width: 						20px;
+    height: 					20px;
+}
+.dijitTitlePane .dijitCloseNode:hover {
+	background : 				url(images/sprite.png) no-repeat -180px -370px;
+}
+
+.dijitTitlePane .dijitArrowNodeInner, .dijitTitlePane .dijitCloseNodeInner, .dijitTitlePane .dijitFullscreenNodeInner, .dijitTitlePane .dijitEditNodeInner {
+	visibility:hidden;
+}
+.dijit_a11y .dijitTitlePane .dijitArrowNodeInner {
+	visibility:visible;
+}
+.dijitTitlePaneTitle .dijitOpenCloseArrowOuter {
+	margin-right:5px;
+}
+.dijitOpen .dijitTitlePaneTitle .dijitOpenCloseArrowOuter {
+	position:relative;
+	top:2px;
+}
+.dj_ie6 .dijitTitlePaneContentOuter,
+.dj_ie6 .dijitTitlePane .dijitTitlePaneTitle {
+	zoom: 1;
+}
+
+.dijitClickableRegion {
+	background-color : #ffc !important;
+}
+	
+.dijitCalendarIncrementControl {
+	
+	width:15px;
+	height:15px;
+}
+.dj_ie6 .dijitCalendarIncrementControl {
+	padding:.1em;
+}
+.dijitCalendarIncreaseInner,
+.dijitCalendarDecreaseInner {
+	visibility:hidden;
+}
+.dijitCalendarDecrease {
+	background:url(images/arrow_sans_left_16.gif) no-repeat top left;
+}
+.dijitCalendarIncrease {
+	background:url(images/arrow_sans_right_16.gif) no-repeat top right;
+}
+table.dijitCalendarContainer {
+	border-spacing: 0;
+	border-collapse: separate;
+	border: 1px solid #ccc;
+}
+.dijitCalendarMonthContainer th {
+	background-color:#575757;
+	padding-top:.3em;
+	padding-bottom:.2em;
+	text-align:center;
+}
+.dj_ie6 .dijitCalendarMonthContainer th {
+	padding-top:.1em;
+	padding-bottom:0em;
+}
+.dijitCalendarDayLabelTemplate {
+	background:white url(images/calendarDayLabel.png) repeat-x bottom;
+	font-weight:bold;
+	padding-top:.15em;
+	padding-bottom:.15em;
+	border-top: 1px solid #eeeeee;
+	color:#293a4b;
+	text-align:center;
+	font-size-adjust:0.55;
+	text-transform:lowercase;
+}
+.dijitCalendarBodyContainer {
+	border-bottom: 1px solid #eeeeee;	
+}
+.dijitCalendarMonthLabel {
+	color:#FFFFFF;
+	font-weight: bold;
+	font-size-adjust:0.8;
+}
+.Calendar .dijitCalendarContainer  {
+	width:					80% !Important;
+	margin-left:auto; 		margin-right:auto;
+}
+.dijitCalendarDateTemplate {
+	font-weight: bold;
+	text-align: center;
+	padding: 0.3em 0.3em 0.05em 0.3em;
+	font-size-adjust:0.6;
+}
+.dijitCalendarPreviousMonth,
+.dijitCalendarNextMonth 	{
+	background-color:#f8f8f8 !important;
+}
+.dijitCalendarPreviousMonth span,
+.dijitCalendarNextMonth span	{
+	color:#999999;
+}
+.dijitCalendarPreviousMonthDisabled,
+.dijitCalendarNextMonthDisabled	{
+	
+	background-color:#a4a5a6 !important;
+}
+.dijitCalendarCurrentMonth {
+	
+	background-color:white !important;
+}
+.dijitCalendarCurrentMonthDisabled span {
+		
+	background-color:#bbbbbc !important;
+}
+
+.dijitCalendarCurrentDate {
+	font-size-adjust:0.7;
+}
+.dijitCalendarCurrentDate {
+	border:1px solid #999999;
+}
+.Calendar .dijitCalendarSelectedDate span {
+	color:#f47921 !important;
+	font-weight:bold !Important;
+}
+.Calendar .weekSelected span,
+.Calendar .monthSelected span {
+	color:#f47921 !important;
+	font-weight:bold !Important;
+}
+.dijitCalendarYearContainer {
+	
+	background:white url(images/calendarYearLabel.png) repeat-x bottom;
+	border-top:1px solid #ccc;
+}
+.dijitCalendarYearLabel {
+	
+	margin:0;
+	padding:0.4em 0 0.25em 0;
+	text-align:center;
+}
+.dijitCalendarSelectedYear {
+	padding:0.2em;
+	padding-bottom:0.1em;	
+	color:#f47921 !important;
+	font-weight:bold !Important;
+}
+.dijitCalendarNextYear,
+.dijitCalendarPreviousYear {
+	color:#333333 !important;
+}
+
+.Publish table.dijitCalendarContainer {
+    margin: 0 auto 10px;
+    width: 75%;}
+
+.Publish .cdrSelectWeek:first-child { 
+float:left;}
+.Publish .cdrSelectWeek:first-child a:after { 
+	content:" - ";
+	padding-right: 3px; }
+.Publish .cdrSelectWeek a:hover {
+	color:#F47921;}
+.Publish .top {
+    font-weight: bold;
+    margin-top: 10px;}
+.Publish ul.itemList {
+	list-style:none;
+    margin-top: 10px;}
+.Publish ul.itemList li.listItem {
+	margin-left:0;}
+
+
+.Publish ul.itemList li.listItem {
+	margin-bottom: 10px;
+	border-bottom: 1px solid #ECECEC;}
+.Publish ul.itemList li.listItem a>span.summary {
+	display:block;
+	position: relative;}
+.Publish ul.itemList li.listItem a>span.summary.bigdate {
+	height:6em;}
+.Publish ul.itemList li.listItem a>span.summary.thumb {
+	height:8em;}
+
+.Publish ul.itemList li.listItem a>span.summary.bigdate {
+	padding-bottom:10px;}
+.Publish ul.itemList li.listItem a span.summary.thumb span.image {
+	display:block;
+	position:absolute;
+	max-width: 120px;
+	max-height:8em;}
+.Publish ul.itemList li.listItem a span.summary span.title {
+    font-size: 1.25em;
+    font-weight: bold;
+	height:1.5em;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;}
+.Publish ul.itemList li.listItem a span.summary.narrow span.title {
+	padding-right:7em;}
+.Publish ul.itemList li.listItem a span.summary.bigdate span.title {
+	height:1.5em;}
+.Publish ul.itemList li.listItem a span.summary.bigdate span.title,
+.Publish ul.itemList li.listItem a span.summary.bigdate span.summary {
+	padding-left:60px;
+	display:block;}
+.Publish ul.itemList li.listItem a span.summary.thumb span.title,
+.Publish ul.itemList li.listItem a span.summary.thumb span.summary {
+	padding-left:130px;
+	display:block;}
+
+.Publish ul.itemList li.listItem a span.summary.narrow span.from,
+.Publish ul.itemList li.listItem a span.summary.narrow span.until,
+.Publish ul.itemList li.listItem a span.summary.thumb span.from,
+.Publish ul.itemList li.listItem a span.summary.thumb span.until {
+	display:block;
+	position: absolute;
+    top: 0;
+	width:3.3em;
+	overflow:hidden;
+	white-space:nowrap;
+	color:#999;
+	font-size:0.75em;}
+.Publish ul.itemList li.listItem a span.summary.thumb span.from,
+.Publish ul.itemList li.listItem a span.summary.thumb span.until {
+	top:auto;
+	bottom:0;}
+.Publish ul.itemList li.listItem a span.summary.narrow span.from,
+.Publish ul.itemList li.listItem a span.summary.thumb span.from {
+	right: 4.15em;}
+.Publish ul.itemList li.listItem a span.summary.bigdate span.from {
+    display:block;
+	border-right: 1px solid #ECECEC;
+    color: #999; 
+    font-size: 24px;
+    left: 0;
+    padding-right: 5px;
+    position: absolute;
+    top: 0;
+    width: 50px;
+	line-height:1em;}
+body.normal .Publish ul.itemList li.listItem a span.summary.bigdate span.from {
+	font-size:1.5em;}
+.Publish ul.itemList li.listItem a span.summary.narrow span.until,
+.Publish ul.itemList li.listItem a span.summary.thumb span.until {
+	right:0;
+	width:3.9em;}
+.Publish ul.itemList li.listItem a span.summary.narrow span.until:before,
+.Publish ul.itemList li.listItem a span.summary.thumb span.until:before { 
+	content:" - ";}
+.Publish ul.itemList li.listItem a span.summary.bigdate span.until {
+    display:block;
+	border-right: 1px solid #ECECEC;
+    color: #333333;
+    font-variant: small-caps;
+    font-weight: bold;
+    padding-left: 0;
+    padding-right: 5px;
+    position: absolute;
+    width: 50px;
+	bottom: 0.5em;
+	height:1.5em;
+	overflow:hidden;
+	font-size:14px;}
+body.normal .Publish ul.itemList li.listItem a span.summary.bigdate span.until {
+	font-size:0.75em;}
+.Publish ul.itemList li.listItem a span.summary.thumb span.until {
+    position: absolute;}
+.Publish ul.itemList li.listItem a span.summary.narrow span.summary {
+	padding-left:0;
+	height:1.5em;}
+.Publish ul.itemList li.listItem a span.summary.narrow span.summary p {
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	height:100%;}
+.Publish ul.itemList li.listItem a span.summary.bigdate span.summary,
+.Publish ul.itemList li.listItem a span.summary.bigdate span.summary p {
+	height:4.5em;
+	overflow:hidden;}
+.Publish ul.itemList li.listItem a span.summary.thumb span.summary,
+.Publish ul.itemList li.listItem a span.summary.thumb span.summary p{
+	height:4.5em;
+	overflow:hidden;}
+
+
+.dijitToolbar {
+	padding: 3px 0 1px 3px;	
+	border-bottom: 1px solid #ccc;
+}
+.dijitToolbar .dijitButtonNode {
+	background: none;
+	margin: 0px !important;
+	padding: 0px !important;	
+	border: none;
+}
+.dijitToolbar .dijitButton,
+.dijitToolbar .dijitToggleButton,
+.dijitToolbar .dijitDropDownButton {
+	margin: 1px;
+	padding: 0px;	
+	border: 1px solid transparent;
+}
+.dijitToolbar .dijitButtonChecked,
+.dijitToolbar .dijitToggleButtonChecked {
+	background-color:#d4dff2;
+	border:1px solid #316ac5;
+	margin: 1px !important;
+	padding: 0px !important;
+}
+.dijitToolbar .dijitButtonCheckedHover,
+.dijitToolbar .dijitToggleButtonCheckedHover
+ {
+	background-color:#abc1e5;
+	border:1px solid #316ac5;
+	margin: 1px !important;
+	padding: 0px !important;
+}
+.dijitToolbar .dijitButtonHover,
+.dijitToolbar .dijitToggleButtonHover,
+.dijitToolbar .dijitDropDownButtonHover {
+	
+	border: 1px solid #316ac5;
+	background-color:#abc1e5;
+}
+.dijitToolbar label {	
+	padding: 3px 3px 0 6px;
+}
+.dj_ie .dijitToolbar .dijitComboButton .dijitButtonContentsFocused,
+.dj_ie .dijitToolbar .dijitComboButton .dijitDownArrowButtonFocused,
+.dj_ff2 .breda.dijitToolbar .dijitComboButton .dijitButtonContentsFocused,
+.dj_ff2 .dijitToolbar .dijitComboButton .dijitDownArrowButtonFocused {
+	border: 1px black dotted !important;
+}
+.dj_ie6 .dijitToolbar .dijitButton,
+.dj_ie6 .dijitToolbar .dijitToggleButton,
+.dj_ie6 .dijitToolbar .dijitDropDownButton {
+	
+	margin: 2px;
+	padding: 0px 2px;
+	border: 0px;
+}
+.dj_ie6 .dijitToolbar .dijitButtonChecked,
+.dj_ie6 .dijitToolbar .dijitToggleButtonChecked,
+.dj_ie6 .dijitToolbar .dijitDropDownButtonChecked {
+	background-color:#c1d2ee;
+	border:1px solid #316ac5;
+	margin: 1px !important;
+	padding: 0px 2px !important;
+}
+.dj_ie6 .dijitToolbar .dijitButtonCheckedHover,
+.dj_ie6 .dijitToolbar .dijitToggleButtonCheckedHover,
+.dj_ie6 .dijitToolbar .dijitDropDownButtonCheckedHover {
+	background-color:#c1d2ee;
+	border:1px solid #316ac5;
+	margin: 1px !important;
+	padding: 0px 2px !important;
+}
+.dj_ie6 .dijitToolbar .dijitButtonHover,
+.dj_ie6 .dijitToolbar .dijitToggleButtonHover,
+.dj_ie6 .dijitToolbar .dijitDropDownButtonHover  {
+	background-color:#c1d2ee;
+	border:1px solid #316ac5;
+	margin: 1px !important;
+	padding: 0px 2px !important;
+}
+
+/* MODAL SCREEN OVERLAY */
+.dijitDialogUnderlay {
+	background:				#808080 none repeat scroll 0 0;
+	opacity:				0.5;
+}
+
+#additionalContainer .additionalTitle,
+.dijitDialogTitleBar {
+	color: 					#f47921;
+	font-weight: 			bold;
+	font-size-adjust:		+0.6;
+	line-height:			20px;
+	margin: 				2px 0px 10px 0px;
+	border-bottom:			1px dotted #333333;
+}
+.dijitDialogTitle {
+	padding-left: 			5px;
+}
+#LoginDialog .dijitButtonText {
+	text-decoration:		underline;
+}
+#LoginDialog .missingBC {
+	font-weight:			bold;
+}
+#LoginDialog .cookieCheckbox {
+	float:					left;
+	width:					auto;
+}
+#LoginDialog .logonOption > label,
+#LoginDialog .logonOption > input {
+	margin-top:				7px;
+}
+#additional {
+    background: 			rgba(150, 150, 150, 0.5);
+    float: 					left;
+    height: 				auto;
+    width: 					100%;}
+#additionalContainer {
+    margin: 				25px;
+    padding: 				10px;
+    width: 					50%;
+}
+#additionalContainer,
+.dijitDialog {
+	background: 			#FFFFFF;
+	border: 				2px solid #FFFFFF;
+	border:					1px solid #F47921;
+	-moz-border-radius: 	0px;
+	-webkit-border-radius: 	0px;
+	-moz-box-shadow: 		0px 0px 0px #adadad;
+	-webkit-box-shadow: 	0px 0px 0px #adadad;
+	max-height: 			90%;
+	overflow: 				auto;
+	padding: 				0;
+	min-width:				200px;
+	min-height:				100px;
+	-moz-box-shadow: 		1px 1px 10px #000000;
+	-webkit-box-shadow: 	1px 1px 10px #000000;
+	box-shadow: 			1px 1px 10px #000000;
+}
+#additionalContainer .logonOption span {
+	display:				block;}
+#additionalContainer .additionalTitle {
+    font-size: 				1.25em;
+    font-weight:			bold;
+    margin: 				5px;
+    padding-bottom: 		5px;
+}
+#additionalContainer .additionalContent {
+	padding:				5px;
+}
+#additionalContainer .logonOption > label {
+	display:				block;
+	padding-top: 			5px;
+}
+
+#additionalContainer .rightDiv{
+	border-top:				1px dotted #333333;
+	margin-top: 			5px;
+	padding-top: 			5px;
+}
+#additionalContainer .rightDiv>div{
+	padding-top:			5px;
+}
+#additionalContainer a {
+	text-decoration:underline;}
+.dijitDialog .checkShowAgain {
+	margin-top:				10px;
+	margin-bottom:			10px;
+}
+
+.dijitDialog #dlgDivTopics {
+	margin-bottom:			10px;
+	max-height:				200px;
+	overflow-y:				scroll;
+}
+
+#dlgDivUrl input[type="text"] {
+    width: 80%;
+}
+
+#dlgDivUserContent {
+	width:					800px;
+}
+#dlgDivUserContent .contentLabel {
+	width:					200px;
+	margin:					3px;
+	display:				block;
+}
+#dlgDivUserContent .contentInput {
+	width:					400px;
+	margin:					3px;
+	display:				inline;
+}
+#dlgDivUserContent .contentArea {
+	height:					200px;
+}
+
+#dlgChangePassword {
+	width:					450px;
+}
+#dlgChangePassword .changePassword > label {
+	width:					200px;
+	margin:					3px;
+	display:				block;
+	float:					left;
+}
+#dlgChangePassword .changePassword > input {
+	width:					200px;
+	margin:					3px;
+	float:					left;
+}
+
+.userMessage {
+	color: 					#333333;
+	border:					1px solid #F47921;
+	margin-bottom:			15px;
+	padding:				15px;	
+	text-align:				center;
+	width:					90%;
+}
+
+.WarningMessage,
+#dlgReserveDiv .msgError,
+#dlgReserveDiv .msgOk {
+	color: 					#333333;
+	border:					1px solid orange;
+	margin-bottom:			15px;
+	padding:				15px;	
+}
+.WarningMessage,
+#dlgReserveDiv .msgError {
+	background:url("images/WarningLarge.png") no-repeat scroll 10px center white;
+	padding-left:50px;
+}
+
+.dijitDialog .dijitDialogPaneContent {
+	padding:10px;
+}
+.dijitDialogTitleBar {
+	cursor: move;
+}
+
+.dijitDialogCloseIcon {
+	background : 				#ffffff url(images/Icons.png) no-repeat -60px top;
+	float: 						right;
+	position: 					absolute;
+	vertical-align: 			middle;
+	top: 						0;
+	right: 						0;
+    width: 						20px;
+    height: 					20px;
+	cursor: 					pointer;
+}
+.dialogButtons {
+	padding-top: 10px;
+}
+.dijitDialog#dlgEditMood .dijitDialogPaneContent {
+    padding: 0 10px 10px 10px;
+}
+#divLists .dijitButtonNode, .dialogButtons button.dijitButtonNode {
+	border:none;
+	background: 			transparent !Important;
+}
+#divLists .dijitButtonNode {
+	min-width:100px;
+}
+#divLists .dijitButtonNode div, .dialogButtons button.dijitButtonNode div {
+	border:none;
+	background : url(images/arrowRight.gif) no-repeat left center;
+	padding-left: 10px;
+	text-decoration:underline;
+}
+
+
+.dialogButtons button.dijitButtonNode < .cancelIcon {
+color:#FF0000;
+}
+
+.dijitTooltip,
+.dijitTooltipDialog {
+	
+	
+	background: transparent;	
+}
+.dijitTooltipBelow {
+	padding-top: 13px;
+}
+.dijitTooltipAbove {
+	padding-bottom: 13px;
+}
+.dijitTooltipContainer {
+	background: #ffffff url(images/popupMenuBg.gif) repeat-x bottom left;
+	border:1px solid #7eabcd;
+	padding:0.45em;	
+	-webkit-border-radius: 6px;
+}
+.dijitTooltipConnector {
+	
+	border:0px;
+	z-index: 2;
+}
+.dijitTooltipABRight .dijitTooltipConnector {
+	
+	left: auto !important;
+	right: 3px;
+}
+.dijitTooltipBelow .dijitTooltipConnector {
+	top: 0px;
+	left: 3px;
+	background:url(images/tooltipConnectorUp.png) no-repeat top left;
+	width:16px;
+	height:14px;
+}
+.dj_ie6 .dijitTooltipBelow .dijitTooltipConnector {
+	background-image: url(images/tooltipConnectorUp.gif);
+}
+.dijitTooltipAbove .dijitTooltipConnector {
+	
+	bottom: 0px;
+	left: 3px;
+	background:url(images/tooltipConnectorDown.png) no-repeat top left;
+	width:16px;
+	height:14px;
+}
+.dj_ie6 .dijitTooltipAbove .dijitTooltipConnector {
+	background-image: url(images/tooltipConnectorDown.gif);
+	bottom: -3px;
+}
+.dijitTooltipLeft {
+	padding-right: 14px;
+}
+.dj_ie6 .dijitTooltipLeft {
+	padding-left: 15px;
+}
+.dijitTooltipLeft .dijitTooltipConnector {
+	right: 0px;
+	bottom: 7px;
+	background:url(images/tooltipConnectorRight.png) no-repeat top left;
+	width:16px;
+	height:14px;
+}
+.dj_ie6 .dijitTooltipLeft .dijitTooltipConnector {
+	background-image: url(images/tooltipConnectorRight.gif);
+}
+.dijitTooltipRight {
+	padding-left: 14px;
+}
+.dijitTooltipRight .dijitTooltipConnector {
+	left: 0px;
+	bottom: 7px;
+	background:url(images/tooltipConnectorLeft.png) no-repeat top left;
+	width:16px;
+	height:14px;
+}
+.dj_ie6 .dijitTooltipRight .dijitTooltipConnector {
+	background-image: url(images/tooltipConnectorLeft.gif);
+}
+.dijitPopup .dijitTooltipContainer,
+.dijitPopup .dijitMenu {
+	-moz-box-shadow: 0px 5px 10px #adadad;
+	-webkit-box-shadow: 0px 5px 10px #adadad;
+}
+.dijitIEFixedToolbar {
+	position:absolute;
+	
+	top: expression(eval((document.documentElement||document.body).scrollTop));
+}
+.dijitToolbar .dijitToolbarSeparator {
+	background: url(images/editor.gif);
+}
+.dijitEditorIcon {
+	background-image: url(images/editor.gif); 
+	background-repeat: no-repeat;
+	width: 18px;
+	height: 18px;
+	text-align: center;
+}
+.dijitEditorIconSep { background-position: 0px; }
+.dijitEditorIconBackcolor { background-position: -18px; }
+.dijitEditorIconBold { background-position: -36px; }
+.dijitEditorIconCancel { background-position: -54px; }
+.dijitEditorIconCopy { background-position: -72px; }
+.dijitEditorIconCreateLink { background-position: -90px; }
+.dijitEditorIconCut { background-position: -108px; }
+.dijitEditorIconDelete { background-position: -126px; }
+.dijitEditorIconForecolor { background-position: -144px; }
+.dijitEditorIconHilitecolor { background-position: -162px; }
+.dijitEditorIconIndent { background-position: -180px; }
+.dijitEditorIconInsertHorizontalRule { background-position: -198px; }
+.dijitEditorIconInsertImage { background-position: -216px; }
+.dijitEditorIconInsertOrderedList { background-position: -234px; }
+.dijitEditorIconInsertTable { background-position: -252px; }
+.dijitEditorIconInsertUnorderedList { background-position: -270px; }
+.dijitEditorIconItalic { background-position: -288px; }
+.dijitEditorIconJustifyCenter { background-position: -306px; }
+.dijitEditorIconJustifyFull { background-position: -324px; }
+.dijitEditorIconJustifyLeft { background-position: -342px; }
+.dijitEditorIconJustifyRight { background-position: -360px; }
+.dijitEditorIconLeftToRight { background-position: -378px; }
+.dijitEditorIconListBulletIndent { background-position: -396px; }
+.dijitEditorIconListBulletOutdent { background-position: -414px; }
+.dijitEditorIconListNumIndent { background-position: -432px; }
+.dijitEditorIconListNumOutdent { background-position: -450px; }
+.dijitEditorIconOutdent { background-position: -468px; }
+.dijitEditorIconPaste { background-position: -486px; }
+.dijitEditorIconRedo { background-position: -504px; }
+.dijitEditorIconRemoveFormat { background-position: -522px; }
+.dijitEditorIconRightToLeft { background-position: -540px; }
+.dijitEditorIconSave { background-position: -558px; }
+.dijitEditorIconSpace { background-position: -576px; }
+.dijitEditorIconStrikethrough { background-position: -594px; }
+.dijitEditorIconSubscript { background-position: -612px; }
+.dijitEditorIconSuperscript { background-position: -630px; }
+.dijitEditorIconUnderline { background-position: -648px; }
+.dijitEditorIconUndo { background-position: -666px; }
+.dijitEditorIconWikiword { background-position: -684px; }
+.dijitEditorIconToggleDir { background-position: -540px; }
+.dijitcolorPalette {
+	border:1px solid #7eabcd;
+	background:#fff;
+	-moz-border-radius: 0px !important;
+}
+
+div.appcontent div.singleEvent a {
+	text-decoration:			none;
+}
+div.appcontent div.selected a {
+	font-weight:bold;
+	color:#f47921;
+}
+
+.dijitTitlePaneContentOuter {
+	min-height: 				50px;
+}
+.News {
+	background : 				url(images/ApplicationBackground.gif) repeat-x left top;
+	border:						1px solid #fef1e8;
+}
+.Calendar {
+	background : 				url(images/ApplicationBackground.gif) repeat-x left top;
+	border:						1px solid #fef1e8;
+}
+.CalendarList {
+	background : 				url(images/ApplicationBackground.gif) repeat-x left top;
+	border:						1px solid #fef1e8;
+}
+
+.calendarLinkDiv {
+	padding-top:				10px;
+}
+.calendarLinkDiv div {
+	margin-left: 				8px;
+}
+
+
+/* Default for images in the RTE editor */
+.RichTextItem img,
+.StyleImage, .imageDiv .image, .oneRow .image img, #cover img {
+	border:					1px solid #F47921;
+	-moz-box-shadow: 		0px 0px 4px #AAAAAA;
+	-webkit-box-shadow: 	0px 0px 4px #AAAAAA;
+	box-shadow: 			0px 0px 4px #AAAAAA;
+	margin:					5px;
+	
+	filter:progid:DXImageTransform.Microsoft.glow(Strength=1, color='#AAAAAA');
+ 	-ms-filter:"progid:DXImageTransform.Microsoft.glow(Strength=1, color='#AAAAAA')";
+}
+.RichTextItem img.StyleNone,
+.loadingCoverDiv img {
+	border:none !Important;
+	filter: none !Important;
+	-ms-filter:none !Important;
+	-moz-box-shadow:none !Important;
+	-webkit-box-shadow:none !Important;
+	box-shadow:none !Important;
+	margin:0;
+}
+.oneRow .image img {
+	display:					block !Important;
+	max-height:					115px;
+	max-width:					70px;
+}
+#divRelatedWorks .image img {
+	cursor:						pointer;
+}
+#cover img.noImage {
+	display:					none;
+}
+.listItem .image img.noBorder, #divRelatedWorks .image img.noBorder {
+	border: 0;
+}
+.recordDisplayElement .image img,
+.listItem .image img, 
+#divRelatedWorks .image img {
+	max-width:				120px;
+	border:					1px solid #F47921;
+	-moz-box-shadow: 		0px 0px 4px #AAAAAA;
+	-webkit-box-shadow: 	0px 0px 4px #AAAAAA;
+	box-shadow: 			0px 0px 4px #AAAAAA;
+	margin:					2px;
+	
+	filter:progid:DXImageTransform.Microsoft.glow(Strength=1, color='#AAAAAA');
+ 	-ms-filter:"progid:DXImageTransform.Microsoft.glow(Strength=1, color='#AAAAAA')";
+}
+
+
+/* Default link with Arrow */
+a.link2,
+.searchTree.textOnly a, 
+a.sortOK,
+#additionalbefore ul.appLinks > li > a,
+#divInterests .generalInfo a.NeedHelp,
+.RichTextItem .additional a,
+.recordDisplayElement div.FullRequest a.linkTo,
+.recordDisplayElement div.FullUrl a.linkTo,
+.otherSources .externalLink a,
+.divVlink .linkVlink a,
+#sOptions .advancedLink a,
+.SearchBox #sBoxOptions .advancedLink a,
+.itemFull .reserveItem a,
+.itemCover .reserveItem a,
+.itemText .reserveItem a,
+.relAuthors .relAuthor a,
+.EditBorrowerData .helpLink a,
+#itemDetailsLink a, .showItemDetails a,
+.LinkRequest .linkEntry .buttons a,
+.viewInfo a,
+#optionsExpanded div.option a, .SearchResults .leftDiv .switchSearchSimpleEmbedded a, .searchFormSimple .switchSearchSimple a,
+.zeroHits .linkVlink a, .zeroHits .searchAll a, .zeroHits .altTerm a, 
+#divListOptions a, #divLists a, #divSearchScreen .more a, #divSearchScreen .switchSearchAdvanced a, #divSearchScreen .switchSearchExpert a, #divSearchResultsCMS .shortRecord a, #divInterests .add a, #divReviews .addReviewLink a, #divReviews .editReviewLink a, #divReviews .deleteReviewLink a, #vote a, #moreInfo a, #divBrowseOptions .option a, #divListOptions .option a, #divRecordOptions .option a, #browseNavOptions a, .UserActivities .navigation a, .modifyData a, .newRequest a, .cancelSelected a, .cancelAll a, .renewSelected a, .renewAll a, .deleteSelected a, .selectPublic a, .selectAll a,
+.UserActivities .navigation a, 
+#divResultsOptions ul a,
+#divResultsOptions .option a,
+.feedItemInner,
+.calendarLinkDiv div a,
+div.appcontent div.singleEvent,
+.appLink a,
+.dijitDialog .guestRegister a, .dijitDialog .forgotPassword a,
+.addMoodLink a {
+	background : 				url(images/arrowRight.gif) no-repeat left 4px !Important;
+	font-weight:				normal !Important;
+	padding-left:				13px !Important;
+	text-decoration:			none !Important;
+	color:    					#333333 !Important;
+}
+a.link2:hover,
+.searchTree.textOnly a:hover, 
+a.sortOK:hover > span,
+#additionalbefore ul.appLinks > li > a:hover span,
+#divInterests .generalInfo a.NeedHelp:hover span,
+.RichTextItem  .additional a:hover span,
+.recordDisplayElement div.FullRequest a.linkTo:hover span,
+/*.recordDisplayElement div.FullUrl a.linkTo:hover span, */
+.otherSources .externalLink a:hover span,
+.divVlink .linkVlink a:hover span,
+#sOptions .advancedLink a:hover span,
+.SearchBox #sBoxOptions .advancedLink a:hover span,
+.itemFull .reserveItem a:hover span,
+.itemCover .reserveItem a:hover span,
+.itemText .reserveItem a:hover span,
+.relAuthors .relAuthor a:hover span,
+.EditBorrowerData .helpLink a:hover span,
+#itemDetailsLink a:hover, .showItemDetails a:hover,
+.LinkRequest .linkEntry .buttons a:hover span,
+.searchFormSimple .switchSearchSimple a:hover span,
+#divSearchScreen .switchSearchAdvanced a:hover span,
+#divSearchScreen .switchSearchExpert a:hover span,
+.viewInfo a:hover,
+#optionsExpanded div.option a:hover, .SearchResults .leftDiv .switchSearchSimpleEmbedded a:hover,
+.zeroHits .linkVlink a:hover, .zeroHits .searchAll a:hover, .zeroHits .altTerm a:hover, 
+#divListOptions a:hover, #divLists a:hover, #divSearchScreen .more a:hover,  #divSearchResultsCMS .shortRecord a:hover, #divInterests .add a:hover, #divReviews .addReviewLink a:hover, #divReviews .editReviewLink a:hover, #divReviews .deleteReviewLink a:hover, #vote a:hover, #moreInfo a:hover, #divBrowseOptions .option a:hover, #divListOptions .option a:hover, #divRecordOptions .option a:hover, #browseNavOptions a:hover, .UserActivities .navigation a:hover, .modifyData a:hover, .newRequest a:hover, .cancelSelected a:hover, .cancelAll a:hover, .renewSelected a:hover, .renewAll a:hover, .deleteSelected a:hover, .selectPublic a:hover, .selectAll a:hover,
+.UserActivities .navigation a:hover, 
+#divResultsOptions ul a:hover,
+#divResultsOptions .option a:hover,
+.feedItemInner a:hover,
+.calendarLinkDiv div a:hover,
+div.appcontent div.singleEvent a:hover,
+.dijitDialog a:hover,
+.addMoodLink a:hover {
+	font-weight:				normal !Important;
+	color:    					#f47921 !Important;
+}
+.otherSources .externalLink a:hover span .linkSearchTerm {
+	font-weight:				bold !Important;
+}
+/* better indent if there's a span in the link */
+#additionalbefore ul.appLinks > li > a,
+#divInterests .generalInfo a.NeedHelp,
+.RichTextItem  .additional a,
+.UserActivities .navigation a,
+.recordDisplayElement div.FullRequest a.linkTo,
+.recordDisplayElement div.FullUrl a.linkTo,
+.viewInfo .switchUser a,
+.otherSources .externalLink a,
+.divVlink .linkVlink a,
+#sOptions .advancedLink a,
+.SearchBox #sBoxOptions .advancedLink a,
+.itemCover .reserveItem a,
+.itemText .reserveItem a,
+.relAuthors .relAuthor a,
+.EditBorrowerData .helpLink a,
+.LinkRequest .linkEntry .buttons a,
+.searchFormSimple .switchSearchSimple a,
+#divSearchScreen .switchSearchAdvanced a,
+#divSearchScreen .switchSearchExpert a {
+	display:					block;
+}
+
+.GenericRSSReader .feedItem {
+	overflow: hidden;
+}
+.feedItemInner a {
+	text-decoration:			none !Important;
+}
+
+.appLinks {
+	margin-top:					15px;
+}
+.appLink {
+	float:						left;
+	margin-right:				10px;
+}
+a.sortOK {
+	margin-left:				15px;
+	padding-left: 				10px !important;}
+
+/* Default link with Dot */
+.LinkRequest .name,
+#divRestrictions .restriction, 
+#divSearchAssociations .association,
+#UserDataSummaryDiv tr td.label, #LinkedAccountsDiv .name {
+	background : 				url(images/Dot.gif) no-repeat left center;
+	padding-left:				12px;
+}
+#divRestrictions .restriction a, 
+#divSearchAssociations .association a,
+#UserDataSummaryDiv tr td.label a, #LinkedAccountsDiv .name a {
+	text-decoration:			none !Important;
+}
+#divRestrictions .restriction a:hover, 
+#divSearchAssociations .association a:hover,
+#UserDataSummaryDiv tr td.label a:hover, #LinkedAccountsDiv .name a:hover {
+	font-weight:				normal !Important;
+	color:    					#f47921 !Important;
+}
+
+/* Default for (DJIT) BUTTONS */
+.buttonLink span,
+.dijitButton, .dijitButton *,
+.RichTextItem .StyleButton, .RichTextItem .StyleButton *,
+.topInfo a {
+	border:						none !Important;
+	background:					#FFFFFF !Important;
+	color:						#FFFFFF !Important;
+	padding:					0 !Important;
+	margin:						0 !Important;
+	text-decoration:			none !Important;
+	font-weight:				normal !Important;
+	line-height:				24px !Important;
+	vertical-align:				middle !Important;
+}
+.dijitButton > button > span
+ {
+	display:					none;
+}
+.link2.button,
+.buttonLink span,
+.dijitButton > button > div,
+.RichTextItem .StyleButton,
+.topInfo a, .topInfo a * {
+	height: 					24px !Important;
+	display:					inline-block !Important;
+	background: 				url(images/ButtonsLeft.png) no-repeat top left !Important;
+	color:						#FFFFFF !Important;
+	line-height:				24px !Important;
+	vertical-align:				middle !Important;
+	cursor:						pointer !Important;
+	padding-left: 				0 !important;
+}
+.link2.button > span,
+.buttonLink span a,
+.dijitButton > button > div > center,
+.RichTextItem .StyleButton > span,
+.topInfo a > span{
+	height: 					24px;
+	display:					inline-block;
+	margin-left:				22px !Important;
+	padding-right:				20px !Important;
+	background: 				url(images/ButtonsRight.png) no-repeat top right !Important;
+	color:						#FFFFFF !Important;
+}
+.link2.button:hover,
+.buttonLink span:hover,
+.dijitButton > button:hover > div,
+.RichTextItem .StyleButton:hover,
+.topInfo a:hover {
+	background: 				url(images/ButtonsLeft.png) no-repeat bottom left !Important;
+	text-decoration:			none !Important;
+	font-weight:				normal !Important;
+}
+.link2.button:hover > span,
+.buttonLink span:hover > a,
+.dijitButton > button:hover > div > center,
+.RichTextItem .StyleButton:hover > span,
+.topInfo a:hover > span {
+	background: 				url(images/ButtonsRight.png) no-repeat bottom right !Important;
+	text-decoration:			none !Important;
+	font-weight:				normal !Important;
+}
+
+.dj_ie7 .topInfo a,
+.dj_ie7 .StyleButton {
+	height: 					23px !Important;
+	display:					inline-block !Important;
+}
+.dj_ie7 .topInfo a span,
+.dj_ie7 .StyleButton span { 
+	height: 					23px !Important;
+	display:					inline-block !Important;
+}
+
+#rightDiv .heading {
+	font-size:					20px;
+	font-weight:				bold !Important;
+	color:						#F47921;
+	font-weight:				normal;
+	margin: 					8px 0 15px 0;
+	border-bottom:				1px dotted #333333;
+	padding-left: 				5px;
+	min-height:					30px;
+}
+#rightDiv .sort {
+	margin: 					0 !Important;
+}
+#rightDiv .sortLabel {
+	font-size:					20px;
+	font-weight:				bold !Important;
+	color:						#F47921;
+	font-weight:				normal;
+	margin: 					8px 0 15px 0;
+	border-bottom:				1px dotted #333333;
+	padding-left: 				5px;
+	min-height:					30px;
+}
+#rightDiv .sortSelect {
+	padding-left: 				5px;
+}
+
+
+#rightDiv .heading img.expandCollapse {
+	display:					none;
+}
+#rightDiv .seperator {
+	display:					none;
+}
+.SearchResults .separator {
+	display:					none;
+}
+.SearchResults .leftDiv {
+	border-right:				none !Important;
+}
+.SearchResults .searchBox {
+	width:						auto !Important;
+}
+.externalLink .linkSearchTerm,
+.SearchResults .SearchBrowse .leftDiv .searchKey {
+	color:						#F47921;
+	font-weight:				bold;
+}
+.accFeatures .SearchResults .pageGoToSelect { /* 379013E */
+	width:						30px;
+}
+
+.searchFormSimple .buttonSimpleEmbedded {
+	margin-left:				0 !Important;
+}
+#divSearchScreen button.dijitButtonNode, .searchFormSimple button.dijitButtonNode {
+	float:						left;
+	border:						none;
+	background: 				transparent !Important;
+}
+#divSearchScreen button.dijitButtonNode div, .searchFormSimple button.dijitButtonNode div {
+	border:						none;
+	background : 				url(images/arrowRight.gif) no-repeat left center;
+	padding-left: 				10px;
+	text-decoration:			underline;
+}
+
+#divSearchScreen .searchForm button.dijitButtonNode div {
+	padding-left: 				5px;
+}
+#divSearchScreen div.button,
+#divSearchScreen div.indexBrowse { 
+	float:						left; 
+}
+
+#divSearchScreen .searchTitle {
+	display:					none;
+}
+#divSearchScreen .separator {
+	clear:						both;
+	margin:						15px 0;
+}
+#divSearchScreen div.searchForm > div.separator {
+	display:					none;
+}
+
+#divSearchScreen .advancedLabel {
+	clear:						both;
+	margin:						5px 0;
+	font-weight:				bold;
+}
+#divSearchScreen .divLabel {
+    clear:                      both;
+	float:						left;
+	margin:						5px 0 0 5px;
+    min-width:                  100px;
+	width:						30%;
+}
+#divSearchScreen .divData {
+	float:						left;
+	margin-top:					5px;
+    min-width:                  200px;
+	width:						66%;
+}
+#divSearchScreen .more {
+	float:						right;
+}
+#divSearchScreen .searchKeyAdvanced {
+	width:						100%;
+}
+#divSearchScreen .divDataShort {
+	float:						left;
+	width:						28%;
+	line-height:				35px;
+}
+.dj_ie #divSearchScreen .divDataShort:first-child {
+	width:						27%;
+}
+#divSearchScreen .divDataShort input {
+	width:						100%;
+}
+#divSearchScreen .boolAND {
+	background-color:			#FAFAFA;
+	color:						#F47921;
+	font-weight:				bold;
+	margin-bottom:				10px;
+	padding:					5px;
+	text-align:					left;
+	width:						100%;
+}
+#divSearchScreen .boolOR {
+    float: left;
+    line-height: 35px;
+    min-width: 2.5em;
+    text-align: center;
+    vertical-align: bottom;
+    width: 8%;
+}
+#divSearchScreen div.cbUserFilter {
+	float: left;
+	margin: 10px 0;
+	width: 100%;
+}
+#divSearchScreen #advancedBlocks {
+	margin-bottom: 				20px;
+}
+
+
+
+
+
+
+
+/*  Search, Simple */
+html.dj_ie #divSearchScreen.simple .dijitComboBox,
+html.dj_ie #divSearchScreen.browse .dijitComboBox{
+    width:15em !important;
+}
+#divSearchScreen.simple > form > div:first-child {
+    overflow: auto;
+    padding-bottom: 10px;
+}
+#divSearchScreen .switch {
+    clear: both;
+}
+#divSearchScreen .switch+div{
+    clear:both;
+}
+
+/*  Search, Expert */
+#divSearchScreen.expert h3 {
+    height: 0;
+    overflow: hidden
+}
+#divSearchScreen.expert .searchRows table {
+    width:100%;
+}
+#divSearchScreen.expert .searchRows table th:first-child {      width: 7em;}
+#divSearchScreen.expert .searchRows table th:first-child+th {   width: auto;}
+#divSearchScreen.expert .searchRows table th:first-child+th+th {width: 40%;}
+#divSearchScreen.expert .searchRows table td+td>* {
+    width:98%;
+}
+#divSearchScreen.expert .searchRows table td > * {
+    zzzposition:absolute;
+}
+/*#divSearchScreen.expert > div + div, */
+#divSearchScreen.expert .searchForm > div {
+    float: left;
+    width:100%;
+}
+#divSearchScreen.expert .searchForm > div.switch {
+    float: right;
+    margin-bottom: 5px;
+}
+#divSearchScreen.expert > div + div, 
+#divSearchScreen.expert .searchForm > div + div + div {
+    clear: both;
+    margin-left:4px;
+    margin-top: 17px;
+    width: 100%;
+}
+#divSearchScreen > div + div {
+    clear: both;
+    float: left;
+    margin-top: 10px;
+}
+#divSearchScreen.expert .rowOper .dijitComboBox {
+    width: 6em;
+}
+.rowKey .dijitTextBox {
+    width: 25em;
+}
+#divSearchScreen.expert .more {
+    float:left;
+    margin-left: 4px;
+}
+
+#divSearchScreen.expert .restrictionRow + .restrictionRow {
+    margin-top: 3px;
+}
+#divSearchScreen.expert .restrictionRow > label {
+    display: inline-block;
+    vertical-align: top;
+    width: 12em;
+}
+#divSearchScreen.expert .restrictionRow > input {    width: 180px;}
+#divSearchScreen.expert .restrictionRow > input {    width: 180px;}
+#divSearchScreen.expert .restrictionRow.doubletextbox span {
+    display: inline-block;
+    text-align: center;
+    width: 184px;
+}
+#divSearchScreen.expert .restrictionRow.doubletextbox span span {
+    float: left;
+    width: 7px;
+}
+html.dj_ie #divSearchScreen.expert .restrictionRow.doubletextbox span {
+    width:auto;
+}
+#divSearchScreen.expert .restrictionRow.doubletextbox input {
+    float: left;
+    width: 7em;
+}
+#divSearchScreen.expert .restrictionRow.doubletextbox input + input {
+    float: right;
+}
+#divSearchScreen.expert div.button {
+    margin-left: -2px !important;
+}
+#divSearchScreen h3+.sourceType {
+    margin-left: 0
+}
+#divSearchScreen .searchPreText,
+#divSearchScreen .searchPostText {
+    background-color: #F9F9F9;
+    border: 1px solid #DDDDDD;
+    margin-bottom: 5px;
+    padding: 10px 5px;
+    width: 99%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.searchFormSimple .switchSearchSimple ,.searchForm .switchSearchAdvanced ,.searchForm .switchSearchExpert { 
+	float: 						right !Important; 
+}
+.searchFormSimple .searchFilter {
+	float:left;}
+
+.SearchResults .leftDiv .switchSearchSimpleEmbedded { 
+	float:						right; 
+}
+
+#searchFormSimple .buttonSimple {
+	margin-left:				3px;
+}
+#searchFormSimple .buttonSimple center {
+	padding-left:				0px !Important;
+}
+
+#divRestrictions div, #divSearchAssociations div {
+	display:					none;
+}
+
+.Restrictions .apptitle, .Associations .apptitle  {
+	margin-bottom:				0px;
+	min-height: 				20px;
+}
+.Restrictions .dijitClosed .dijitArrowNode, .Associations .dijitClosed .dijitArrowNode {
+	margin-top:					15px;
+}
+
+#divBrowseOptions .option, #divListOptions .option, #divRecordOptions .option, #divResultsOptions .sort, #divResultsOptions .option {
+	margin-top:					0px;
+	margin-left:				2px !Important;
+}
+.ResultsOptions, .ResultsWiki, .Restrictions, Associations {
+	margin-bottom:				0px !Important;
+}
+.zeroHits ul li,
+#additionalbefore > ul.appLinks, #additionalbefore > ul.appLinks > li, .ResultsOptions > ul, .ResultsOptions > ul > li, ul.cloud, ul.cloud > li, .Restrictions > ul, .Restrictions > ul > li, Associations > ul, Associations > ul > li, .SearchAssociations > ul, .SearchAssociations > ul > li,
+div#divBrowseOptions > ul, div#divBrowseOptions > ul > li, div#divListOptions > ul, div#divListOptions > ul > li, div#divRecordOptions > ul, div#divRecordOptions > ul > li, div#divVlink ul, div#divVlink ul > li, div#divRelatedWorks ul, div#divRelatedWorks ul > li,
+div#divRelations ul.itemCover, div#divRelations ul.itemCover > li,
+ul.itemCover, ul.itemCover > li,
+div#divSearchResultsCMS > ul, div#divSearchResultsCMS > ul > li {
+	list-style:none;
+	margin-left: 0;
+}
+ul.cloud > li {
+	display:inline;
+    margin-right: 5px;
+}
+.Search .dijitTitlePaneContentOuter, .ResultsWiki .dijitTitlePaneContentOuter {
+	min-height:					30px !Important;
+}
+
+#divRestrictions div.restriction, #divSearchAssociations div.association, #divRestrictions .restrictionHeader, #divSearchAssociations div.associationHeader, #rightDiv .heading {
+	display:					block;
+}
+#divRestrictions .restrictionHeader, #divSearchAssociations div.associationHeader {
+	margin-top: 				15px;
+	margin-left: 				5px;
+	padding-left:				0px;
+	font-weight:				bold;
+}
+
+.cloud {
+	margin-top:					0px !Important;
+	margin-bottom:				0px !Important;
+}
+.cloud a {
+	text-decoration:			none;
+	padding-right:				5px;
+}
+.cloud .cloud1 a {				font-size:20px; color: #F47921; }
+.cloud .cloud2 a {				font-size:18px;	color: #F47921; }
+.cloud .cloud3 a {				font-size:18px;	color: #d17a11; }
+.cloud .cloud4 a {				font-size:16px;	color: #d17a11; }
+.cloud .cloud5 a {				font-size:16px;	color: #955e1e; }
+.cloud .cloud6 a {				font-size:14px;	color: #955e1e; }
+.cloud .cloud7 a {				font-size:14px;	color: #5d452b;	}
+.cloud .cloud8 a {				font-size:12px;	color: #5d452b;}
+.cloud .cloud9 a {				font-size:12px; color: #333333;	}
+.cloud .cloud10 a{				font-size:12px; color: #333333;	}
+
+.cloud a:hover {
+	color:						#F47921;
+	font-weight:				normal;
+	text-decoration:			underline;
+}
+.cloud .wikiHelp  {
+	font-style:					italic;
+	padding-top:				15px;
+}
+
+.navigationPage {
+	text-decoration:			none;
+	color:						#333333 !Important;
+	font-weight:				normal !Important;
+}
+.navigationPageCurrent {
+	color:						#F47921 !Important;
+}
+.navigationPage:hover {
+	text-decoration:			none;
+}
+#divItemsLH .navigation,
+#divItemsCL .navigation,
+#divItemsCR .navigation,
+.SearchResults .navigation, 
+.ReadingList .navigation {
+	float:						left !Important;
+	width:						100%;
+	text-align:					center;
+	margin-bottom:				15px
+}
+.accFeatures  .results ul.navigation > li {
+	margin-right:				10px;}
+.results .navigation img {
+	margin: 					0px 5px 0px 5px;
+	vertical-align: 			bottom;
+}
+.results .navigation span {
+	vertical-align: 			middle;
+}
+.results .navigation .navigationPrevious span,
+.results .navigation .navigationNext span {
+	background: url("images/sprite.png") no-repeat scroll -500px -350px rgba(0, 0, 0, 0);
+    display: block;
+    height: 20px;
+    width: 20px;
+}
+.results .navigation .navigationNext span {
+	background-position: -480px -350px;
+}
+
+.SearchResults .otherSources {
+	clear:						both;
+}
+
+.applicationcontainer  div {
+	outline:					none !Important;
+}
+.SearchResults .searchKey, .SearchResultsCMS .searchKey, .SearchBrowse .searchKey {
+	font-size:					x-large;
+}
+
+.SearchResultsCMS .heading {
+	margin-bottom:				0px !Important;
+}
+.SearchResultsCMS .shortRecord {
+	margin-top:					0px !Important;
+	margin-bottom:				20px !Important;
+}
+.SearchResultsCMS .shortSummary {
+	font-style:					normal !Important;
+}
+
+.SearchImageViewer .viewerImage {
+	width:						100px;
+	float:						left;
+	margin-left:				15px;
+}
+.SearchImageViewer .viewerThumbnail {
+	max-width:					100px;
+	border:						0;
+}
+.SearchImageViewer .viewerText {
+	width:						100%;
+	font-weight:				bold;
+	font-size:					0.9em;
+	text-align:					center;
+	margin-top:					5px;
+}
+
+/* Newsletters */
+#divNewsletterList {
+	width: 20%;
+	float: left;
+}
+#divNewsletterList .newsletterList + .newsletterList {
+	margin-top:10px;
+}
+#divGoSubscriptions {
+	margin: 10px;
+}
+#divGoSubscriptions a:hover {
+	color:#F47921;
+}
+#divIframe {
+    border: 1px solid #CCCCCC;
+	width: 79%;
+	float: left;
+}
+
+@media screen and (max-width:800px){
+    #divNewsletterList {	width: 30%;}
+    #divIframe {        	width: 69%;}
+}
+@media screen and (max-width:550px){
+    #divNewsletterList {
+        border: 1px solid #CCCCCC;
+        margin-bottom: 10px;
+        max-height: 200px;
+        overflow: auto;
+        width: 100%;}
+    #divIframe {        	width: 100%;}
+}
+    
+#divIframe > iframe {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+#divNewsletterList .nameNewsletter {
+	font-weight: bold;
+	font-size: 1.1em;
+}
+#divNewsletterList .newsletterList li {
+    background: url("images/arrowRight.gif") no-repeat scroll 8px center rgba(0, 0, 0, 0);
+    margin-left:0;
+    padding-left: 18px;
+}
+#divNewsletterList .newsletterList li:hover {
+    margin-left: 3px;
+    padding-left: 15px;
+}
+#divNewsletterList .newsletterList li:hover span,
+#divNewsletterList .newsletterList li.selected span{
+    color:#F47921;
+}
+#divNewsletterList .newsletterList li.selected span{
+    font-weight:bold;
+}
+#divNewsletterList > ul {
+	margin-left: 10px;
+	list-style: none;
+}
+#divSubscriptions .hdrSubscriptions {
+	margin: 10px 0px 10px 0px;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+#divSubscriptions > ul > li > span {
+	width: 300px;
+	margin: 5px;
+	font-size: 1.1em;
+	display: inline-block;
+}
+#divSubscriptions > ul > li > input {
+	vertical-align: middle;
+}
+#divSubscriptionSave {
+	margin: 20px 0px 50px 10px;
+}
+
+
+/* Personal profiles */
+#divLists > div,
+#divLists > table,
+#divLists > table > tbody {
+	padding-left:				0 !Important;
+	margin-left:				0 !Important;
+}
+#divLists > div.viewInfo {
+	padding-left:				5px !Important;
+}
+#divLists > table {
+	margin-left:				-2px !Important;
+}
+#divLists > div.header {
+	margin:						0;
+	margin-top:					15px;
+}
+.Alerts .nickName {
+	margin-left:				-8px;
+}
+.Alerts .nickName a {
+	color:						#F47921;
+}
+
+#divListOptions div.option {
+	margin-left:				5px !important;
+}
+#divLinkRequest {
+	background : 				url(images/Warning.png) no-repeat left top;
+}
+#divLinkRequest .noEntries,
+#divLinkRequest .heading {
+	font-weight:				bold;
+	padding-left:				22px;
+	line-height:				20px;
+	margin-top:					0px;
+	margin-bottom:				0px;
+}
+#divLinkRequest .linkEntry {
+	float:						left;
+}
+#divLinkRequest .linkEntry .buttons span:first-child {
+	margin-right:				10px;
+}
+#divLinkRequest .linkEntry .buttons span:last-child {
+	margin-right:				10px;
+}
+#pendingLinkRequest a {
+	background : 				url(images/arrowRight.gif) no-repeat left center;
+	padding-left:				8px;
+	text-decoration:			none;
+	font-weight:				bold;
+}
+#divSearchScreen .more a, #divSearchScreen .switchSearchAdvanced a, #divSearchScreen .switchSearchExpert a, #pendingLinkRequest a:hover {
+	text-decoration:			underline;
+}
+#pendingLinkRequest {
+	margin-left:				4px;
+}
+
+.modifyData a, .newRequest a {
+	padding-left:				10px;
+}
+
+.dijitTitlePaneContentInner .top {
+	cursor:pointer;
+}
+#UserDataSummaryDiv tr {
+	background-color:				#FFFFFF !Important;
+}
+.LinkedAccounts .heading {
+	margin-bottom:					0px !Important;
+}
+#LinkedAccountsDiv .name {
+	padding-right:					10px
+}
+.LinkedAccounts .refused, .LinkedAccounts .waiting {
+	background:						url("images/warning.png") no-repeat scroll left center transparent;
+	line-height:					20px;
+	margin-left:					10px;
+	padding-left:					20px;
+}
+.LinkedAccounts .remove a span{
+	display:						none;
+}
+#LinkedAccountsDiv .remove a {
+	display:						block;
+	visibility:						hidden;
+	background : 					url(images/Icons.png) no-repeat -60px top;
+	height:							20px;
+	width:							20px;
+	cursor:							pointer;
+	margin-right:					5px;
+}
+#LinkedAccountsDiv .remove a:hover {
+	background : 					url(images/Icons.png) no-repeat -60px bottom;
+}
+#LinkedAccountsDiv:hover .remove a {
+	visibility:						visible;
+}
+
+#dlgQuestion .question .answer {
+	margin:							10px;
+}
+.Navigation .viewInfo {
+background:url("images/WarningLarge.png") no-repeat scroll 15px 15px transparent;
+border:1px solid orange;
+margin-bottom:15px;
+padding:15px;
+}
+.Navigation .viewInfo .viewData{
+font-weight:bold;
+margin-left:50px;
+}
+.Navigation .viewInfo .linkName {
+margin-left:						50px;
+color:								#F47921;
+font-weight:						bold;
+}
+.Navigation .viewInfo .switchUser{
+margin-top:15px;
+}
+
+
+.UserActivities  .title {
+	color:							#F47921 !important;
+	font-size:						14px;
+	line-height:					20px;
+}
+.large .UserActivities  .title {
+	font-size:						16px;
+}
+.largest .UserActivities  .title  {
+	font-size:						18px;
+}
+#PersonalDataDiv, #UserDataSummaryDiv, #LinkedAccountsDiv {
+	width:						100%;
+}
+#UserDataSummaryDiv {
+	margin-top:					10px;
+}
+#PersonalDataDiv, #UserDataSummaryDiv, #LinkedAccountsDiv {
+	margin-left: 				10px;
+	clear:						both;
+	width:						auto;
+}
+.UserDataSummary td {
+	padding-top:				0 !Important;
+	padding-right:				0 !Important;
+}
+
+.Alerts {
+	margin-left:				11px;
+}
+.Alerts .alert {
+	margin-left:				0px;
+	padding-left:				0px !Important;
+}
+.Alerts table.alert {
+	width:						100%;
+}
+
+#PersonalDataToggleDiv, #UserDataSummaryToggleDiv, #LinkedAccountsToggleDiv {
+	margin-right:				0px !Important;
+	width:						auto !Important;
+}
+#collapseExpandLA span,
+#collapseExpandPD span {
+	display:					none;
+}
+#collapseExpandLA.collapsed,
+#collapseExpandPD.collapsed {
+	background : 				url(images/Icons.png) no-repeat -20px top;
+	float:						right;
+	height:						20px;
+	width:						20px;
+}
+#collapseExpandLA.expanded,
+#collapseExpandPD.expanded {
+	background : 				url(images/Icons.png) no-repeat -40px top;
+	float:						right;
+	height:						20px;
+	width:						20px;
+}
+#collapseExpandLA.collapsed:hover,
+#collapseExpandPD.collapsed:hover {
+	background : 				url(images/Icons.png) no-repeat -20px bottom;
+}
+#collapseExpandLA.expanded:hover,
+#collapseExpandPD.expanded:hover {
+	background : 				url(images/Icons.png) no-repeat -40px bottom;
+}
+
+.UserActivities .holder, .UserActivities .separator{
+	border-top:					1px dotted #CCCCCC !Important;
+	border-bottom:				none !Important;
+}
+.UserActivities .data {
+	text-align:					right;
+}
+
+#contentHolder_CurrentLoans .topInfo {
+	float:						left;
+	width:						100%;
+}
+#contentHolder_CurrentLoans .topInfo div {
+	float:						left;
+	width:						100%;
+}
+
+.largest #divInterests div.addChar {	
+	height:						20px; 
+}
+#divInterests div.addChar {
+	padding-top:				5px;
+}
+#divInterests div.addChar > * {
+  font-size-adjust: 			-1;
+    background-color: #F0F0F0;
+    border: 1px solid #CCCCCC;
+    color: #999999;
+    cursor: default;
+    float: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-right: 2px;
+    padding: 3px 5px;
+}
+#divInterests div.addChar a {
+  color: 						#333333;
+  text-decoration:				none;
+  cursor:						pointer;
+  background-color:				#FFFFFF;
+}
+#divInterests div.addChar a:hover > span {
+  color: 						#F47921;
+}
+
+/* Full record display */
+#divSearchRecord .moreInfo {
+	margin-left:				4px !Important;
+}
+#divSearchRecord .heading {
+	display:					none;
+}
+.SearchRecord .recordDisplay {
+	margin:						0px !Important;
+}
+.SearchRecord .image {
+	float:						left;
+	margin:						0 10px 0 0 !Important;
+}
+ZZE#divSearchRecord .displayTable caption {
+	font-weight:				bold;
+	margin-left:				2px;
+}
+#divSearchRecord .displayTable {
+    width: 100%;
+}
+#divSearchRecord .displayTable tbody {
+	margin-left:				0px;
+}
+#divSearchRecord .displayTable tr td:first-child, #divItemDetails tbody tr td:first-child, #divLists .listItem td:first-child > a {
+	background : 				url(images/Dot.gif) no-repeat left center;
+}
+#divSearchRecord .displayTable td, #divItemDetails tbody td, #divItemDetails thead th, #divLists .listItem td:first-child > a {
+	padding-left:				10px;
+}
+
+/*  START: Shelfmarks */
+#shelfMarks .displayTable tr + tr td {
+    border-top: 1px solid #CCCCCC;
+    padding-top: 10px;
+}
+#shelfMarks .displayTable tr td:first-child > .title {
+    font-weight: bold;
+}
+#shelfMarks .displayTable tr td {
+    background: none !important;
+    padding-bottom: 10px;
+} 
+#shelfMarks .displayTable tr td .group {
+    margin-top: 10px;
+}
+#shelfMarks .displayTable tr td .group .title {
+    font-style: italic;
+    margin: 0;
+}
+#shelfMarks .displayTable tr td .group .data {
+    padding-left: 2em;
+}
+#shelfMarks .displayTable td:first-child {
+    word-break: break-all;
+}
+#shelfMarks .displayTable tr td.availStatus, 
+#shelfMarks .displayTable tr td.serialsItemDetails {
+    vertical-align: bottom;
+}
+#shelfMarks .displayTable td.availStatus {
+    text-align: right;
+}
+#shelfMarks .displayTable tr.notavailable td.availStatus {    color: #990000;}
+#shelfMarks .displayTable tr.available td.availStatus {    color: #00CC00;}
+
+@media screen and (max-width:850px){ /* custom */
+    #shelfMarks .displayTable td {
+        display: block;
+    }
+    #shelfMarks .displayTable tr td .group .data .issues + .issues {
+        margin-top: 5px;
+    }
+    #shelfMarks .displayTable tr td.availStatus, 
+    #shelfMarks .displayTable tr td.serialsItemDetails{
+        border-top: medium none;
+        float:left;
+        padding-top: 0;
+    }
+}
+/*  STOP: Shelfmarks */
+
+#divItemDetails thead th:first-child{
+	padding-left:				0px;
+}
+
+#divItemDetails thead th{
+	font-weight:				bold !Important;
+}
+
+.VlinkHeading {
+	margin:						5px 0px 5px 0px;
+	font-weight:				bold;
+}
+.Vlink .divVlink {
+	list-style:					none;
+}
+.Vlink .divVlink li{
+	margin-left:				5px !Important;
+}
+#divReviews div.reviewContents, #divReviews div.editReviewLink, #divReviews div.deleteReviewLink {
+	padding-left:				20px;
+}
+#divReviews {
+	margin-top:					0px !Important;
+}
+#divReviews div.addReviewLink {
+	margin-bottom:				10px;
+}
+#divReviews div.editReviewLink {
+	margin-top:					10px !Important;
+}
+#divReviews div.review  {
+	background: 				#FEFEFE;
+	border: 					1px solid #999999;
+	margin:						5px 0 10px 10px;
+	padding: 					5px;
+}
+#divReviews div.review .reviewUserAlias {
+	margin:						0 5px 0 0;
+	border-bottom: 1px solid #DDDDDD;
+}
+#divReviews div.review .alias {
+	font-style:					italic;
+}
+#divReviews div.review .alias img {
+	height:						80px;
+	border: 					1px solid  #f47921;
+}
+#divReviews .headerReviews {
+	color:						#f47921;
+	font-weight:				bold;
+}
+#dlgEditReview .dijitDialogPaneContent, #dlgDivEditReview .editReview {
+	margin-top:					0px !Important;
+	padding-top:				0px !Important;
+	width:						400px;
+    max-width:100%;
+}
+#reviewContents {
+	min-height:					100px;
+	width: 						100%;
+}
+
+.SearchReviews .review .alias img { display:none;}
+
+/* Record list*/
+.oneRow .image {
+	cursor:						pointer;
+}
+
+/* CMS SEARCH RESULTS */
+#divSearchResultsCMS div.fullRecord {
+	border:						1px dotted #DADADA;
+	background-color:			#F7F7F7;
+    margin: 5px 0 15px 15px;
+}
+#divSearchResultsCMS div.shortTitle {
+	font-weight:bold;
+}
+#divSearchResultsCMS div.fullRecord div.fullClose {
+	width:						100%;
+	cursor:						pointer;
+	text-align:					right;
+}
+#divSearchResultsCMS div.fullRecord div.fullClose img {
+	padding:2px;
+}
+#divSearchResultsCMS div.fullRecord div.fullContents {
+	padding:					0 10px;
+}
+#divSearchResultsCMS div.fullRecord div.fullBottom {
+	border-bottom:					2px solid #DEDEDE;
+}
+
+#divSearchResults .restrictInfo {
+	padding-left:				13px;
+}
+#divSearchResultsCMS .modeFull .fullRecord {
+	display:block !important;}
+#divSearchResultsCMS .fullClose > a {
+	background: transparent !important;
+	padding-left: 0 !important;}
+
+/* ReadingLists */
+#divLists .listItem td a {
+	text-decoration:				underline;
+}
+
+/* ALT DISPLAYS */
+
+.itemFull .listItem, .itemCover .listItem, .itemText .listItem {
+	cursor:							default !Important;
+}
+.itemFull .checkbox input, .itemCover .checkbox input, .itemText .checkbox input {
+	cursor:							pointer !Important;
+}
+.itemFull .title, .itemText .title {
+	margin-top:						0px !Important;
+	line-height:					16px;
+}
+#divSearchResults .itemFull .listItem .image, #divSearchResults .itemCover .listItem .image, #divSearchResults .itemText .listItem .image {
+	cursor:							pointer;
+}
+
+/* Default: Images & data */
+.itemFull .listItem a:hover, .itemCover .listItem a:hover, .itemText .listItem a:hover {
+	font-weight:					normal;
+}
+.itemFull .listItem, .itemText .listItem {
+	width:							100%;
+	float:							left;
+	cursor:							pointer;
+}
+#divSearchResults .itemFull, #divSearchResults .itemText {
+	position:						relative;
+}
+
+#divSearchResults ul.itemFull, #divSearchResults ul.itemText {
+	list-style:none;
+}
+#divSearchResults ul.itemFull > li, #divSearchResults ul.itemText > li {
+	
+}
+
+.dj_ie #divSearchResults .itemFull {
+	top: 0px;
+}
+#divSearchResults .listItem {
+	margin-bottom:					15px;
+}
+#divSearchResults .itemFull .listItem {
+	clear:							both;
+}
+
+.itemFull .checkbox, .itemText .checkbox {
+	float:							left;
+	width:							25px;
+}
+.RelatedWorks .imgAndData .briefMainTitle {
+	float:							none;
+}
+
+.finishItem {
+	height:							20px;
+}
+.itemFull .image {
+	float:							left;
+	width:							85px;
+}
+
+.listReadingListItemCover {
+	float:                 			left;
+	margin-top: 					20px;
+	width:							100%;
+}
+.listReadingListItemCover .ReadingListTitle {
+	font-size:						2em;}
+
+/* Images & minimal texts*/
+#divItemsCL .itemCover .listItem {
+	height:							240px;
+}
+#divItemsCR .itemCover .listItem {
+	height:							270px;
+}
+#divItemsLH .itemCover .listItem {
+	height:							180px;
+}
+
+.dj_ie .itemCover .listItem .moreData {
+	margin-top:20px;
+	margin-left:-40px;
+}
+#divItemsCR .itemCover .listItem .moreData,
+#divItemsCL .itemCover .listItem .moreData {
+	width:250px;
+}
+#divItemsLH .itemCover .listItem .moreData {
+	width:200px;
+}
+
+#divItemsLH .itemCover .listItem .element .label,
+#divItemsCR .itemCover .listItem .element .label,
+#divItemsCL .itemCover .listItem .element .label {
+	width:auto;
+}
+#divItemsLH .itemCover .listItem .element .delim,
+#divItemsCR .itemCover .listItem .element .delim,
+#divItemsCL .itemCover .listItem .element .delim {
+	clear:both;
+}
+#divItemsLH .itemCover .listItem .element .data,
+#divItemsCR .itemCover .listItem .element .data,
+#divItemsCL .itemCover .listItem .element .data {
+	margin-left:20px;
+	clear:both;
+}
+
+/*highlight listitem*/
+.itemFull > .listItem.highlight,
+.itemText > .listItem.highlight {
+    background: none repeat scroll 0 0 #FFFFEE;
+    border: 1px solid gold;
+    box-shadow: 3px 3px 10px -8px black;}
+.itemFull > .listItem.highlight > div,
+.itemText > .listItem.highlight > div {
+    padding: 5px;}
+.itemCover > .listItem.highlight .recordDisplayElement.vertical div.data.popup {
+    background: none repeat scroll 0 0 #FFFFEE;
+    border-color: gold;}
+
+/* Switch icons */
+div.dispIcons {
+	float:							right;
+}
+.SearchResults div.dispIcons, .RelatedWorks div.dispIcons {
+    position: absolute;
+    right: 0;
+    top: 0;
+	z-index:150;}
+.RelatedWorks div.dispIcons {
+	top:							-11px;
+	display:						none;
+}
+.RelatedWorks div.data > a > div {
+	margin-left:80px;
+}
+div.dispIcons div.dispFull img, div.dispIcons div.dispCover img, div.dispIcons div.dispText img  {
+	display:						none;
+}
+div.dispIcons div.dispFull a span, div.dispIcons div.dispCover a span, div.dispIcons div.dispText a span  {
+	width:							30px;
+	height:							30px;
+	display:block;
+}
+div.dispIcons div.dispFull, div.dispIcons div.dispCover, div.dispIcons div.dispText  {
+	float:							left;
+	margin-left:					2x;
+}
+div.dispIcons div.dispFull a span {
+	background : 					url(images/sprite.png) no-repeat 0 -350px;
+}
+div.dispIcons div.dispCover a span {
+	background : 					url(images/sprite.png) no-repeat -30px -350px;
+}
+div.dispIcons div.dispText a span {
+	background : 					url(images/sprite.png) no-repeat -60px -350px;
+}
+div.dispIcons div.dispFull a:hover > span {
+	background : 					url(images/sprite.png) no-repeat 0 -380px;
+}
+div.dispIcons div.dispCover a:hover > span {
+	background : 					url(images/sprite.png) no-repeat -30px -380px;
+}
+div.dispIcons div.dispText a:hover > span {
+	background : 					url(images/sprite.png) no-repeat -60px -380px;
+}
+
+.itemFull { 
+	float:							left;
+	width:							100%;
+}
+ul.itemFull { 						list-style:none; }
+ul.itemFull > li,
+ul.itemText > li {	
+	margin-left:0;
+	margin-right:15px; }
+
+.RelatedWorks .relAuthors {
+	float:							left;
+	width:							100%;
+}
+.RelatedWorks .relAuthors .heading {
+	font-weight:					bold;
+}
+
+/*ZERO HITS*/
+.zeroHits {
+	margin-top:						15px;
+}
+.zeroHits .noHitsHeading {
+  padding-top:						11px;
+  font-weight:						bold;
+}
+
+/* --- RTE WIDGET CLASSES ------------------------------------------------------------------------------- */
+/* TABLE IN WIDGETS */
+#xEditingArea table,
+.RichTextItem .appcontent table,
+.ItemDetails table,
+.PaymentsDue table, .LoanHistory table {
+	border:							1px !Important;
+	*width:							90%;
+	min-width:						90%;
+	line-height:					24px;
+	border-collapse: 				collapse !Important;
+	border:							none !Important;
+	border-color:					#CCCCCC !Important;
+	font-style:						normal !Important;
+	margin-bottom: 15px;
+}
+.accFeatures #xEditingArea table, .accFeatures .RichTextItem .appcontent table, .accFeatures .ItemDetails table, .accFeatures .PaymentsDue table, .accFeatures .LoanHistory table {
+	width:auto;
+	min-width:0;}
+
+
+.large .RichTextItem .appcontent table,
+.large .ItemDetails table,
+.large .PaymentsDue table,
+.large .LoanHistory table {	font:	14px/26px Arial, sans-serif; }
+.largest .RichTextItem .appcontent table,
+.largest .ItemDetails table,
+.largest .PaymentsDue table,
+.largest .LoanHistory table {	font:	16px/28px Arial, sans-serif; }
+
+.RichTextItem .appcontent td, .RichTextItem .appcontent th,
+.ItemDetails td, .ItemDetails th,
+.PaymentsDue td, .PaymentsDue th,
+.LoanHistory td, .LoanHistory th {
+	border:							none;
+	border-left: 					1px solid #CCC;
+	padding: 						0 0.5em !Important;
+}
+.RichTextItem .appcontent td:first-child, .RichTextItem .appcontent th:first-child,
+.ItemDetails td:first-child, .ItemDetails th:first-child,
+.PaymentsDue td:first-child, .PaymentsDue th:first-child,
+.LoanHistory td:first-child, .LoanHistory th:first-child {border-left:none !Important;}
+.RichTextItem .appcontent td:nth-child, .RichTextItem .appcontent th:nth-child,
+.ItemDetails td:nth-child, .ItemDetails th:nth-child,
+.PaymentsDue td:nth-child, .PaymentsDue th:nth-child,
+.LoanHistory td:nth-child, .LoanHistory th:nth-child {	border-left:none !Important;}
+.RichTextItem .appcontent tr,
+.ItemDetails tr,
+.PaymentsDue tr,
+.LoanHistory tr,
+.dj_ie .RichTextItem .appcontent tr,
+.dj_ie .ItemDetails tr td, .dj_ie .ItemDetails tr th,
+.dj_ie .PaymentsDue tr td, .dj_ie .PaymentsDue tr th,
+.dj_ie .LoanHistory tr td, .dj_ie .LoanHistory tr th {
+	border-bottom: 					1px solid #FBAC7E;
+	background: 					#FFFFFC !Important;
+}
+
+.RichTextItem .appcontent tr th,
+.ItemDetails tr th,
+.PaymentsDue tr th,
+.LoanHistory tr th {				
+	font-weight:					bold;
+	vertical-align:					top;
+}
+
+/* Force the table back to no visible lines */
+table.StyleNone,
+table.StyleNone tr,
+table.StyleNone th,
+table.StyleNone td {
+	border:	none !Important;
+	line-height:normal !Important;
+	font-weight:normal !Important;
+}
+
+
+
+/* HYPERLINKS */
+/* Default for inline link in texts */
+.RichTextItem .appcontent a {
+	color:							#f47921;
+	text-decoration:				none;
+}
+.RichTextItem .appcontent a:hover {
+	text-decoration:				underline;
+}
+a.linkTo:hover{
+	color:							#f47921;
+}
+
+/* UserSelectable to defir the look of the link */
+/* .StyleLinkButton is declared with the DJITButton in the 'Default looks' section */
+.RichTextItem .StyleLinkDot {
+	color:						#333333 !Important;
+	background: 				url(images/Dot.gif) no-repeat left center;
+	padding-left: 				13px;
+	text-decoration:			none;
+}
+.RichTextItem .StyleLinkArrow {
+	color:						#333333 !Important;
+	background : 				url(images/arrowRight.gif) no-repeat left center;
+	padding-left:				13px;
+	text-decoration:			none;
+}
+.RichTextItem .StyleButtonDot {
+	color:						#333333 !Important;
+	background: 				url(images/Dot.gif) no-repeat left center;
+	padding-left: 				13px;
+	text-decoration:			underline;
+}
+.RichTextItem .StyleButtonArrow {
+	color:						#333333 !Important;
+	background : 				url(images/arrowRight.gif) no-repeat left center;
+	padding-left:				13px;
+	text-decoration:			underline;
+}
+
+/* Reset the list-icons for the rti elements */
+.RichTextItem ul { 
+   list-style-type: disc; 
+   list-style-position: outside; 
+	margin-left: 15px;
+}
+.RichTextItem ol { 
+   list-style-type: decimal; 
+   list-style-position: outside; 
+	margin-left: 15px;
+}
+.RichTextItem ul ul, .RichTextItem ol ul { 
+   list-style-type: circle; 
+   list-style-position: outside; 
+   margin-left: 15px; 
+}
+.RichTextItem ol ol, .RichTextItem ul ol { 
+   list-style-type: lower-latin; 
+   list-style-position: outside; 
+   margin-left: 15px; 
+}
+
+.RichTextItem .StyleLinkDot:hover, 
+.RichTextItem .StyleLinkArrow:hover, 
+.RichTextItem .StyleButtonDot:hover, 
+.RichTextItem .StyleButtonArrow:hover {
+	color:						#f47921 !Important;
+	text-decoration:			none !Important;
+}
+
+.RichTextItem .StyleListDot ul {
+	color:						#333333 !Important;
+	list-style: 				disc url(images/Dot.gif) outside;
+	ZZmargin-left:				15px !Important;
+}
+.RichTextItem .StyleListArrow ul {
+	color:						#333333 !Important;
+	list-style: 				disc url(images/arrowRight.gif) outside;
+	ZZmargin-left:				15px !Important;
+}
+.RichTextItem .StyleListOrange ol {
+	color:						#F47921;
+	font-weight:				bold;
+}
+.RichTextItem .StyleListOrange ol li > span {
+	color:						#333333;
+	font-weight:				normal;
+}
+
+.RichTextItem .StyleListDot a, 
+.RichTextItem .StyleListArrow a {
+	color:						#333333;
+	text-decoration:			none !Important;
+}
+.RichTextItem .StyleListDot a:hover, 
+.RichTextItem .StyleListArrow a:hover {
+	color:						#f47921;
+}
+.RichTextItem .StyleListNone ul,
+.RichTextItem ul.StyleListNone,
+.RichTextItem .StyleListNone ol,
+.RichTextItem ol.StyleListNone {
+	list-style: 				none;
+	Zmargin-left: 15px;
+}
+
+.RichTextItem .additional {
+	clear:						both;
+}
+.RichTextItem .additional a {
+	color:						#333333 !Important;
+}
+
+/* RESULTS FS */
+.ResultsFS .listItem {
+	border-bottom:					1px solid #CCCCCC;
+	margin-bottom:					10px;
+	padding-bottom:					5px;
+}
+.ResultsFS .listItem * {
+	text-decoration:				none !Important;
+	font-weight:					normal !Important;
+	border:							none !Important;
+	color:							#333333 !Important;
+	font-size:						100% !Important;
+	padding:						0 !Important;
+	margin:							0 !Important;
+	width:							auto !Important;
+	height:							auto !Important;
+	font-style:						normal !Important;
+	line-height:					inherit !Important;
+	text-align:						left !Important;
+	vertical-align:					top !Important;
+}
+.ResultsFS .listItem .briefTitle, .ResultsFS .listItem .briefTitle * {
+	font-weight:					bold !Important;
+}
+#wrapper div.briefExtract > table {
+     width: 100% !important; }
+.ResultsFS .listItem img {
+	float:							right; 
+	display:						block;
+}
+.ResultsFS .listItem br {
+	display:						none;
+}
+
+/* I want to-list */
+.mainOptions {
+	padding-bottom:					20px;
+	padding-top:					10px;
+}
+#shelfMarks table caption,
+.mainOptions .iWantTo {
+	color:							#F47921;
+	font-size:						20px;
+	font-weight:					bold;
+}
+.mainOptions .recordOptions {
+	padding-left:					10px;
+}
+.mainOptions .recordOptions div {
+	float:							left;
+}
+.mainOptions .optionSep	{
+	background-color:				#555555;
+	height:							15px;
+	margin-left:					10px;
+	margin-right:					10px;
+	margin-top:						2px;
+	width:							2px;
+}
+.mainOptions .option {
+	font-size:						larger;
+	font-weight:					bold;
+}
+.mainOptions .option * {
+	text-decoration:				none;
+	color:							#F47921;
+}
+.mainOptions .option a:hover *  {
+	color:							#333333;
+	text-decoration:				none;
+	cursor:							pointer;
+}
+
+/***
+ *	EDWIN HEIJMEN
+ */
+form table, form tr, form td	{
+	border: 0 !important;
+}
+
+#recordDisplay > div:first-child {
+	width:125px;
+}
+#recordDisplay .recordTable tbody tr {
+	vertical-align:top;
+}
+#recordDisplay .recordTable tbody tr:first-child td {
+	padding-top:10px;
+}
+#recordDisplay .recordTable tbody:first-child tr:first-child td {
+	padding-top:0px;
+}
+#recordDisplay .recordTable tbody td:first-child {
+	font-weight:						bold;
+	white-space: 						nowrap;
+	padding-right:						10px;
+}
+
+/* ------------------------ ADDED BY EDWIN H FOR INTEGRATION --------------------------- */
+
+/* general form elements styles*/
+.appcontent form .dijitTextArea, .appcontent form .dijitTextBox	{
+	width: 90% !important;
+}
+
+.appcontent form .dijitTextArea {
+	margin-left: 3px;
+	height: 60px !important;
+}
+.dj_ie .appcontent form .dijitTextArea {
+	margin-left: 1px;
+}
+
+.appcontent form input[maxlength="6"]	{
+	width: 25% !important;
+}
+
+.appcontent form input[maxlength="10"]	{
+	width: 45% !important;
+}
+
+#footer .footer {
+	display: block;
+	padding: 0 0 5px 0;
+}
+
+body.popup	{
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+body.popup .wrapper	{
+	width: 100%;
+	height: 100%;
+	margin: 5px;
+	border: 2px solid #444444;
+	background-color: white;
+}
+
+body.popup .wrapper>div	{
+	margin: 5px;
+}
+
+/* Style to set width of 'NoImage' automatically to 100% */
+img[src*="NoImage"]	{
+	width: 100%;
+}
+
+/* to use labels inside forms without content or that should not be displayed but need to be rpesent for screenreaders/WAVE */
+label.hideLabel	{
+	display: none;
+}
+
+.SoundPlayer	{
+	height: 32px;
+}
+
+.SoundPlayer a {
+	float: left;
+	width: 32px;
+	height: 32px;
+	display: block;
+}
+.SoundPlayer a.play span, .SoundPlayer a.pause span, .SoundPlayer a.stop span {
+	display: none;
+}
+.SoundPlayer a.play {
+	background: url(images/SoundPlayer/play.png) no-repeat top left;
+}
+.SoundPlayer a.pause {
+	background: url(images/SoundPlayer/pause.png) no-repeat top left;
+}
+.SoundPlayer a.stop {
+	background: url(images/SoundPlayer/stop.png) no-repeat top left;
+}
+
+/* ------------------------ ADDED BY WILLEM FOR INTEGRATION --------------------------- */
+
+/* User activities - navigation menu */
+.Navigation	{
+	width: 100%;
+}
+.Navigation table	{
+	width: 100%;
+	border-spacing: 0;
+	border-style: none;
+	border-collapse: collapse;
+}
+.Navigation td	{
+	border-width: 0;
+	padding: 1px 3px;
+}
+.Navigation .label	{
+	width: 70%;
+}
+.Navigation .data	{
+	width: 20%;
+	text-align: right;
+}
+
+/* User activities - edit borrower data */
+.EditBorrowerData	{
+	width: 100%;}
+fieldset.group {
+    background: none repeat scroll 0 0 #F9F9F9;
+    border: 1px solid #999999;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 3px 3px 15px -12px black, 0 -2px 17px -15px black inset;
+    margin-top: 30px;
+    margin-right: 20px;
+    padding: 15px 10px 6px !important;
+    position: relative;}
+fieldset.group legend {
+    color: #F47921; 
+    top: -1.25em;
+    background: none repeat scroll 0 0 #FFFFFF;
+    box-shadow: 0 0 3px 3px white;
+    font-weight: bold;
+    padding: 0 3px;
+    position: absolute; 
+	line-height:2em;}
+fieldset.group .label {
+    font-weight: bold;}
+fieldset.group .data {
+    font-style: italic;
+    margin-bottom: 10px;}
+fieldset.group .text .data,
+fieldset.group .radio .data,
+fieldset.group .select .data {
+    margin-left: 10px;}
+
+fieldset.group div.boolean {
+    position: relative;}
+fieldset.group div.boolean:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 1em;
+    visibility: hidden;}
+fieldset.group .boolean .label {
+    left: 20px;
+    position: relative;}
+fieldset.group .boolean .data {
+    position: absolute;
+    top: 0;}
+
+
+.EditBorrowerData .dateDay {
+	width: 30px;
+	text-align: center;
+}
+.EditBorrowerData .dateMonth {
+	width: 30px;
+	text-align: center;
+}
+.EditBorrowerData .dateYear {
+	width: 50px;
+	text-align: center;
+}
+.EditBorrowerData .select {
+	width: 90%;
+}
+.EditBorrowerData .text {
+	width: 90%;
+}
+.EditBorrowerData .button {
+	padding: 10px;
+}
+.EditBorrowerData .helpInfo {
+	width: 95%;
+	border: 1px solid black;
+	padding: 5px;
+}
+.EditBorrowerData .helpClose {
+	float: right;
+	padding: 5px;
+}
+
+.EditBorrowerData .stepActive {
+	color:						#F47921;
+	font-weight:				bold;
+	font-size-adjust:			+0.8;
+	margin-right:				10px;
+}
+.EditBorrowerData .stepNext {
+	color:						#F47921;
+	font-weight:				normal;
+	font-size-adjust:			+0.7;
+	margin-right:				10px;
+}
+.EditBorrowerData .stepDone {
+	color:						#000000;
+	font-weight:				normal;
+	font-size-adjust:			+0.7;
+	margin-right:				10px;
+}
+.EditBorrowerData .registerSteps {
+	margin:						10px 0px 20px 5px;
+}
+.EditBorrowerData .regType {
+	margin:						10px 0px 0px 25px;
+}
+.EditBorrowerData .regInfo {
+	margin:						20px 0px 15px 5px;
+}
+.EditBorrowerData .paymentInfo {
+	margin:						20px 0px 15px 5px;
+}
+.EditBorrowerData .confirmation {
+	margin:						20px 0px 15px 5px;
+}
+.EditBorrowerData .registerDone {
+	margin:						20px 0px 15px 5px;
+}
+
+#showSteps .registerSteps > a > span {
+    text-decoration: underline;}
+.EditBorrowerData .confirmation .group {
+    font-weight: bold;
+    padding-top: 10px;}
+.EditBorrowerData .confirmation tr.label td {
+    padding-left: 10px;}
+.EditBorrowerData .confirmation tr.label td + td:before {
+    content: ": ";}
+
+/* User activities - current loans */
+.renewOverview
+{
+	margin:						15px;
+	width: 						600px;
+	max-height:					450px;
+	overflow:					auto;
+}
+.renewDetails
+{
+	margin:						10px 0px 10px 10px;
+}
+.renewTitle
+{
+	width:						350px;
+}
+.renewInfo
+{
+	width:						200px;
+	float:						right;
+}
+
+/* User activities - payments due */
+.PaymentsDue .title {
+	font-weight: bold;
+	margin-left: 5px;
+}
+.accFeatures .payments span.title,
+.accFeatures .items span.title {
+	float:left !important;}
+.accFeatures .payments span.sort,
+.accFeatures .items span.sort {
+	float:none !important;}
+
+/* User activities - interests */
+.Interests	{
+	width: 100%:
+}
+.Interests .generalInfo,
+.Interests .newMaterial {
+	margin-bottom: 10px;
+}
+.Interests .title  {
+	font-weight: bold;
+}
+.Interests .add {
+	margin-top: 15px;
+	clear: both;
+}
+.Interests .orSelectChar {
+	margin-top: 5px;
+}
+.Interests .notify {
+    clear: both;
+	margin-top: 20px;
+}
+.Interests .listTable {
+	width: 98%;
+	margin-left: 5px;
+	padding: 5px;
+}
+.Interests .listColHeader {
+	font-style: italic;
+	margin-bottom: 3px;
+}
+#dlgAdd {
+	height: 400px;
+	width:600px;
+}
+#interestsTree	{
+	height: 250px;
+	overflow: auto;
+}
+
+#dlgDiv .treeInfo {
+	margin-bottom: 10px;
+}
+
+/* User activities - search filter */
+.SearchFilter .option {
+	width:						250px;
+	display:					block;
+	float:						left;
+}
+.SearchFilter .title, .SearchFilter .button {
+	font-weight:				bold;
+	clear:						both;
+	padding:					20px 0px 10px;
+}
+
+/* User activities - reading lists */
+.ReadingLists	{
+	width: 100%:
+}
+.ReadingLists .info {
+	margin: 5px 10px 5px 10px;
+}
+.ReadingLists .newList {
+	margin-left: 5px;
+	float: left;
+}
+.ReadingLists .headerList {
+	margin: 10px 0px 5px 0px;
+	font-weight: bold;
+}
+.ReadingLists .buttonList {
+	float: left;
+}
+.ReadingLists .listTable {
+	width: 98%;
+	margin-left: 5px;
+	padding: 5px;
+}
+.accFeatures .ReadingLists .listTable {
+	width:auto;}
+.ReadingLists .listColHeader {
+	font-style: italic;
+	margin-bottom: 3px;
+}
+.ReadingLists .label {
+	margin: 0px 0px 5px 20px;
+	width: 20%;
+	float: left;
+}
+.ReadingLists .createCopy {
+	margin: 5px 0px 5px 0px;
+}
+.ReadingLists .modifyDelete {
+	margin-left: 20px;
+}
+.dlgUpdateList {
+	max-width: 600px;
+}
+.updHeader {
+	margin: 10px 0px 5px 0px;
+	font-weight: bold;
+}
+.updListType {
+	margin: 0px 0px 5px 20px;
+	width: 90%;
+}
+.updListName {
+	margin: 0px 0px 5px 0px;
+	width: 100%;
+}
+
+/* User activities - personal data */
+.PersonalData	{
+	width: 100%:
+}
+.PersonalData .top	{
+	height: 17px;
+	display: block;
+}
+.PersonalData .title 	{
+	position: relative;
+	float: left;
+	font-weight: bold;
+}
+.PersonalData .name {
+	margin-top: 5px;
+	font-style: italic;
+}
+.PersonalData .modifyData {
+	margin-top: 5px;
+}
+.PersonalData .holder	{
+	padding: 3px;
+	border-top: 1px dashed black;
+	margin-top: 10px;
+}
+
+/* User activities - linked accounts */
+.LinkedAccounts	{
+	width: 100%;
+}
+.LinkedAccounts .top	{
+	height: 17px;
+	display: block;
+}
+.LinkedAccounts .title 	{
+	position: relative;
+	float: left;
+	font-weight: bold;
+}
+.LinkedAccounts .holder	{
+	padding: 3px;
+	border-top: 1px dashed black;
+	margin-top: 10px;
+}
+.LinkedAccounts .heading {
+	margin: 10px 0px 10px 0px;
+}
+.LinkedAccounts .name {
+	float: left;
+}
+.LinkedAccounts .remove {
+	float: right;
+}
+.LinkedAccounts .refused {
+	color: #F47921;
+	font-style: italic;
+	clear: both;
+}
+.LinkedAccounts .waiting {
+	color: #F47921;
+	font-style: italic;
+	clear: both;
+}
+.LinkedAccounts .acceptRefuse {
+	margin-right: 20px;
+}
+.LinkedAccounts .newRequest {
+	margin-top: 10px;
+}
+#dlgLinkRequest .linkRequestInfo {
+	margin: 5px 0px 5px 0px;
+}
+#dlgLinkRequest .linkRequestId {
+	margin: 5px 0px 5px 0px;
+}
+#dlgLinkRequest .linkRequestType {
+	margin: 5px 0px 5px 0px;
+}
+#LinkedAccountsToggleDiv	{
+	position: relative;
+	float: right;
+	margin-right: 3px;
+	margin-top: 3px;
+	height: 15px;
+	width: 15px;
+}
+#LinkedAccountsToggleDiv .inner	{
+	visibility: hidden;
+}
+
+/* User activities - link request */
+.LinkRequest	{
+	width: 100%;
+}
+.LinkRequest .top	{
+	height: 17px;
+	display: block;
+}
+.LinkRequest .heading {
+	margin: 10px 0px 10px 0px;
+	font-weight: bold;
+}
+.LinkRequest .linkEntry {
+	width: 90%;
+}
+.LinkRequest .name {
+	float: left;
+	font-style: italic;
+	width: 200px;
+}
+.LinkRequest .buttons {
+	float: left;
+}
+
+/* User activities - deposits */
+.Deposits	{
+	width: 100%:
+}
+.Deposits .summary, .Deposits .items	{
+	width: 100%;
+	margin-bottom: 3px;
+}
+.Deposits .title	{
+	font-weight: bold;
+}
+.Deposits table	{
+	width: 100%;
+	border-spacing: 0;
+	border-style: none;
+	border-collapse: collapse;
+}
+.Deposits td	{
+	border-width: 0;
+	padding: 1px 3px;
+}
+.Deposits .label {
+	width: 70%;
+}
+.Deposits .amount {
+	width: 30%;
+	text-align: right;
+}
+.Deposits th	{
+	border-bottom: 1px solid black;
+	padding: 2px;
+}
+.Deposits .totalAmount td	{
+	border-top: 1px solid black;
+	font-weight: bold;
+}
+.Deposits .sort {
+	padding: 0px;
+	font-weight: normal;
+	vertical-align: top;
+}
+.accFeatures .Deposits table	{
+	width: auto;}
+.accFeatures .Deposits td {
+    border-top: 1px solid #EEEEEE;
+	padding: 1px 5px;}
+/* User activities - payments history */
+.PaymentsHistory	{
+	width: 100%:
+}
+.PaymentsHistory .separator {
+	width: 100%;
+	border-bottom: 1px dashed black;
+	clear: both;
+	margin-bottom: 5px;
+}
+.PaymentsHistory .summary, .PaymentsHistory .payments	{
+	width: 100%;
+	margin-bottom: 3px;
+}
+.PaymentsHistory .title	{
+	font-weight: bold;
+}
+.PaymentsHistory table	{
+	width: 100%;
+	border-spacing: 0;
+	border-style: none;
+	border-collapse: collapse;
+}
+
+.PaymentsHistory td	{
+	border-width: 0;
+	padding: 1px 3px;
+}
+.PaymentsHistory .label {
+	width: 70%;
+}
+.PaymentsHistory .amount	{
+	width: 30%;
+	text-align: right;
+}
+.PaymentsHistory th	{
+	border-bottom: 1px solid black;
+	padding: 2px;
+}
+.PaymentsHistory .totalAmount td	{
+	border-top: 1px solid black;
+	font-weight: bold;
+}
+.PaymentsHistory .sort {
+	padding: 0px;
+	font-weight: normal;
+	vertical-align: top;
+}
+
+.accFeatures .PaymentsHistory table	{
+	width: auto;}
+.accFeatures .PaymentsHistory td {
+    border-top: 1px solid #EEEEEE;
+	padding: 1px 5px;}
+/* User activities - loan plan */
+.LoanPlan	{
+	width: 100%:
+}
+.LoanPlan .summary, .LoanPlan .items	{
+	width: 100%;
+	margin-bottom: 3px;
+}
+.LoanPlan .separator {
+	width: 100%;
+	border-bottom: 1px dashed black;
+	clear: both;
+	margin-bottom: 5px;
+}
+.LoanPlan .title	{
+	font-weight: bold;
+}
+.LoanPlan table	{
+	width: 100%;
+	border-spacing: 0;
+	border-style: none;
+	border-collapse: collapse;
+}
+.LoanPlan td	{
+	border-width: 0;
+	padding: 1px 3px;
+}
+.LoanPlan .label	{
+	width: 70%;
+}
+.LoanPlan .amount	{
+	width: 30%;
+	text-align: right;
+}
+.LoanPlan th	{
+	border-bottom: 1px solid black;
+	padding: 2px;
+}
+.LoanPlan .totalAmount td	{
+	border-top: 1px solid black;
+	font-weight: bold;
+}
+.LoanPlan .sort {
+	padding: 0px;
+	font-weight: normal;
+	vertical-align: top;
+}
+
+/* User activities - searchfilter */
+.SearchFilter .title
+{
+	font-weight			: bold;
+    margin-top: 10px;
+}
+.SearchFilter .option
+{
+	margin				: 2px;
+	width				: 250px;
+	float				: left;
+}
+.accFeatures  .optionGroup > span {
+	width:100%;}
+/* Search - start screen */
+.Start .searchFormSimple .searchKeySimple {
+	float: left;
+	width: 45%;
+}
+.Start .searchFormSimple .buttonSimple {
+	float: left;
+	margin-left: 10px;
+}
+.Start .searchFormSimple .switchSearchSimple, .switchSearchAdvanced, .switchSearchExpert {
+	margin-left: 10px;
+	float: left;
+}
+.Start .sourceType {
+	margin-left: 10px;
+	float: left;
+}
+.Start .oneSource {
+	margin-top: 5px;
+}
+
+/* Search - results */
+#divSearchResults {
+	position: relative;}
+
+#divItemsLH .heading,
+#divItemsCL .heading,
+#divItemsCR .heading,
+.Results .heading, 
+.ResultsCMS .heading, 
+.ResultsFS .heading, 
+.ReadingList .heading {
+	font-weight: bold;
+	margin: 5px 95px 5px 0px;
+}
+.Results .linkNoRestrict {
+	font-weight: normal;
+}
+#divItemsCL .navigationPage, #divItemsCR .navigationPage, #divItemsLH .navigationPage, .Results .navigationPage, .ResultsCMS .navigationPage, .ResultsFS .navigationPage, .ReadingList .navigationPage {
+	font-weight: bold;
+	font-size: 11pt;
+	margin-right: 3px;
+}
+#divItemsCL .navigationPageCurrent, #divItemsCR .navigationPageCurrent, #divItemsLH .navigationPageCurrent, .Results .navigationPageCurrent, .ResultsCMS .navigationPageCurrent , .ResultsFS .navigationPageCurrent , .ReadingList .navigationPageCurrent {
+	font-weight: bold;
+	font-size: 11pt;
+	margin-right: 3px;
+}
+.Results .selectAll,
+.ReadingList .selectAll
+{
+	margin-bottom: 10px;
+}
+
+/* Search - results options */
+.ResultsOptions .sort {
+	margin: 10px 0px 15px 10px;
+	width: 100%;
+}
+.ResultsOptions .sortLabel {
+	margin-bottom: 5px;
+}
+
+/* Search - default reading list */
+#defaultReadingList {
+	width: 90%;
+	margin-top: 20px;
+}
+#defaultReadingList .dijitComboBox {
+	width: 100%;
+	margin-top: 4px;
+}
+#defaultReadingList > select {
+	width: 100%;
+	margin-top: 4px;
+}
+
+/* Search - restrictions */
+.Restrictions .restrictionHeader {
+	font-style: italic;
+	margin: 0px 0px 5px 10px;
+}
+.Restrictions .restriction {
+	font-weight: normal;
+	margin-left: 25px;
+}
+
+/* Search - associations */
+.Associations .associationHeader {
+	font-style: italic;
+	margin: 0px 0px 5px 10px;
+}
+.Associations .association {
+	font-weight: normal;
+	margin-left: 25px;
+}
+
+/* Search - reserve */
+#dlgReserve {
+	overflow: auto;
+	width:750px;
+	height:auto !Important;
+	max-height: 90%;
+}
+#dlgReserveDiv .title {
+	font-weight: bold;
+	margin: 10px 20px 20px 20px;
+}
+#dlgReserveDiv table	{
+	width: 90%;
+	border-spacing: 0;
+	border-style: none;
+	border-collapse: collapse;
+	margin: 20px;
+}
+#dlgReserveDiv td	{
+	border-width: 0;
+	padding-top: 5px;
+}
+#dlgReserveDiv .label {
+	width: 40%;
+	padding: 3px;
+}
+#dlgReserveDiv .fieldIntro {
+	font-style: italic;
+	padding: 3px;
+}
+#dlgReserveDiv .dateDay {
+	width: 30px;
+	text-align: center;
+}
+#dlgReserveDiv .dateMonth {
+	width: 30px;
+	text-align: center;
+}
+#dlgReserveDiv .dateYear {
+	width: 50px;
+	text-align: center;
+}
+#dlgReserveDiv .select {
+	width: 90%;
+}
+#dlgReserveDiv .text {
+	width: 90%;
+}
+#dlgReserveDiv .button {
+	padding: 15px;
+	text-align: right;
+	width: 90%;
+}
+#dlgReserveDiv .msgOk {
+	margin: 20px;
+	font-weight: bold;
+	text-align: center;
+	width: 90%;
+}
+#dlgReserveDiv .volume {
+	width: 30%;
+	padding: 5px 3px 0px 0px;
+}
+
+#dlgReserveDiv .reserveLinkName {
+	font-size-adjust: +1.1;
+	font-weight: bold;
+	color: #F47921;
+	text-align: center;
+}
+
+/* Search - search box */
+.SearchBox .searchDiv .sOptions {
+	width: 100%;
+	background-color: white;
+	clear: both;
+}
+.SearchBox .searchDiv .searchIn {
+	margin: 5px 0px 5px 0px;
+	padding-top: 5px;
+}
+.SearchBox .searchDiv .searchCheckbox {
+	padding: 3px;
+}
+
+/* Search - selected for you */
+.SelectedForYou .tablePeriod {
+	width: 90%;
+	margin-bottom: 10px;
+}
+.SelectedForYou .links,
+.SelectedForYou .links div:first-child {
+	float: left;
+}
+.SelectedForYou .links span {
+	color: #F47921;
+}
+.SelectedForYou span.periodNotActive {
+	color: #000000;
+}
+.SelectedForYou .location {
+	padding-bottom: 10px;
+}
+.SelectedForYou .locationLabel {
+	margin-bottom: 3px;
+}
+.SelectedForYou .select {
+	width: 100%;
+}
+.SelectedForYou .options {
+	margin-bottom: 10px;
+}
+.SelectedForYou .header {
+	font-weight: bold;
+	color: #F47921;
+}
+
+
+/* RecordDisplayElement */
+.recordDisplayElement {
+	margin-bottom:				20px;
+	padding-bottom:5px;}
+.recordDisplayElement > .top,
+.recordDisplayElement > .bottom {
+	height:						0;
+}
+.recordDisplayElement .tools {
+	float:						left !Important;
+	width:						25px !Important;
+}
+.recordDisplayElement .image {
+	float:						left !Important;
+	width:						125px !Important;
+}
+.recordDisplayElement .data {
+	margin-left:				155px;
+}
+.recordDisplayElement .element .data {
+	margin-left:				0px;
+}
+.recordDisplayElement div.group {
+	clear:						right;
+	padding-top:				5px;
+}
+.recordDisplayElement div.group:first-child {
+	padding-top:				0px;
+}
+
+.recordDisplayElement > div .right {
+	float:						right !Important;
+}
+.accFeatures .recordDisplayElement > div .right {
+    float: left !important;}
+.recordDisplayElement > div .left {
+	float:						left !Important;
+}
+.recordDisplayElement > div > .bottom {
+	clear:						both !Important;
+}
+.recordDisplayElement > .bottom {
+	clear:						both;	
+}
+
+.Availability.summary.available > span,
+.Availability.summary.onorder > span,
+.Availability.summary.notavailable > span {
+	background: 				url("images/sprite.png") no-repeat scroll -2984px -350px transparent;
+	padding-left:				20px;
+	display:					block;
+	height:						16px;
+	line-height:				16px;}
+.Availability.summary.onorder > span {
+	background-position:		-2984px -382px;}
+.Availability.summary.notavailable > span {
+	background-position:		-2984px -366px;}
+.Availability.detail > .available * {
+	color:						green;}
+.Availability.detail > .onorder * {
+	color:						orange;}
+.Availability.detail > .notavailable * {
+	color:						red;}
+
+/*Rating stars*/
+.rating > a, .rating > a > img {
+    display: block;
+    height: 100%;
+    width: 100%;}
+.rating {
+    background: url("images/sprite.png") no-repeat scroll -240px -350px transparent;
+    height: 24px;
+    width: 120px;}
+.rating.rated1 {    background-position: -336px -374px;}
+.rating.rated3 {    background-position: -312px -374px;}
+.rating.rated5 {    background-position: -288px -374px;}
+.rating.rated7 {    background-position: -264px -374px;}
+.rating.rated9 {    background-position: -240px -374px;}
+.rating.rated2 {    background-position: -336px -398px;}
+.rating.rated4 {    background-position: -312px -398px;}
+.rating.rated6 {    background-position: -288px -398px;}
+.rating.rated8 {    background-position: -264px -398px;}
+.rating.rated10 {    background-position: -240px -398px;}
+#RatingVote > div {
+    margin-bottom: 5px;}
+
+/* Moods - emoticons */
+/*
+ul.emoticons {
+	list-style:none;}
+ul.emoticons li {
+    border: 1px solid #DDDDDD;
+    box-shadow: 2px 2px 4px -2px rgba(0, 0, 0, 0.15);
+    float: left;
+    margin: 5px;
+    padding: 5px 10px;
+    width: 26px;}
+ul.emoticons li:hover {
+    box-shadow: 2px 2px 4px -2px rgba(0, 0, 0, 0.15) inset;}
+ul.emoticons li span {
+	color: #333333;
+	display:block;
+	width:100%;}
+ul.emoticons li.uservoted {
+    background: none repeat scroll 0 0 #FFFFCC;
+    border: 1px solid #FFFF00;}
+li span.amount{
+    border-top: 1px solid #CCCCCC;
+    height: 1.2em;
+    margin-top: 5px;
+    text-align: center;}
+*/
+ul.emoticons {
+	list-style:none;
+    margin-top:5px;
+    overflow: auto;}
+.dijitDialog ul.emoticons {
+    margin-bottom: 10px;
+}
+ul.emoticons li {
+    border: 1px solid #DDDDDD;
+    box-shadow: 2px 2px 4px -2px rgba(0, 0, 0, 0.15);
+    float: left;
+    margin: 5px;
+    padding: 5px 10px;
+    min-width: 26px;}
+ul.emoticons li span {
+	color: #333333;
+	display:block;
+    float: none !important;
+	width:100%;}
+ul.emoticons li span.image {
+    min-height:26px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+ul.emoticons li.uservoted {
+    background: none repeat scroll 0 0 #FFC;
+    border: 1px solid #dd0;}
+ul.emoticons li span.amount{
+    border-top: 1px solid #CCCCCC;
+    height: 1.2em;
+    margin-top: 5px;
+    text-align: center;}
+ul.emoticons li span.checkbox{
+    border-top: 1px solid #CCCCCC;
+    height: 1.5em;
+    margin-top: 5px;
+    padding-top: 5px;
+    text-align: center;}
+
+ul.emoticons+.addMoodLink {
+    margin-left: 5px;
+}
+
+
+
+/*UpdateComment*/
+.divUpdateComment {
+    background-color: #FCFCF1;
+    border: 1px solid #CCCCCC;
+    box-shadow: 3px 3px 5px -3px rgba(0, 0, 0, 0.25);
+    margin: -15px 0 25px 25px;
+    padding: 10px;
+}
+.divUpdateComment .divComment div.comment {
+    margin-left: 25px;
+}
+.divUpdateComment > div + div {
+    margin-top: 5px;
+}
+
+
+
+/* ELEMENT, NOIMAGE */
+.recordDisplayElement.noimage > .image {
+	display:					none;
+}
+.recordDisplayElement.noimage > .data {
+	margin-left:				25px;
+}
+/* ELEMENT, SMALLIMAGE */
+.recordDisplayElement.smallimage > .image {
+	width:						95px !Important;
+}
+.recordDisplayElement.smallimage > .image img {
+	width:						85px !Important;
+}
+.recordDisplayElement.smallimage > .data {
+	margin-left:				125px; 
+}
+/* ELEMENT, NOTOOLS */
+.recordDisplayElement.notools > .tools {
+	display:					none;
+}
+.recordDisplayElement.notools > .data {
+	margin-left:				135px;
+}
+
+/* ELEMENT, NOIMAGE & NOTOOLS */
+.recordDisplayElement.noimage.notools > .data {
+	margin-left:				0px;
+}
+/* ELEMENT, SMALLIMAGE & NOTOOLS */
+.recordDisplayElement.smallimage.notools > .data {
+	margin-left:				100px;
+}
+.recordDisplayElement.vertical.notools > .data {
+	margin-left:				0px;
+}
+
+/* ELEMENT, VERTICAL */
+.itemCover .listItem {
+	cursor:default;
+	float:left;
+	height:190px;
+	width:145px !important;
+	z-index:100;
+}
+ul.itemCover > li {	
+	float:						left;
+	width:						130px;
+	height:						180px;
+	padding:					0 5px;
+	margin-left:15px;}
+
+.recordDisplayElement.vertical .image {
+	height:						120px;
+	float:						left !important;
+	text-align: center;
+}
+.recordDisplayElement.vertical img {
+	max-height:					115px;
+	max-width:					70px;
+}
+.recordDisplayElement.vertical .data {
+	margin-left:				0px;
+	clear:						left;
+	white-space:				nowrap;
+	overflow:					hidden;
+	text-overflow: 				ellipsis;
+}
+.recordDisplayElement.vertical .data * {
+	white-space:				nowrap;
+	overflow:					hidden !Important;
+	text-overflow: 				ellipsis;
+}
+.recordDisplayElement.vertical .popup {
+	margin-left:				-25px;
+}
+html.dj_ie .recordDisplayElement.vertical .popup {
+	margin-left:				-175px;
+}
+.recordDisplayElement.vertical.notools.popup > .data {
+	margin-left:40px;
+}
+.recordDisplayElement.vertical .popup,
+.recordDisplayElement.vertical .popup *,
+.recordDisplayElement.vertical .foldout * {
+	white-space:				normal;
+	overflow:					auto;
+}
+
+.recordDisplayElement.vertical span.vote {
+	float:						left;
+}
+.dj_ie .recordDisplayElement.vertical span.vote {
+	float:						none;
+}
+.dj_ie .recordDisplayElement.vertical span.vote:first-child {
+	float:						left;
+}
+
+/* ELEMENT, FOLDOUT & POPUP */
+.recordDisplayElement .popup {
+	background-color: 			#FFFFFF;
+	border:						1px solid orange;
+	display:					none;
+	
+	position:					absolute;
+	padding-left:				inherit;
+	width:						200px !Important;
+	
+	margin-top:					40px;
+	margin-left:				40px;
+	
+	padding:					5px !Important;
+	z-index:					500;
+}
+.recordDisplayElement > div > .group .popup {
+	margin-top:					0px;
+	margin-left:				40px;
+}
+
+.dj_ie .recordDisplayElement .popup {
+	margin-top:					20px;
+}
+.recordDisplayElement .foldout {
+	display:					none;
+}
+.recordDisplayElement:hover > .popup,
+.recordDisplayElement *:hover > .popup,
+.recordDisplayElement:hover .foldout {
+	display:					block;
+}
+
+/* Styling */
+.recordDisplayElement .title {
+	font-weight:				bold;
+}
+.recordDisplayElement .title .briefTitle {
+	font-weight:				normal;
+}
+#recordDisplay .FullMaterialType,
+.recordDisplayElement .briefMaterial,
+.recordDisplayElement .FullMaterialType {
+	font-weight:				bold;
+	color:						#F47921;
+}
+.recordDisplayElement .group .label {
+	width:						150px !Important;
+	display:					inline-block;
+}
+.recordDisplayElement.vertical .group .label {
+    display: 					inline;
+    font-weight: 				bold;
+    width: 						auto !important;
+}
+.recordDisplayElement .vote a  {
+	cursor:						pointer;
+}
+.recordDisplayElement #rating .noRating,
+.recordDisplayElement #rating .rating0, 
+.recordDisplayElement #rating .rating05, 
+.recordDisplayElement #rating .rating1 {
+	float:						left !Important;
+	height:						18px;
+	padding-right:				5px;
+	width:						18px !Important;
+}
+
+
+.recordDisplayElement #vote a {
+	margin-left:				10px;
+}
+
+.recordDisplayElement #rating .noRating span,
+.recordDisplayElement #rating .rating0 span,
+.recordDisplayElement #rating .rating05 span,
+.recordDisplayElement #rating .rating1 span {
+	display:					none;
+}
+
+.recordDisplayElement #rating .noRating { background:	url(images/Star_inactive.png) no-repeat left top; }
+.recordDisplayElement #rating .rating0  { background:	url(images/Star_light.png) no-repeat left top; }
+.recordDisplayElement #rating .rating05 { background:	url(images/Star_half.png) no-repeat left top; }
+.recordDisplayElement #rating .rating1  { background:	url(images/Star_dark.png) no-repeat left top; }
+.recordDisplayElement #rating .numVotes { white-space:	nowrap; 	float:left;}
+.recordDisplayElement #rating #vote     { clear:		both; 		float:left;	margin-right:10px;}
+.recordDisplayElement #rating #ratingVote{clear:		both; 		float:left;}
+.recordDisplayElement .vote a.link2.vote{ float:left;}
+
+
+.recordDisplayElement #rating .dijitComboBox {
+	width:						50px;
+}
+
+/* Sorteer op, links uitlijnen */
+.CurrentReservations .items > span {
+	float:						none !Important; 
+}
+.CurrentLoans .items > span.title,
+.LoanHistory .items > span.title,	
+.CurrentReservations .items > span.title {	
+	float:						left !Important; 
+	font-weight:				bold;
+	line-height:20px;
+}
+.CurrentLoans .items span.sort > div,
+.LoanHistory .items span.sort > div,	
+.CurrentReservations .items span.sort > div {	
+	height:						20px;
+    max-width: 100%;
+    width: 27em;
+}
+.CurrentLoans .items span.sort > div input,
+.LoanHistory .items span.sort > div input,
+.CurrentReservations .items span.sort > div input {
+    text-overflow: ellipsis;
+}
+.recordDisplayElement.vertical .group .briefRelTypeText {
+	float:						left;
+}
+
+/* Output to printer or e-mail */
+#dlgOutput
+{
+	width:						500px;
+}
+#dlgOutput .outputLower label{
+    display: inline-block;
+    margin-right: 5px;
+	vertical-align:				top;
+    width: 60px;    
+}
+#dlgOutput .outputLower input, 
+#dlgOutput .outputLower textarea {
+    max-width: 100%;
+}
+html.dj_ie7 #dlgOutput .outputLower input, 
+html.dj_ie7  #dlgOutput .outputLower textarea {
+    max-width: none;
+}
+
+#dlgOutput .outputRange {
+    overflow: auto;
+}
+#dlgOutput .outputRange > div {
+    float: left;
+}
+#dlgOutput .outputRange > div + div label {
+    width: auto;
+}
+
+.outputTemplate, .outputLower > div 
+{
+	margin:						15px;
+}
+.outputTemplate .templateOption {
+	margin:						10px 0px 10px 0px;
+}
+
+.outputTemplate label
+{
+	margin-left:				5px;
+}
+
+#pleaseWait,
+#emailRetrieving,
+#printRetrieving,
+div[class*='message_'].formmessage > span {
+	border:						1px solid #F47921;
+	background:					url("images/warning.png") no-repeat scroll 5px 5px transparent;
+	line-height:				20px;
+	margin:						5px;
+	padding:					5px 3px 5px 30px;
+	
+	clear:						both;
+	color:						#F47921;
+	font-style:					italic;
+	display:					block;
+}
+#pleaseWait,
+#emailRetrieving,
+#printRetrieving {
+	background:					url("images/loading.gif") no-repeat scroll 5px 5px transparent;
+}
+
+
+/*widget title and -/+ icon not overlapping */
+.applicationcontainer .applicationcontainerregular .dijitTitlePaneTitle > div:first-child {
+	padding-right:		20px;
+}
+
+/*widgetclear*/
+.applicationcontainer .applicationcontainerregular.widgetclear .dijitTitlePaneTitle 					{	background: none;}
+.applicationcontainer .applicationcontainerregular.widgetclear .dijitTitlePaneTitle > div:first-child 	{	background: none;}
+.applicationcontainer .applicationcontainerregular.widgetclear .dijitTitlePaneContentOuter 				{	background: none;}
+.applicationcontainer .applicationcontainerregular.widgetclear .dijitTitlePaneContentOuter > div		{	background: none;}
+.applicationcontainer .applicationcontainerregular.widgetclear .cornerDiv 								{	background: none;}
+.applicationcontainer .applicationcontainerregular.widgetclear .cornerDiv > div							{	background: none;}
+/*NoTitle, use with apearance 'widgetclear' */
+.applicationcontainernotitle.moderator:hover .dijitTitlePaneTitle 										{	display:block !Important; border:none; margin-bottom:0;}
+.applicationcontainernotitle.moderator:hover .dijitTitlePaneTitle .appFunctions > div 					{	display:inline;}
+.applicationcontainernotitle.moderator:hover .dijitTitlePaneTitle .appFunctions .dijitOpen 				{ 	visibility:hidden; }
+.applicationcontainernotitle .dijitTitlePaneContentOuter, .applicationcontainernotitle .appcontent 		{ 	padding-top:0; margin-top:0;}
+
+/*SearchTree, has textAndImage and textOnly mode*/
+div.searchTree {
+    clear:both;}
+div.searchTree > ul {
+	list-style:none;}
+div.searchTree > ul.textAndImage >li {
+	margin-left:0;}
+div.searchTree > ul.textAndImage > li {
+    background: none repeat scroll 0 0 #333333;
+	box-shadow: 4px 3px 10px -8px black;
+    float: left;
+    height: 135px;
+    margin: 12px 10px;
+    overflow: hidden;
+    position: relative;
+    width: 160px;}
+div.searchTree > ul.textAndImage > li > a{}
+div.searchTree > ul.textAndImage > li > a > div.treeElementImage{
+    height: 100%;
+    margin-left: -150px;
+    text-align: center;
+    width: 460px;}
+div.searchTree > ul.textAndImage > li > a > div.treeElementImage > img{
+    height: 105% !important;}
+div.searchTree > ul.textAndImage > li:hover > a > div.treeElementImage > img{
+    height: 125% !important;}
+div.searchTree > ul.textAndImage > li > a > div.treeElementText,
+div.searchTree > ul.textAndImage > li > a > span {
+	background: url("images/semitrans_50ffffff.png") repeat scroll 0 0 transparent;
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.7);
+    bottom: 0;
+    display: block;
+    font-weight: bold;
+    left: 0;
+    padding: 3px 5px;
+    position: absolute;
+    width: 100%;}
+
+div.SearchTree > div.breadCrumb {
+	margin:0 10px;}
+div.SearchTree > div.breadCrumb > div {
+	float:						left;}
+div.SearchTree > div.breadCrumb > .breadCrumbSeparator > span {
+	margin:						0 5px;}
+
+
+/* RSS feeds extra info box */
+.GenericRSSReader .feedItemInner {margin-right:0px;}
+.GenericRSSReader .feedItemInner > span > span { display: none; }
+.GenericRSSReader .feedItemInner > a {
+	margin-right:	 			-20px;
+	padding-right:				16px;
+}
+.GenericRSSReader .feedItemInner > span {
+    float: 						right;
+    height: 					16px;
+    width: 						16px;
+	cursor: 					pointer;
+	background-image:			url("images/Icons.png");
+}
+.dj_ie .GenericRSSReader .feedItemInner > span {
+	margin-top:					-20px;
+}
+.GenericRSSReader .feedItemInner .opened {	    background-position: -40px top;}
+.GenericRSSReader .feedItemInner .closed {		background-position: -20px top;}
+.GenericRSSReader .feedItemPreview {
+    color: 						#999999;
+    font-style: 				italic;
+    padding-left: 				20px;
+	
+}
+
+/* Browse authority note */
+#divSearchBrowse .noteImg {
+	border:						0;
+	cursor:						pointer;
+	vertical-align:				middle;
+}
+#divSearchBrowse .noteDisplay {
+	background-color: #f7f7f7;
+	border: 1px solid #ffffff;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+	left: 20px;
+	margin: 5px;
+	padding: 3px;
+	position: absolute;
+	top: -3px;
+	width: 300px;
+
+}
+#divSearchBrowse .noteClose {
+	cursor:						pointer;
+	float:						right;
+	margin:						2px;
+}
+
+
+/* Resultlist availability */
+.listItem .Availability.detail div span {
+	display:					inline-block;
+	width:						100% !Important;
+	vertical-align: 			text-top;}
+.listItem .Availability.detail div > span span {	
+	width:						45% !Important;}
+.listItem .Availability.detail div > span span:first-child {
+	width:						55% !Important;}
+
+
+/* custom navigation & searchbox generic */
+.customnavigation, .searchbox {
+	margin-top:0px !Important;
+}
+img.menubar, img.searchboxHolder {
+	display: none;
+}
+/* custom navigation - HeaderBasic */
+.HeaderBasicInner {
+	/*height: 40px;*/
+}
+.HeaderBasicInner div.row {
+	float: right;
+	clear:both;
+	min-height:25px;
+}
+
+.HeaderBasicInner div.row3 .buttonHolder a {
+	height:25px;
+	vertical-align:bottom;
+	font-weight: bold;
+	color: #FF6600;
+}
+.customnavigation .HeaderBasicInner .row div {
+	float: left;
+	margin-right:0px !Important;
+}
+.customnavigation .HeaderBasicInner .row .notfirst {
+	background: url("images/Devider.gif") no-repeat scroll left center transparent;
+}
+.customnavigation .HeaderBasicInner .row1 .item6 {
+	background: none !important;
+}
+.HeaderBasicInner div.row1 .avatarSpacer {
+	background: url("images/HeaderAvatarBackgroundLeft.gif") no-repeat scroll left top transparent;
+	height: 80px;
+	margin-top: -20px;
+	padding-left: 18px;
+}
+.avatarSpacer .avatarInner {
+	background: url("images/HeaderAvatarBackgroundRight.gif") no-repeat scroll right top transparent;
+	height: 80px;
+	padding-right: 17px;
+}
+.avatarSpacer .avatarImage {
+	margin-top: 4px;
+}
+.avatarSpacer img {
+	height: 75px;
+}
+/* SearchBox in RTI */
+.searchbox {
+	width: 100%;
+}
+img.searchbox {
+	width:auto;}
+.searchbox .SearchBoxForm .SearchInner>div {
+	position: relative;
+	float: left;
+}
+
+.searchbox .searchBoxForm .searchFilterSelect,
+.searchbox .searchBoxForm .searchterm {
+    padding: 0 5px 5px 0;}
+.searchbox .searchBoxForm .searchterm input {
+	width:15em !important;}
+.searchbox .searchBoxForm .searchsubmit {
+    padding: 0 5px 5px 0;}
+
+
+/* SearchBox in header */
+#header .SearchBox {
+	position: absolute;
+	top: 105px;
+	right: 13px;
+	text-align: right;}
+#header .searchbox .searchBoxForm .searchterm input {
+	width						:140px !important;}
+/* VI */
+body.vi h1 { border-top			: 1px solid red;}
+body.vi h2 { border-top			: 1px solid blue;}
+body.vi a:focus { border		: 1px dotted black;}
+
+
+/* Moderator */
+.moderator #column1 {
+	background-color			: #E0E0E0;}
+.moderator #column2 {
+	background-color			: #D0D0D0;}
+.moderator #column3 {
+	background-color			: #C0C0C0;}
+.moderator #column4 {
+	background-color			: #B0B0B0;}
+.moderator #column5 {
+	background-color			: #888;}
+.moderator #column6 {
+	background-color			: #eee;}
+.moderator #column998,
+.moderator #column999 {
+	background-color			: #A0A0A0;}
+#column998, #column999 {
+	width						: 100%;}
+.moderator #columnwrapper div.column {
+	min-height					: 50px !important;
+	outline						: 1px dashed red !important;
+	padding-top					: 10px;
+	padding-bottom				: 25px;}
+#columnwrapper div.column {
+	min-height					: 0px;}
+
+/* MODERATOR, Red&Green */
+body #content {
+    display						: block;
+    float						: left;
+    width						: 100%;}
+body.moderator #columnwrapper .column {
+	background					: transparent !important;
+	outline						: none !important;
+	padding-bottom				: 0;
+    padding-top					: 0;}
+body.dojoDndMove #columnwrapper {
+	background					: #fcc !important;
+	padding						: 25px 0;}
+body.dojoDndMove #columnwrapper .column {
+	background					: #dec !important;
+	outline						: 1px dashed black !important;
+	min-height					: 100px !important;}
+body.dojoDndMove #columnwrapper .column.dojoDndContainerOver {
+	background					: #be9 !important;}
+body.dojoDndMove #columnwrapper .column > div {
+	background					: #dec !important;}
+body.dojoDndMove .applicationcontainernotitle.moderator:hover .dijitTitlePaneTitle {
+    display						: none !important;}
+body.dojoDndMove #columnwrapper .column .dojoDndItemBefore {
+	border-top					: 50px solid #be9 !important;}
+body.dojoDndMove #columnwrapper .column .dojoDndItemAfter {
+	border-bottom				: 50px solid #be9 !important;}
+
+
+/* PublishComment */
+.PublishCommentDialog .commentAnonymous {
+	padding						: 5px 0;}
+
+
+/* Maps */
+#map_canvas { 
+	height						: 100% }
+    
+#map_canvas .mapPopup * {
+	color						: #333333;
+	font-family					: arial,sans-serif;
+	font-size					: 1em;
+	font-size-adjust			: .5;}
+#map_canvas .mapPopup div {
+	margin-bottom				: 10px;}
+#map_canvas .mapPopup .telephone {
+	margin-bottom				: 0px;}
+#map_canvas .mapPopup .mail {
+	margin-bottom				: 20px;}
+#map_canvas .mapPopup .general .title {
+	color						: #000000;
+	font-weight					: bold;
+	font-size-adjust			: .8;
+	margin-bottom				: 0px;}
+#map_canvas .mapPopup .remaining {
+	font-weight					: bold;}
+#map_canvas .mapPopup .title {
+	color						: #34A1BE;
+	font-size-adjust			: 0.6;
+	font-weight					: bold;}
+#map_canvas .mapPopup .directions {
+	background					: url(images/arrowRight.gif) no-repeat left center;
+	padding-left				: 8px;
+	text-decoration				: none;}
+
+
+/* Navigation */
+ul.navigation,
+ul.navigation ul {
+	list-style					: none;}
+ul.navigation li {
+	margin						: 0;
+	display						: block;
+	float						: left;}
+ul.mainnavigation > li {
+	line-height					: 37px;}
+ul.mainnavigation > li > a > span {
+	padding						: 0 25px 0 20px;
+	display						: block;}
+
+ul.mainnavigation > li:hover,
+ul.mainnavigation > li:active {
+	background-color			: #d2d3ce;
+	box-shadow					: 1px 5px 7px -3px rgba(0, 0, 0, 0.15);}
+ul.mainnavigation > li > ul {
+	display						: none;
+
+	position					: absolute;
+	background-color			: #E6E7E2;
+	width						: 400px;
+	padding						: 10px 5px;
+	
+	border						: 1px solid #CDCDCD;
+	border-top					: none;
+	border-radius				: 0 0 5px 5px;
+	box-shadow					: 1px 5px 7px -3px rgba(0, 0, 0, 0.15);}
+ul.mainnavigation > li:hover > ul,
+ul.mainnavigation > li:active > ul {
+	display						: block;}
+ul.mainnavigation > li > ul > li {
+	width						: 50%;}
+ul.mainnavigation > li > ul > li > ul > li {
+	width						: 100%;}
+ul.mainnavigation > li > ul > li > ul > li > a {
+	padding-left				: 15px}
+ul.mainnavigation .empty {
+	display						: none;}
+ul.mainnavigation > li > ul li.separator > div {
+	height						: 1.5em;
+	margin-left					: 15%;
+	width						: 50%;
+	border						: none;
+	border-top					: 1px solid #ccc;
+	display						: block;}
+ul.mainnavigation a {
+	text-decoration				: none;
+	display						: block;}
+.nolink {
+	cursor						: default;}
+ul.mainnavigation a.link {
+	cursor						: pointer;}
+ul.mainnavigation a.link:hover,
+ul.mainnavigation a.link:active {
+	text-decoration				: underline;}
+ul.mainnavigation > li > ul > li > a {
+	font-weight					: bold;}
+/* Navigation, orange */
+ul.mainnavigation > li > a > span {
+	background					: url("images/arrowRight.gif") no-repeat scroll 8px center transparent;}
+ul.mainnavigation > li.hasmenu > a > span {
+	background					: url("images/arrowDown.gif") no-repeat scroll 8px center transparent;}
+ul.mainnavigation ul ul > li {
+	padding-left				: 0;}
+ul.mainnavigation ul ul > li > a.link > span {
+	background					: url("images/Dot.gif") no-repeat scroll left center transparent;
+	padding-left				: 10px;}
+
+/* Mobile */
+/*
+body .onlyMobile {
+	display						: none;}
+body.mobiledevice .onlyMobile {
+	display						: block;}
+
+body.mobiledevice #wrapperinner > #navigation {
+	display						: none;}
+	
+.mobiledevice #wrapper {
+    min-width					: 235px !important;
+    width						: auto !important;}
+
+body.mobiledevice .application ul.navigation {
+	width						: auto;}
+body.mobiledevice .application ul.navigation > li > a[onclick^=o] {
+	text-decoration				: underline !important;}
+body.mobiledevice .application ul.navigation > li,
+body.mobiledevice .application ul.navigation > li li.separator,
+body.mobiledevice .application ul.navigation > li li.separator > hr {
+	width						: 100%;}
+body.mobiledevice .application ul.navigation > li {
+	float						: left;
+	border						: 1px solid #ccc;
+	margin-bottom				: 20px;}
+body.mobiledevice .application ul.navigation > li > a {
+	font-weight					: bold;}
+body.mobiledevice .application ul.navigation > li > * {
+	clear						: both;
+	float						: left;}
+body.mobiledevice .application ul.navigation > li li {
+	margin-left					: 25px;
+	width						: auto !important;
+	clear						: both;
+	display						: block;
+	padding						: 10px 0;}
+body.mobiledevice .application ul.navigation > li ul {
+	width						: 100%;
+	display						: block;
+	position					: static;}
+body.mobiledevice .application ul.navigation > li li.seperator > hr {
+	visibility					: visible;}
+body.mobiledevice .application ul.navigation > li > ul a {
+	padding-top					: 10px !important;
+	padding-bottom				: 10px !important;}
+
+body.mobiledevice div#wrapperinner div#columnwrapper .column,
+body.mobiledevice div#wrapperinner div#columnwrapper .wrapperColumn {
+	width						: 100%;}
+
+body.mobiledevice #content {
+	border-top					: 1px solid #CCCCCC;
+	box-shadow					: 0 5px 10px -5px rgba(0, 0, 0, 0.25) inset;}
+body.mobiledevice div.shortnav .row {
+	float						: none;}
+body.mobiledevice div.shortnav .row > div{
+	clear						: both;}
+*/
+
+/* MY LIBRARY, Interests */
+.interests ul.overview {
+	list-style					: none;
+	max-width					: 500px;}
+.interests ul.overview > li {
+    clear						: both;
+    margin-left					: 0;
+    position					: relative;}
+	
+.interests ul.overview > li a:hover > span,
+.interests ul.overview > li a:focus > span{
+    text-decoration				: underline;}
+
+.interests ul.overview .remove {
+float							: left;}
+.interests ul.overview .remove > a {
+    background					: url("images/Icons.png") no-repeat scroll -60px top transparent;
+    display						: block;
+    height						: 20px;
+    visibility					: hidden;
+    width						: 20px;}
+body.accFeatures .interests ul.overview .remove > a {
+	visibility					: visible;
+	background					: none;
+	width						: auto;
+}
+.interests ul.overview:hover .remove > a {
+	visibility					: visible;}
+.interests ul.overview .remove > a > span{
+	display						: none;}
+body.accFeatures .interests ul.overview .remove > a > span{
+	display						: inline;;}
+.interests ul.overview .topic {
+    display						: block;
+    line-height					: 20px;
+    margin						: auto 75px auto 20px;
+	padding-left				: 5px;}
+
+html.dj_ie .interests ul.overview .topic {
+    display						: inline-block;
+    line-height					: 20px;
+    margin						: auto 75px auto 0;
+	padding-left				: 5px;}
+
+
+body.accFeatures .interests ul.overview .topic {
+    float						: left;
+    margin-left					: 0;
+    margin-right				: 20px;}
+.interests ul.overview .lastUpdate {
+    position					: absolute;
+    right						: 0;
+    top							: 0;}
+body.accFeatures .interests ul.overview .lastUpdate {
+    margin-left					: 5px;
+    position					: relative;
+    white-space					: nowrap;}
+
+html.dj_ie body.accFeatures .itemText .listItem {float:none;}
+
+/*SEARCH, Advanced*/
+body.accFeatures #divSearchScreen .divData,
+body.accFeatures #divSearchScreen .boolOR,
+body.accFeatures #divSearchScreen .divDataShort {
+  clear: both;}
+body.accFeatures #divSearchScreen div.button {
+  clear: both;
+  margin-top:10px;}
+
+/*Small search box (display as one element)*/
+.smallsearch div.searchbox,
+#header div.searchbox {
+    padding:5px;
+    display: inline-block;
+    height: 28px;
+    overflow: hidden;
+    position: relative;
+    width: 200px;
+}
+.smallsearch div.searchbox > form,
+#header div.searchbox > form {
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    box-shadow: 1px 1px 2px -1px rgba(0, 0, 0, 0.25) inset;
+    height: 100%;
+    position: relative;
+    width: 100%;
+
+}
+.smallsearch div.searchbox.searchfilter,
+#header div.searchbox.searchfilter { 
+    width: 400px;}
+
+.smallsearch.vertical div.searchbox.searchfilter,
+#header .vertical div.searchbox.searchfilter { 
+    width: 200px;
+    height: 57px;}
+@media screen and (max-width:450px){
+    .smallsearch div.searchbox.searchfilter,
+    #header div.searchbox.searchfilter { 
+        width: 200px;
+        height: 57px;}
+}
+
+.smallsearch div.searchbox .searchFilterSelect,
+#header div.searchbox .searchFilterSelect {
+    display: none;
+}
+.smallsearch div.searchbox.searchfilter .searchFilterSelect,
+#header div.searchbox.searchfilter .searchFilterSelect {
+    display: block;
+}
+.smallsearch div.searchbox.searchfilter .searchFilterSelect > div,
+#header div.searchbox.searchfilter .searchFilterSelect > div {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: none;
+    border-right: 1px solid #ccc;
+    height: 28px;
+    margin: 0;
+    position: absolute;
+    width: 199px;
+}
+.smallsearch div.searchbox.searchfilter .searchFilterSelect > div.dijitError,
+#header div.searchbox.searchfilter .searchFilterSelect > div.dijitError {
+    background: #F9F7BA;
+}
+
+.smallsearch.vertical div.searchbox.searchfilter .searchFilterSelect > div, 
+#header .vertical div.searchbox.searchfilter .searchFilterSelect > div {
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+}
+@media screen and (max-width:450px){
+    .smallsearch div.searchbox.searchfilter .searchFilterSelect > div, 
+    #header div.searchbox.searchfilter .searchFilterSelect > div {
+        border-right: none;
+        border-bottom: 1px solid #ccc;
+    }
+}
+
+html.dj_ie7 .smallsearch div.searchbox.searchfilter .searchFilterSelect > div,
+html.dj_ie7 #header div.searchbox.searchfilter .searchFilterSelect > div {
+    width: 198px;
+}
+html.dj_ie7 .smallsearch div.searchbox.searchfilter .searchFilterSelect .dijitComboBox > div > .dijitArrowButton,
+html.dj_ie7 #header div.searchbox.searchfilter .searchFilterSelect .dijitComboBox > div > .dijitArrowButton{
+    border-right: 1px solid #ccc;
+}
+.smallsearch div.searchbox.searchfilter .searchFilterSelect .dijitComboBox > div > .dijitArrowButton,
+#header div.searchbox.searchfilter .searchFilterSelect .dijitComboBox > div > .dijitArrowButton {
+    background: none repeat scroll 0 0 #FFFFFF;
+    box-shadow: 0 1px 2px -1px rgba(0, 0, 0, 0.25);
+}
+.smallsearch div.searchbox.searchfilter .searchFilterSelect .dijitComboBox > div > .dijitArrowButton:hover,
+.smallsearch div.searchbox.searchfilter .searchFilterSelect .dijitComboBox > div > .dijitArrowButton:focus,
+#header div.searchbox.searchfilter .searchFilterSelect .dijitComboBox > div > .dijitArrowButton:hover,
+#header div.searchbox.searchfilter .searchFilterSelect .dijitComboBox > div > .dijitArrowButton:focus {
+    background-position: 6px 7px;
+    box-shadow: 1px 1px 2px -1px rgba(0, 0, 0, 0.25) inset;
+    outline: medium none;
+}
+.smallsearch div.searchbox.searchfilter .searchFilterSelect .dijitComboBox > div > .dijitArrowButton:hover > .dijitArrowButtonInner,
+.smallsearch div.searchbox.searchfilter .searchFilterSelect .dijitComboBox > div > .dijitArrowButton:focus > .dijitArrowButtonInner,
+#header div.searchbox.searchfilter .searchFilterSelect .dijitComboBox > div > .dijitArrowButton:hover > .dijitArrowButtonInner,
+#header div.searchbox.searchfilter .searchFilterSelect .dijitComboBox > div > .dijitArrowButton:focus > .dijitArrowButtonInner{
+    margin-top: 1px;
+}
+
+#body #wrapper #header .searchterm > input,
+#body #wrapper .smallsearch .searchterm > input {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: medium none;
+    height: 28px;
+    right: 28px;
+    margin: 0;
+    padding: 0 5px;
+    position: absolute;
+    bottom: 0;
+    width: 162px !important;
+}
+.smallsearch div.searchbox.searchfilter .searchterm > input,
+#header div.searchbox.searchfilter .searchterm > input{
+    left: 200px !important;
+}
+.smallsearch.vertical div.searchbox.searchfilter .searchterm > input, 
+#header .vertical div.searchbox.searchfilter .searchterm > input {
+    left: auto !important;
+}
+@media screen and (max-width:450px){
+    .smallsearch div.searchbox.searchfilter .searchterm > input, 
+    #header div.searchbox.searchfilter .searchterm > input {
+        left: auto !important;
+    }
+}
+.smallsearch div.searchbox.searchfilter .searchFilterSelect .dijitComboBox > div > div, 
+.smallsearch div.searchbox.searchfilter .searchFilterSelect .dijitComboBox > div > div > input,
+.smallsearch div.searchbox.searchfilter .searchFilterSelect .dijitComboBox > div > div > .dijitArrowButtonInner,
+#header div.searchbox.searchfilter .searchFilterSelect .dijitComboBox > div > div, 
+#header div.searchbox.searchfilter .searchFilterSelect .dijitComboBox > div > div > input,
+#header div.searchbox.searchfilter .searchFilterSelect .dijitComboBox > div > div > .dijitArrowButtonInner {
+    height: 28px !important;
+}
+.smallsearch .searchsubmit > input,
+#header div.searchbox .searchsubmit > input {
+    background: url("images/search.png") no-repeat scroll 6px 6px #fff;
+    border: medium none;
+    box-shadow: 0 1px 2px -1px rgba(0, 0, 0, 0.25);
+    color:transparent;
+    cursor: pointer;
+    display: block;
+    height: 28px;
+    position: absolute;
+    right: 0;
+    text-indent: 28px;
+    bottom: 0;
+    width: 28px;
+}
+.smallsearch .searchsubmit > input:hover,
+.smallsearch .searchsubmit > input:focus,
+#header div.searchbox .searchsubmit > input:hover,
+#header div.searchbox .searchsubmit > input:focus {
+    background-position: 6px 7px;
+    box-shadow: 1px 1px 2px -1px rgba(0, 0, 0, 0.25) inset;
+    outline: medium none;
+}
+
+
+
+  /*Show focus for accFeatures*/
+body.accFeatures *:focus {
+    outline: 1px dotted !important;}
+	
+body.accFeatures .SearchScreen .switchSearchSimple,
+body.accFeatures .SearchScreen .switchSearchAdvanced,
+body.accFeatures .SearchScreen .switchSearchExpert,
+body.accFeatures .SearchScreen .switchSearchBrowse {
+  width:100%;
+  clear:both;
+  float:left !important;
+  margin:5px;} 
+
+body.accFeatures .items div.navigation {
+
+  display: inline;
+
+  float:none !important;
+} 
+
+body.accFeatures .items .heading {
+  font-weight: bold;
+  margin: 10px 0px 10px !important;
+}
+
+div.autoCompleteDiv div a:hover, 
+div.autoCompleteDiv div span.hilite {
+    cursor:pointer;
+}
+
+.CRMheader, .CRMfooter {
+    border-top: 1px solid #CCCCCC;
+    margin: 5px 0;
+    padding-top: 5px;
+}
+
+
+/*  Custom class (.locname) for location name cantered in header
+    Add class to DIV element wrapping the text or navigation(list) element.*/
+.locname {
+    margin-top: 24px;
+    text-align: center;}
+.locname ul > li {
+    float: none;}
+.locname ul > li > a {
+    font-size: 1.5em;
+    text-shadow: 0 0 5px #FFFFFF;}
+
+
+/*START: Cover display, big covers*/
+ul.itemCover > li.listItem,
+ul.itemCover > li {
+    box-shadow: 2px 4px 10px -7px rgba(0, 0, 0, 0.75);
+    float: left;
+    height: 180px !important;
+    margin: 10px 20px 20px;
+    overflow: visible;
+    padding: 0;
+    position: relative;
+    width: 140px !important;}
+ul.itemCover > li:hover {
+    z-index:1;}
+.recordDisplayElement.vertical .image {
+    float: left !important;
+    height: 180px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 140px !important;
+	overflow: hidden;}
+.recordDisplayElement.vertical .image img {
+    border: medium none;
+    box-shadow: none;
+    left: 0;
+    margin: 0;
+    max-height: none;
+    max-width: none;
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    top: 0;}
+.recordDisplayElement.vertical .tools {
+    left: 5px;
+    position: absolute;
+    top: 5px;
+    z-index: 1;}
+.recordDisplayElement.vertical div.data .group > .title {
+    display: none;}
+.recordDisplayElement.vertical div.data.popup .group > .title {
+    display: block;}
+.recordDisplayElement.vertical div.data .group > #rating {
+   display: block;
+    left: 25px;
+    position: absolute;
+    top: 6px;}
+.recordDisplayElement.vertical div.data.popup {
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.85);
+    border: 1px solid #AAAAAA;
+    top: 145px;
+    display: block;
+    height: 2.5em;
+    left: 0;
+    line-height: 1.25em;
+    margin: 0;
+    overflow: hidden !important;
+    position: relative;
+    width: 128px !important;
+	z-index: 2;
+	 padding: 2px 5px !important;}
+.recordDisplayElement.vertical div.data.popup:hover {
+    top: -15px;
+    min-height: 205px;
+	height:auto;
+    left: -5px;
+    width: 140px !important;
+	overflow:auto !important;}
+
+.recordDisplayElement.vertical .popup, .recordDisplayElement.vertical .popup *, .recordDisplayElement.vertical .foldout * {
+    white-space: nowrap;}
+.recordDisplayElement.vertical div.data.popup .group * {
+    white-space:inherit;
+	line-height:inherit;}
+.recordDisplayElement.vertical div.data.popup .group {
+    line-height: 1.25em;
+    max-height: 1.25em;
+	white-space:nowrap;
+	padding-top:0px;}
+.recordDisplayElement.vertical div.data.popup:hover .group {
+    max-height: 6em;
+	white-space:normal !important;
+	padding-top: 5px;}
+.recordDisplayElement.vertical div.data.popup:hover .group:first-child{
+    max-height: 4em;}
+.recordDisplayElement.vertical div.data.popup:hover .group > div {
+    max-height: 10em;
+	white-space:normal !important;}
+/*END: Cover display, big covers*/
+
+
+
+
+/*  START: Additions to enhance responsiveness */
+    body #navigation {
+        display: block !important;
+    }
+    body #navigation > ul > li > a > span {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    
+    body .NavigationDisplayApp ul li {
+        margin: 5px;
+        width: auto !important;
+    }
+    body .NavigationDisplayApp ul ul li {
+        margin-left: 20px;
+    }
+    body .NavigationDisplayApp div.icon {
+        background-position: center center !important;
+        width: 25px !important;
+    }
+    body .NavigationDisplayApp div.elem {
+        float: none !important;
+        margin-left: 15px;
+        width: auto !important;
+    }
+    body .NavigationDisplayApp a, 
+    body .NavigationDisplayApp a span {
+        display: block;
+        width: auto;
+    }
+    
+    body .EditBorrowerData {
+        width: auto;
+    }
+    body .PaymentsDue .title+span {
+        display:block;
+    }
+    
+    
+    body .UserActivities #anchor_menu li {
+        margin: 0;
+    }
+    body .UserActivities #anchor_menu li > span {
+        margin: 0 0 0 14px !important;
+    }
+    body .UserActivities #anchor_menu li > br {
+        clear: both;
+    }
+    
+    body .emulModal {
+        border: 4px double #999;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+        margin: 10px;
+        padding: 10px;
+    }
+
+    @media screen and (min-width:750px){ /* normal */
+        body:not(.moderator) .hideonnormal {
+            display:none;
+        }
+    }
+    
+    @media screen and (max-width:950px){
+        body #wrapper {
+            min-width: 0;
+            width: 100%;
+        }
+        body ul.mainnavigation > li > a > span {
+            padding: 0 20px 0 20px;
+        }
+        body div.column[id^="column99"] {
+            width: 100% !important;
+        }
+        body .widgetborder .application, 
+        body .widgetborder.application {
+            border: 1px solid #999999;
+            border-radius: 10px 10px 10px 10px;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+            margin: 10px 5px 15px;
+            padding: 0;
+        } 
+        body .widgetborder .application .appcontent, 
+        body .widgetborder.application .appcontent {
+            margin: 0 !important;
+            padding: 5px !important;
+        }
+        body .widgetborder.tight .application .appcontent, 
+        body .widgetborder .tight.application .appcontent, 
+        body .widgetborder.tight.application .appcontent {
+            padding: 0 !important;
+        }
+        body .widgetborder .application .spare *, 
+        body .widgetborder.application .spare * {
+            display:none;
+        }
+    
+        body#body #externalLikeShare.likeseparatediv {
+            border-color: #666666 #666666 -moz-use-text-color;
+            border-radius: 5px 5px 0 0;
+            border-style: solid solid none;
+            border-width: 2px 2px medium;
+            margin: 10px auto;
+            padding: 5px 0;
+            position: relative;
+            text-align: center;
+            width: 225px;
+        }
+        body#body #externalLikeShare.likeseparatediv > div {
+            display: inline-block;
+            float: none;
+            width: auto;
+        }
+    }
+    
+    @media screen and (max-width:750px){ /* medium */
+        body #banner {
+            Zdisplay: none;
+        }
+        
+        body ul.mainnavigation > li {
+            width: 33.3%;
+        }
+        body ul.mainnavigation:hover:after {
+            background: none repeat scroll 0 0 #FFDDBB;
+            border: 1px solid orange;
+            border-radius: 0 0 0 20px;
+            box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.25);
+            color: #FFA500;
+            content: "X";
+            display: block;
+            font-size: 12pt;
+            font-weight: bold;
+            line-height: 1em;
+            padding: 8px 8px 12px 13px;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        
+        body ul.mainnavigation ul {
+            padding: 10px 0 !important;
+        }
+        body ul.mainnavigation ul a {
+            padding: 5px;
+        }
+        
+        body #columnwrapper div.column {
+            width: 100%;
+        }
+        body .applicationcontainer {
+            padding: 0;
+        }
+        
+        body#body #content #columnwrapper div.column {
+            width: 50%;
+        }
+        body#body.basic1 #content #columnwrapper div#column1 {
+            width: 100%;
+        }
+        body#body #content #columnwrapper div.wrapperColumn {
+            float:left;
+            width: 50%;
+            margin:0;
+        }
+        body#body #content #columnwrapper div.wrapperColumn div.column {
+            width:100%;
+        }
+
+        
+        body .dijitDialogUnderlay {
+            opacity:0.75;
+        }
+        body #additionalContainer, 
+        body .dijitDialog {
+            left: 5px !important;
+            margin: 0 !important;
+			max-height: none;
+            min-width: 0;
+            right: 5px;
+            top: 5px !important;
+            width: auto !important;
+        }
+        body .LoginDialog .leftDiv {
+            max-width: 50%;
+            width: auto !important;
+        }
+        body .dijitDialogCloseIcon {
+            border: 3px double orange;
+            margin: 5px 5px 0 0;
+        }
+    
+        body #divItemsPH table th,
+        body #divItemsPD table th{
+            font-weight:bold;
+        }    
+        body #divItemsPH table tr,
+        body #divItemsPD table tr{
+            border-bottom: 1px solid #CCCCCC;
+            width: 100%;
+        }
+        body #divItemsPH table tr > *,
+        body #divItemsPD table tr > *{ /* table --> lijst weergave*/
+            border: medium none;
+            display: block;
+            margin: 0;
+            min-height: 1em;
+            padding: 0 !important;
+            text-align: left;
+            width: 100%;
+        }
+        body #divItemsPH table tr > td:first-child,
+        body #divItemsPD table tr > td:first-child{
+            margin-top:5px;
+        }
+        
+        body .recordDisplayElement.smallimage > .image img {
+            width: 50px !important;
+        }
+        body .recordDisplayElement.smallimage > .image {
+            width: 60px !important;
+        }
+        body .recordDisplayElement.smallimage > .data {
+            margin-left: 90px;
+        }
+        body .recordDisplayElement.smallimage.notools > .data {
+            margin-left: 65px;
+        }
+        body .recordDisplayElement div.element {
+            padding-top: 5px;
+        }
+        body .recordDisplayElement .group .label {
+            color: #666666;
+            width: 100% !important;
+        }
+        body .recordDisplayElement .link2 {
+            max-width:90%;
+        }
+        body .recordDisplayElement .link2 span {
+            max-width: 75%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+    
+    @media screen and (max-width:750px) and (min-width:500px){ /* Only on medium */
+        body:not(.moderator) .hideonmedium {
+            display:none;
+        }
+    }
+    
+    @media screen and (max-width:500px){  /* narrow */
+        body:not(.moderator) .hideonnarrow {
+            display:none;
+        }
+        
+        body #banner {
+            display: none;
+        }
+        
+        body #header > a+div > a > img {
+            height:70px !important;
+            width:auto !important;
+        }
+        body ul.mainnavigation > li {
+            width: 49.5%;
+        }
+        body ul.mainnavigation ul {
+            left:0;
+            width: 99% !important;
+        }
+        
+        body #columnwrapper div.column,
+        body #columnwrapper div.wrapperColumn {
+            width: 100% !important;
+        }
+    }
+    
+    @media screen and (max-width:440px){
+        body #header > div > p:first-child + .customnavigation.HeaderBasic {
+            display: none;
+        }
+        body #header > div + div {
+            width: 100% !important;
+        }
+        body .HeaderBasicInner div.row1 {
+            margin-top: 0px;
+        }
+    }
+    @media screen and (max-width:375px){
+        body ul.mainnavigation > li {
+            width: 100%;
+        }
+    }
+/*  END: Additions to enhance responsiveness */
+
+/*  START: MEDIA TYPE for printing, keep this at the end of the file. */
+#print_div, #print_divRL, #print_divCL, #print_divCR, #print_divLH {
+	display:					none;}
+@media print {
+    #header,#navigation, #banner, .customnavigation,.navigation,.UserActivities .navigation a,#footer .payoff, .noprint,#inlineEditorDiv,.RecordOptions,#divSearchRecord > .mainOptions {
+        display: none;}
+    .UserActivities .navigation {
+        display:block;}
+    
+    .wrapperColumn, body#body .column,#columnwrapper,body#body #columnwrapper .column,.itemFull .listItem, .itemText .listItem,ul.itemFull {
+        margin: 0 !important;
+        float: none !important;
+        width: 100% !important;
+        height: auto !important;}
+    
+    body, #wrapper, #wrapperinner, #header, #footer, #footerinner {
+        background: none repeat scroll 0 0 white;
+        width: 100%;
+        min-width:0;
+        max-width:none;
+        margin:0;}
+    #header > a:first-child {
+        background: none;}
+    .application {
+        margin-bottom:25px;}
+    .apptitle {
+        border: medium none;
+        margin: 20px 0 5px;
+        padding: 0;}
+    .appcontent {
+        padding: 0 0 0 20px;;}
+    
+    body {
+        font-family: georgia,serif;
+        font-size: 12pt;}
+    a:link, a:visited {
+        color: #552200 !important;
+        font-weight: bold !important;
+        text-decoration: underline !important;}
+    
+    body.printEnabled #wrapper {
+        max-width: 					none;
+        min-width: 					0;
+        width: 						auto;}
+    
+    body.printEnabled .appcontent .summary table,
+    body.printEnabled #header,
+    body.printEnabled #navigation,
+    body.printEnabled #banner,
+    body.printEnabled #footer,
+    body.printEnabled .items,
+    body.printEnabled .results,
+    body.printEnabled .overhead,
+    body.printEnabled .summary .generalInfo,
+    body.printEnabled input,
+    body.printEnabled .ResultsOptions,
+    body.printEnabled .Restrictions,
+    body.printEnabled .UserActivities,
+    body.printEnabled .applicationcontainer[role*="search"],
+    body.printEnabled .application.ListOptions {
+        display:					none !important;}
+    body.printEnabled #wrapperinner {
+        margin:						0;
+        padding:					0;}
+    body.printEnabled .print_div {
+        background: 				none repeat scroll 0 0 #FFFFFF;
+        display: 					block !important;
+        height: 					auto;
+        left: 						0;
+        overflow: 					hidden !important;
+        position: 					static;
+        top: 						0;
+        visibility: 				visible;
+        width: 						auto;}
+    
+    
+    iframe {
+        max-height:300px;}
+    .odd, .even,
+    tr.odd > td, tr.even > td {
+        border-bottom: 1px solid #F5F5F5;}
+    #anchor_menu > li > span[style*="right"]:before {
+        content: ":";
+        margin: 0 5px;}
+    #anchor_menu > li > span[style*="right"] {
+        float: left !important;}
+    
+    
+    body#body .application .appcontent .results,
+    body#body .application .appcontent .results > ul,
+    body#body .application .appcontent .results > ul > li,
+    .print_div .listItem {
+        float: none;
+        position:static;}
+    .dj_ie7 .print_div * {
+        margin:0;
+        padding:0;}
+    .dj_ie7 .print_div .recordDisplayElement {
+        padding-bottom:2em;}
+    .dj_ie7 .print_div .listItem *,
+    .dj_ie7 .Publish ul.itemList li.listItem a>span.summary,
+    body#body .application,
+    body#body .application > .apptitle,
+    body#body .application > .apptitle > * > * {
+        position:static;}
+    body#body #content,
+    ul > li {
+     float:none;}
+} /* END: MEDIA TYPE for printing, keep this at the end of the file. */

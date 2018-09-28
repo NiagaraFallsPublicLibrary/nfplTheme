@@ -1,0 +1,37 @@
+global-styling:
+  version: 8.x
+  css:
+    theme:
+      css/bootstrap.css: {}
+      css/localStyle.css: {}
+      css/localMedia.css: {}
+      css/nfplStyle.css: {}
+      css/nfplAdRotator.css: {}
+      css/miniTableStyling.css: {}
+media-styling:
+  version: 8.x
+  css:
+    theme:
+      css/localMedia.css: {}
+
+editor-classes:
+  version: 8.x
+  css:
+    theme:
+      css/editorClasses.css: {}
+
+global-scripts:
+  version: 8.x
+  js:
+    JS/script.js: {}
+    JS/popper.min.js: {}   
+    JS/nfpl-map-all.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
+    - core/drupalSettings
+    - core/bootstrap
+    
+   
+    
