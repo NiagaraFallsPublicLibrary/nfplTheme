@@ -1,53 +1,32 @@
 h1.headTitle{
-    font-size: 20px;
-    color: #34a1be !important;
-    border-bottom: 1px solid #34a1be;
-    padding-top:25px;
-    margin-right:10px;
-    width:95%;
+    
 }
 
 h2.subTitle{
-    font-family: 'Montserrat', sans-serif;
-    color: #34A1BE;
-    font-size: 18px;
-    padding-top: 16px;
+    
 }
 
 h3.altTitle{
-    font-size: 16px;
-    color: #34a1be !important;
-    border-bottom: 1px solid #34a1be;
-    padding-top:10px;
+    
 }
 
 img.inlineImage{
-    max-height: 150px;
-    max-width: 250px;
-    width: auto;
-    display: inline-block;
+    
 }
 
 a.ButtonLink{
-    font-family: Montserrat;
-    color: #ffffff !important;
-    font-size: 16px;
-    background: #34A1BE !important;
-    padding: 8px 16px 8px 16px;
-    border: solid #34a1be 2px;
-    margin-bottom: 5px;
-    text-decoration: none !important;
+    
 }
 
 a.ButtonLink:hover{
-    background: #84c9db !important;
-    text-decoration: none !important;
-    cursor: pointer;
+    
 }
 
 a.TextLink{
-    color: #34A1BE;
+    
 }
+
+
 /* 
 h1.headTitle|HeadTitle
 h2.subTitle|SubTitle

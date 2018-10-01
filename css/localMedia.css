@@ -1,71 +1,21 @@
-@media screen and (max-width:888px){
-    /*To reduce button overlap*/
-    .ButtonLink{
-        width:120px; 
-        display:block;
-        margin:auto
-    }
-}
-@media screen and (max-width:576px){
-    .logo{
-        max-width: 350px;
-        height:auto;
-    }
-    .layout-content{
-    display: block;
-    }
-    .hasmenu{
-        width:100%;
-    }
-    img.logo{
-        padding:25px;
-    }
-}
 
-@media screen and (max-width:991px){
-    .srch, .searchDiv, .searchbox{
-        width: 100%;
-    }
-    .logo{
-        text-align: center;
-    }
-    .mid-banner{
-            margin: 10px 15px;
-    }
-    .views-field-field-ad-rotator > div > img{
-        max-width: 500px !important;
-    }
-}
 
-@media screen and (min-width:576px) and (max-width:991px){
-    .srch{
-        display: inline-block;
-        position: absolute;
-        left: 0;
-        bottom: 10px;
-    }
-    .searchDiv{
-        float: left;
-    }   
-    .logo{
-        max-width:450px;
-    }
-}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
 
-@media screen and (min-width:550px) and (max-width:650px){
-    .hasmenu{
-        min-width:50%;
-    }
-}
+ }
 
-@media screen and (min-width:650px) and (max-width:950px){
-    .hasmenu{
-        min-width:33%;
-    }
-}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
 
-@media screen and (max-width:1200px){
-    .views_slideshow_cycle_teaser_section{
-        height: 250px !important;
-    }
-}
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    
+ }
